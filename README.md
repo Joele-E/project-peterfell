@@ -5,7 +5,7 @@
     Replica della pagina web PeterFell utilizzando HTML, SASS, JS
     Team2 classe 15 FullStack.
 
-### Membri del team:
+### Membri del team 💻:
 
 - Joele Esposito
 - Antonio Iannibelli
