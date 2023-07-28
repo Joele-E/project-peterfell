@@ -1,0 +1,252 @@
+/* 
+
+#e09c9e	Pink Daisy
+
+#d27846	Raw Sienna
+
+#6496be	Faded Blue
+
+#788c50	Camo
+
+#dca03c	Satin Sheen Gold
+
+#aaa050	Bullet Shell
+
+#c85f3c	Terracotta 
+
+font-family: 'Playfair Display', serif;
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #7ac7cd;
+}
+
+.sections {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  font-family: "Heebo", sans-serif;
+}
+.sections .logo-section {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+.sections .logo-section .logos-title {
+  font-size: 28px;
+  font-weight: 600;
+  border-bottom: 3px solid #404041;
+}
+.sections .logo-section .logos {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.sections .logo-section .logos .primary-logo {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  font-size: 36px;
+}
+.sections .logo-section .logos .primary-logo .primary-logo-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.sections .logo-section .logos .all-white {
+  font-weight: 800;
+  padding: 16px;
+  background-color: #404041;
+  color: #ffffff;
+}
+.sections .logo-section .logos .standard-logo {
+  font-weight: 800;
+  padding: 16px;
+  background-color: #404041;
+}
+.sections .logo-section .logos .standard-logo .first-half {
+  color: #ffffff;
+}
+.sections .logo-section .logos .standard-logo .second-half {
+  color: #7a99ac;
+}
+.sections .logo-section .logos .dark-logo {
+  font-weight: 800;
+  padding: 16px;
+  /* background-color: #fce2d4; */
+  border: 1px solid black;
+}
+.sections .logo-section .logos .dark-logo .first-half {
+  color: #404041;
+}
+.sections .logo-section .logos .dark-logo .second-half {
+  color: #7a99ac;
+}
+.sections .colors-section {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+.sections .colors-section .colors-title {
+  font-size: 28px;
+  font-weight: 600;
+  border-bottom: 4px solid #404041;
+}
+.sections .colors-section .colors {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 40px;
+}
+.sections .colors-section .colors .color-cards {
+  display: flex;
+  flex-flow: row wrap;
+}
+.sections .colors-section .colors .color-cards .color-card {
+  height: 135px;
+  width: 100px;
+  padding: 8px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.sections .colors-section .colors .color-cards .color-card .color {
+  min-height: 60px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sections .colors-section .colors .color-cards .color-card .color-description {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+.sections .colors-section .colors .color-cards .color-card .color-description .color-description-title {
+  font-weight: 800;
+  font-size: 18px;
+}
+.sections .colors-section .colors .color-cards .color-card .color-description .color-description-text {
+  font-size: 12px;
+}
+.sections .colors-section .colors .primary-colors {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 30px;
+  min-width: 50%;
+}
+.sections .colors-section .colors .primary-colors .primary-colors-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.sections .colors-section .colors .primary-colors #colorCard1 .color {
+  background-color: #7a99ac;
+}
+.sections .colors-section .colors .primary-colors #colorCard2 .color {
+  background-color: #404041;
+}
+.sections .colors-section .colors .primary-colors #colorCard3 .color {
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+.sections .colors-section .colors .secondary-colors {
+  margin-top: 30px;
+}
+.sections .colors-section .colors .secondary-colors .secondary-colors-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.sections .colors-section .colors .secondary-colors #colorCard4 .color {
+  background-color: #e09c9e;
+}
+.sections .colors-section .colors .secondary-colors #colorCard5 .color {
+  background-color: #d27846;
+}
+.sections .colors-section .colors .secondary-colors #colorCard6 .color {
+  background-color: #6496be;
+}
+.sections .colors-section .colors .secondary-colors #colorCard7 .color {
+  background-color: #788c50;
+}
+.sections .colors-section .colors .secondary-colors #colorCard8 .color {
+  background-color: #dca03c;
+}
+.sections .colors-section .colors .secondary-colors #colorCard9 .color {
+  background-color: #aaa050;
+}
+.sections .colors-section .colors .secondary-colors #colorCard10 .color {
+  background-color: #c85f3c;
+}
+.sections .typography-section {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+.sections .typography-section .typography-title {
+  font-size: 28px;
+  font-weight: 600;
+  border-bottom: 4px solid #404041;
+}
+.sections .typography-section .typography {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  gap: 30px;
+}
+.sections .typography-section .typography .typography-card .typography-desc {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.sections .typography-section .typography .typography-card .typography-desc .typography-desc-title {
+  font-weight: bold;
+  font-size: 12px;
+}
+.sections .typography-section .typography .typography-card .typography-desc .typography-desc-subtitle {
+  font-size: 10px;
+}
+.sections .typography-section .typography #typography-header .typography-ref {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: bold;
+}
+.sections .typography-section .typography #typography-description .typography-ref {
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+}
+.sections .typography-section .typography #typography-text-button .typography-ref {
+  display: flex;
+  align-items: center;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #7a99ac;
+  border-bottom: 2px solid #7a99ac;
+}
+.sections .typography-section .typography #typography-text-button .typography-ref svg {
+  width: 12px;
+  padding-top: 5px;
+}
+.sections .icons-section {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+.sections .icons-section .icons-title {
+  font-size: 28px;
+  font-weight: 600;
+  border-bottom: 4px solid #404041;
+}
+.sections .icons-section .icons {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 20px;
+  gap: 20px;
+}/*# sourceMappingURL=ds.css.map */

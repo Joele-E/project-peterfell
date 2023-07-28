@@ -1,0 +1,311 @@
+$base-color: #ffffff;
+$logo-dark: #404041;
+$logo-blue: #7a99ac;
+
+$pink-daisy: #e09c9e;
+$raw-sienna: #d27846;
+$faded-blue: #6496be;
+$camo: #788c50;
+$satin-sheen-gold: #dca03c;
+$bullet-shell: #aaa050;
+$terracotta: #c85f3c;
+/* 
+
+#e09c9e	Pink Daisy
+
+#d27846	Raw Sienna
+
+#6496be	Faded Blue
+
+#788c50	Camo
+
+#dca03c	Satin Sheen Gold
+
+#aaa050	Bullet Shell
+
+#c85f3c	Terracotta 
+
+font-family: 'Playfair Display', serif;
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #7ac7cd;
+}
+
+.sections {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  font-family: "Heebo", sans-serif;
+
+  .logo-section {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+
+    .logos-title {
+      font-size: 28px;
+      font-weight: 600;
+      border-bottom: 3px solid $logo-dark;
+    }
+
+    .logos {
+      display: flex;
+      flex-flow: row nowrap;
+
+      .primary-logo {
+        margin-top: 30px;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;
+        font-size: 36px;
+        .primary-logo-title {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+      .all-white {
+        font-weight: 800;
+        padding: 16px;
+        background-color: $logo-dark;
+        color: $base-color;
+      }
+      .standard-logo {
+        font-weight: 800;
+        padding: 16px;
+        background-color: $logo-dark;
+        .first-half {
+          color: $base-color;
+        }
+        .second-half {
+          color: $logo-blue;
+        }
+      }
+      .dark-logo {
+        font-weight: 800;
+        padding: 16px;
+        /* background-color: #fce2d4; */
+        border: 1px solid black;
+        .first-half {
+          color: $logo-dark;
+        }
+        .second-half {
+          color: $logo-blue;
+        }
+      }
+    }
+  }
+
+  .colors-section {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+
+    .colors-title {
+      font-size: 28px;
+      font-weight: 600;
+      border-bottom: 4px solid $logo-dark;
+    }
+    .colors {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 40px;
+      .color-cards {
+        display: flex;
+        flex-flow: row wrap;
+        .color-card {
+          height: 135px;
+          width: 100px;
+          padding: 8px;
+          display: flex;
+          flex-flow: column nowrap;
+
+          .color {
+            min-height: 60px;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          .color-description {
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+
+            gap: 20px;
+
+            .color-description-title {
+              font-weight: 800;
+              font-size: 18px;
+            }
+            .color-description-text {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .primary-colors {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-top: 30px;
+        min-width: 50%;
+
+        .primary-colors-title {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        #colorCard1 {
+          .color {
+            background-color: $logo-blue;
+          }
+        }
+        #colorCard2 {
+          .color {
+            background-color: $logo-dark;
+          }
+        }
+        #colorCard3 {
+          .color {
+            background-color: $base-color;
+            border: 1px solid black;
+          }
+        }
+      }
+      .secondary-colors {
+        margin-top: 30px;
+        .secondary-colors-title {
+          font-size: 18px;
+          font-weight: 600;
+        }
+        #colorCard4 {
+          .color {
+            background-color: $pink-daisy;
+          }
+        }
+        #colorCard5 {
+          .color {
+            background-color: $raw-sienna;
+          }
+        }
+        #colorCard6 {
+          .color {
+            background-color: $faded-blue;
+          }
+        }
+        #colorCard7 {
+          .color {
+            background-color: $camo;
+          }
+        }
+        #colorCard8 {
+          .color {
+            background-color: $satin-sheen-gold;
+          }
+        }
+        #colorCard9 {
+          .color {
+            background-color: $bullet-shell;
+          }
+        }
+        #colorCard10 {
+          .color {
+            background-color: $terracotta;
+          }
+        }
+      }
+    }
+  }
+
+  .typography-section {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+
+    .typography-title {
+      font-size: 28px;
+      font-weight: 600;
+      border-bottom: 4px solid $logo-dark;
+    }
+
+    .typography {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: baseline;
+
+      gap: 30px;
+
+      .typography-card {
+        .typography-desc {
+          display: flex;
+          flex-flow: column nowrap;
+          .typography-desc-title {
+            font-weight: bold;
+            font-size: 12px;
+          }
+          .typography-desc-subtitle {
+            font-size: 10px;
+          }
+        }
+      }
+
+      #typography-header {
+        .typography-ref {
+          font-family: "Playfair Display", serif;
+          font-size: 38px;
+          font-weight: bold;
+        }
+      }
+      #typography-description {
+        .typography-ref {
+          font-family: "Heebo", sans-serif;
+          font-size: 20px;
+        }
+      }
+      #typography-text-button {
+        .typography-ref {
+          display: flex;
+          align-items: center;
+          font-family: "Playfair Display", sans-serif;
+          font-size: 20px;
+          font-weight: bold;
+          color: $logo-blue;
+          border-bottom: 2px solid $logo-blue;
+
+          svg {
+            width: 12px;
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .icons-section {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+    .icons-title {
+      font-size: 28px;
+      font-weight: 600;
+      border-bottom: 4px solid $logo-dark;
+    }
+    .icons {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 20px;
+      gap: 20px;
+    }
+  }
+}
