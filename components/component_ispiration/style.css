@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerIspiration {
+  padding: 20px;
+}
+.containerIspiration .titleIspiration {
+  font-size: 4.5ch;
+  margin-bottom: 30px;
+}
+.containerIspiration .containerTextandImg {
+  display: flex;
+  align-self: center;
+  gap: 4rem;
+}
+.containerIspiration .containerTextandImg .textandLink .textIspiration {
+  color: #6d6e70;
+  font-size: 19px;
+  margin-bottom: 40px;
+}
+.containerIspiration .containerTextandImg .textandLink .linkIspiration a {
+  text-decoration: none;
+  color: #7a99ac;
+  font-weight: bold;
+  font-size: 23px;
+}
+.containerIspiration .containerTextandImg .textandLink .linkIspiration .line {
+  background-color: #7a99ac;
+  height: 3px;
+  width: 70%;
+  margin-top: 5px;
+}
+.containerIspiration .containerTextandImg .imgInspiration .imgInsp {
+  width: 70%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerIspiration {
+  padding: 20px;
+  .titleIspiration {
+    font-size: 4.5ch;
+    margin-bottom: 30px;
+  }
+  .containerTextandImg {
+    display: flex;
+    align-self: center;
+    gap: 4rem;
+    .textandLink {
+      .textIspiration {
+        color: #6d6e70;
+        font-size: 19px;
+        margin-bottom: 40px;
+      }
+      .linkIspiration {
+        a {
+          text-decoration: none;
+          color: #7a99ac;
+          font-weight: bold;
+          font-size: 23px;
+        }
+        .line {
+          background-color: #7a99ac;
+          height: 3px;
+          width: 70%;
+          margin-top: 5px;
+        }
+      }
+    }
+    .imgInspiration {
+      .imgInsp {
+        width: 70%;
+        height: 100%;
+      }
+    }
+  }
+}
