@@ -1,3 +1,5 @@
+@import url("../../../hero-section-card/style.css");
+@import url("../../../homepage_navbar/style.css");
 body {
   margin: 0 auto;
   padding: 0;
@@ -5,11 +7,49 @@ body {
 
 .hero-section-container {
   height: 100vh;
+}
+.hero-section-container .hero-section-overlay {
+  height: 100vh;
+  width: 100vw;
+  filter: brightness(0.75);
+  position: absolute;
+  z-index: -10;
   background-image: url("../img/bgimage1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0.3s all;
+}
+.hero-section-container .hero-section-cards {
   display: grid;
-  grid-template-columns: repeat(1fr, 4);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
+  z-index: 2;
+}
+.hero-section-container .hero-section-cards #hero-card-2:hover {
+  background-color: rgba(210, 119, 70, 0.9019607843);
+}
+.hero-section-container .hero-section-cards #hero-card-3:hover {
+  background-color: rgba(100, 150, 190, 0.9019607843);
+}
+.hero-section-container .hero-section-cards #hero-card-4:hover {
+  background-color: rgba(120, 140, 80, 0.9019607843);
+}
+.hero-section-container .hero-section-cards #hero-card-5:hover {
+  background-color: rgba(220, 160, 60, 0.9019607843);
+}
+.hero-section-container .hero-section-cards #hero-card-6:hover {
+  background-color: rgba(170, 160, 80, 0.9019607843);
+}
+.hero-section-container .hero-section-cards #hero-card-7:hover {
+  background-color: rgba(200, 95, 60, 0.9019607843);
+}
+.hero-section-container .hero-section-first-card {
+  display: flex;
+  padding: 50px 50px;
+  align-items: flex-end;
+  color: white;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

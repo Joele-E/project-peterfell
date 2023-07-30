@@ -1,3 +1,6 @@
+@import url("../../../hero-section-card/style.css");
+@import url("../../../homepage_navbar/style.css");
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -5,11 +8,65 @@ body {
 
 .hero-section-container {
   height: 100vh;
-  background-image: url("../img/bgimage1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: grid;
-  grid-template-columns: repeat(1fr, 4);
-  grid-template-rows: 1fr 1fr;
+
+  .hero-section-overlay {
+    height: 100vh;
+    width: 100vw;
+    filter: brightness(0.75);
+    position: absolute;
+    z-index: -10;
+    background-image: url("../img/bgimage1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s all;
+  }
+  .hero-section-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    z-index: 2;
+
+    #hero-card1 {
+    }
+    #hero-card-2 {
+      &:hover {
+        background-color: #d27746e6;
+      }
+    }
+    #hero-card-3 {
+      &:hover {
+        background-color: #6496bee6;
+      }
+    }
+    #hero-card-4 {
+      &:hover {
+        background-color: #788c50e6;
+      }
+    }
+    #hero-card-5 {
+      &:hover {
+        background-color: #dca03ce6;
+      }
+    }
+    #hero-card-6 {
+      &:hover {
+        background-color: #aaa050e6;
+      }
+    }
+    #hero-card-7 {
+      &:hover {
+        background-color: #c85f3ce6;
+      }
+    }
+  }
+  .hero-section-first-card {
+    display: flex;
+    padding: 50px 50px;
+    align-items: flex-end;
+    color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
 }
