@@ -1,0 +1,46 @@
+.coloured-concrete-box {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.coloured-concrete-box .coloured-concrete-title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.coloured-concrete-box .coloured-concrete-title .intestazione-coloured-concrete {
+  width: 100%;
+  font-size: 80px;
+  font-weight: 700;
+}
+.coloured-concrete-box .coloured-concrete-title .scritta-coloured-concrete {
+  width: 50%;
+  padding-left: 35%;
+  color: #6d6e70;
+  font-size: 17px;
+  font-weight: 300;
+}
+.coloured-concrete-box .coloured-concrete-title .choose-your-colour {
+  padding-left: 35%;
+  width: 24%;
+}
+.coloured-concrete-box .coloured-concrete-title .choose-your-colour .link-colour-box:hover .link-colour {
+  color: black;
+}
+.coloured-concrete-box .coloured-concrete-title .choose-your-colour .link-colour-box:hover .line-bottom {
+  background-color: black;
+}
+.coloured-concrete-box .coloured-concrete-title .choose-your-colour .link-colour-box:hover .img-choose-color1 {
+  filter: brightness(0) saturate(100%);
+}
+.coloured-concrete-box .coloured-concrete-title .choose-your-colour .link-colour-box .link-colour {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #7a99ac;
+}
+.coloured-concrete-box .coloured-concrete-title .choose-your-colour .line-bottom {
+  background-color: #7a99ac;
+  height: 3px;
+}/*# sourceMappingURL=style.css.map */
