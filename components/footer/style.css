@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .container-footer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+}
+.footer .container-footer .footer-left {
+  width: 50%;
+}
+.footer .container-footer .footer-left .title-footer {
+  color: white;
+  font-size: 65px;
+  font-weight: 700;
+  width: 80%;
+}
+.footer .container-footer .footer-left .second-title-footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container-footer .footer-left .second-title-footer-box .footer-left-left .second-title-footer {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+.footer .container-footer .footer-left .second-title-footer-box .footer-left-left .paragraph-footer-left {
+  color: #6d6e70;
+  padding-bottom: 120px;
+}
+.footer .container-footer .footer-left .second-title-footer-box .footer-left-right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+}
+.footer .container-footer .footer-left .second-title-footer-box .footer-left-right .icons-footer .svg-icons {
+  text-decoration: none;
+}
+.footer .container-footer .footer-left .second-title-footer-box .paragraph-footer-right {
+  color: white;
+  font-weight: 700;
+}
+.footer .container-footer .footer-left .last-paragraph-footer {
+  color: #6d6e70;
+}
+.footer .container-footer .footer-right {
+  background-color: black;
+}
+.footer .container-footer .footer-right .title-footer-right-box {
+  margin-top: 80%;
+}
+.footer .container-footer .footer-right .title-footer-right-box .title-footer-right {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+.footer .container-footer .footer-right .form-footer input {
+  background-color: black;
+  height: 40px;
+  width: 200px;
+  margin-bottom: 30px;
+}
+.footer .container-footer .footer-right .link-subscribe-footer:hover .link-subscribe {
+  color: white;
+}
+.footer .container-footer .footer-right .link-subscribe-footer:hover .underline-subscribe-footer {
+  background-color: white;
+}
+.footer .container-footer .footer-right .link-subscribe-footer:hover .img-subscribe {
+  filter: brightness(0%) invert(1) saturate(100%);
+}
+.footer .container-footer .footer-right .link-subscribe-footer .link-subscribe {
+  text-decoration: none;
+  color: #7a99ac;
+  font-weight: 700;
+  font-size: 20px;
+}
+.footer .container-footer .footer-right .link-subscribe-footer .underline-subscribe-footer {
+  height: 3px;
+  width: 25%;
+  background-color: #7a99ac;
+}/*# sourceMappingURL=style.css.map */
