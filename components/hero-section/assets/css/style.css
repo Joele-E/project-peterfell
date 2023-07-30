@@ -9,4 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1fr, 4);
+  grid-template-rows: 1fr 1fr;
 }/*# sourceMappingURL=style.css.map */
