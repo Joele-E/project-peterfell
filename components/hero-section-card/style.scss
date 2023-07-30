@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* 
+font-family: "Heebo", sans-serif;
+font-family: "Playfair Display", sans-serif;
+*/
+
+.hero-card {
+  height: auto;
+  min-height: 300px;
+  width: auto;
+  background-color: rgba(224, 156, 158, 0);
+  border: 1px solid grey;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 50px 50px;
+  cursor: pointer;
+  transition: 0.3s all;
+
+  .hero-card-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    color: white;
+    font-size: 20px;
+    font-family: "Heebo", sans-serif;
+    font-weight: 300;
+    align-self: flex-end;
+    justify-content: flex-end;
+    height: calc(300px - 50px);
+  }
+  .hero-card-description {
+    display: none;
+    .hero-card-description-title {
+      font-family: "Playfair Display", sans-serif;
+      font-size: 45px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 25px;
+    }
+    .hero-card-description-text {
+      font-family: "Heebo", sans-serif;
+      font-size: 17px;
+      color: white;
+      margin-bottom: 15px;
+    }
+    .hero-card-description-link {
+      display: flex;
+      align-items: center;
+      font-family: "Playfair Display", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      border-bottom: 2px solid black;
+      width: fit-content;
+      transition: 0.3s all;
+
+      &:hover {
+        color: white;
+        border-color: white;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: rgba(224, 156, 158, 0.9);
+
+    .hero-card-text {
+      display: none;
+    }
+    .hero-card-description {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  }
+}
