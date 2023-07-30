@@ -21,19 +21,28 @@
   font-size: 19px;
   margin-bottom: 40px;
 }
-.containerIspiration .containerTextandImg .textandLink .linkIspiration a {
-  text-decoration: none;
+.containerIspiration .containerTextandImg .textandLink .linkIspiration {
   color: #7a99ac;
   font-weight: bold;
   font-size: 23px;
+  cursor: pointer;
 }
-.containerIspiration .containerTextandImg .textandLink .linkIspiration .line {
+.containerIspiration .containerTextandImg .textandLink .linkIspiration:hover {
+  color: black;
+}
+.containerIspiration .containerTextandImg .textandLink .linkIspiration:hover .iconInspiration {
+  filter: brightness(0) saturate(100%);
+}
+.containerIspiration .containerTextandImg .textandLink .linkIspiration:hover .line {
+  background-color: black;
+}
+.containerIspiration .containerTextandImg .textandLink .line {
   background-color: #7a99ac;
   height: 3px;
   width: 70%;
   margin-top: 5px;
 }
-.containerIspiration .containerTextandImg .imgInspiration .imgInsp {
+.containerIspiration .imgInspiration .imgInsp {
   width: 70%;
   height: 100%;
 }/*# sourceMappingURL=style.css.map */

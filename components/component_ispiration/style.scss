@@ -21,25 +21,32 @@
         margin-bottom: 40px;
       }
       .linkIspiration {
-        a {
-          text-decoration: none;
-          color: #7a99ac;
-          font-weight: bold;
-          font-size: 23px;
+        color: #7a99ac;
+        font-weight: bold;
+        font-size: 23px;
+        cursor: pointer;
+        &:hover {
+          color: black;
+          .iconInspiration {
+            filter: brightness(0) saturate(100%);
+          }
+          .line {
+            background-color: black;
+          }
         }
-        .line {
-          background-color: #7a99ac;
-          height: 3px;
-          width: 70%;
-          margin-top: 5px;
-        }
+      }
+      .line {
+        background-color: #7a99ac;
+        height: 3px;
+        width: 70%;
+        margin-top: 5px;
       }
     }
-    .imgInspiration {
-      .imgInsp {
-        width: 70%;
-        height: 100%;
-      }
+  }
+  .imgInspiration {
+    .imgInsp {
+      width: 70%;
+      height: 100%;
     }
   }
 }
