@@ -7,15 +7,15 @@
   justify-content: space-evenly;
 
   .create-look-img {
-    min-width: 25vw;
-    max-width: 40vw;
+    min-width: 25%;
+    max-width: 40%;
     img {
       width: 100%;
     }
   }
   .create-look-desc {
-    min-width: 25vw;
-    max-width: 40vw;
+    min-width: 25%;
+    max-width: 40%;
     .create-look-desc-title {
       font-family: "Playfair Display", sans-serif;
       font-weight: bold;
@@ -62,17 +62,17 @@
     flex-flow: column nowrap;
     align-items: center;
     width: 100%;
-  }
-  .create-look-img {
-    min-width: 100%;
-  }
-  .create-look-desc {
-    min-width: 100%;
-    .create-look-desc-title {
+    .create-look-img {
+      min-width: unset;
+      max-width: 100%;
     }
-    .create-look-desc-text {
-    }
-    .create-look-desc-link {
+    .create-look-desc {
+      min-width: 100%;
+      max-width: unset;
+
+      .create-look-desc-title {
+        font-size: 2.5em;
+      }
     }
   }
 }
