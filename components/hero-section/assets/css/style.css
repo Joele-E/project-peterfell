@@ -20,6 +20,47 @@ body {
   background-position: center;
   transition: 0.3s all;
 }
+.hero-section-container .home-navbar {
+  position: fixed;
+  font-family: "Heebo", sans-serif;
+}
+.hero-section-container .home-navbar * {
+  transition: 0.3s all;
+}
+.hero-section-container .home-navbar .logo {
+  font-size: 1em;
+  margin-bottom: unset;
+}
+.hero-section-container .home-navbar .menu img {
+  height: 18px;
+  width: 18px;
+}
+.hero-section-container .home-navbar .menu .textMenu {
+  font-size: 0.6em;
+}
+.hero-section-container .home-navbar .designTool img {
+  height: 18px;
+  width: 18px;
+}
+.hero-section-container .home-navbar .designTool .textDesignTool {
+  font-size: 0.6em;
+}
+.hero-section-container .home-navbar .cart img {
+  height: 18px;
+  width: 18px;
+}
+.hero-section-container .home-navbar .cart .eventCart {
+  padding: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+.hero-section-container .home-navbar .cart .eventCart .textEvent {
+  font-size: 0.6em;
+  font-weight: bold;
+}
 .hero-section-container .hero-section-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -50,6 +91,6 @@ body {
   align-items: flex-end;
   color: white;
   font-family: "Playfair Display", sans-serif;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

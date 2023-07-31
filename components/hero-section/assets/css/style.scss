@@ -1,6 +1,8 @@
 @import url("../../../hero-section-card/style.css");
 @import url("../../../homepage_navbar/style.css");
 
+$nav-desc-font-size: 0.6em;
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -21,14 +23,61 @@ body {
     background-position: center;
     transition: 0.3s all;
   }
+  .home-navbar {
+    position: fixed;
+    font-family: "Heebo", sans-serif;
+
+    * {
+      transition: 0.3s all;
+    }
+    .logo {
+      font-size: 1em;
+      margin-bottom: unset;
+    }
+    .menu {
+      img {
+        height: 18px;
+        width: 18px;
+      }
+      .textMenu {
+        font-size: $nav-desc-font-size;
+      }
+    }
+    .designTool {
+      img {
+        height: 18px;
+        width: 18px;
+      }
+      .textDesignTool {
+        font-size: $nav-desc-font-size;
+      }
+    }
+    .cart {
+      img {
+        height: 18px;
+        width: 18px;
+      }
+      .eventCart {
+        padding: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15px;
+        height: 15px;
+
+        .textEvent {
+          font-size: $nav-desc-font-size;
+          font-weight: bold;
+        }
+      }
+    }
+  }
   .hero-section-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     z-index: 2;
 
-    #hero-card1 {
-    }
     #hero-card-2 {
       &:hover {
         background-color: #d27746e6;
@@ -66,7 +115,7 @@ body {
     align-items: flex-end;
     color: white;
     font-family: "Playfair Display", sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
   }
 }

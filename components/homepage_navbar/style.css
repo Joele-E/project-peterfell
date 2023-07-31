@@ -5,7 +5,6 @@ nav {
   width: 8%;
   padding: 10px;
   gap: 0.5rem;
-  background-image: url(assets/background.png);
 }
 nav .logo {
   font-size: 35px;
