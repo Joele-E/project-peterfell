@@ -30,7 +30,7 @@ body {
     gap: 1vh;
 
     * {
-      transition: 0.3s all;
+      transition: 0.3s all ease;
     }
     .logo {
       font-size: 1.7em;
@@ -40,6 +40,7 @@ body {
       svg {
         height: 18px;
         width: 18px;
+        transition: 0.1s all;
       }
       .textMenu {
         font-size: $nav-desc-font-size;
@@ -49,6 +50,7 @@ body {
       svg {
         height: 18px;
         width: 18px;
+        transition: 0.1s all;
       }
       .textDesignTool {
         font-size: $nav-desc-font-size;

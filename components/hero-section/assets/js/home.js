@@ -30,6 +30,10 @@ document.addEventListener("scroll", (event) => {
 
   let navbarIcons = homeNavbar.querySelectorAll(".navbar-icon");
 
+  navbarIcons.forEach((el) => {
+    el.style.transition = "0.1s all";
+  });
+
   console.log(navbarIcons);
 
   if (scroll > 0) {
@@ -42,6 +46,7 @@ document.addEventListener("scroll", (event) => {
       firstSpan.style.color = "#404041";
       secondSpan.style.color = "#7a99ac";
       navbarIcons.forEach((el) => {
+        el.style.transition = "0.1s all";
         el.style.fill = "#7a99ac";
       });
     } else {
