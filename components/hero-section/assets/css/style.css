@@ -23,29 +23,31 @@ body {
 .hero-section-container .home-navbar {
   position: fixed;
   font-family: "Heebo", sans-serif;
+  padding: 3vh;
+  gap: 1vh;
 }
 .hero-section-container .home-navbar * {
   transition: 0.3s all;
 }
 .hero-section-container .home-navbar .logo {
-  font-size: 1em;
+  font-size: 1.7em;
   margin-bottom: unset;
 }
-.hero-section-container .home-navbar .menu img {
+.hero-section-container .home-navbar .menu svg {
   height: 18px;
   width: 18px;
 }
 .hero-section-container .home-navbar .menu .textMenu {
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
-.hero-section-container .home-navbar .designTool img {
+.hero-section-container .home-navbar .designTool svg {
   height: 18px;
   width: 18px;
 }
 .hero-section-container .home-navbar .designTool .textDesignTool {
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
-.hero-section-container .home-navbar .cart img {
+.hero-section-container .home-navbar .cart svg {
   height: 18px;
   width: 18px;
 }
@@ -58,7 +60,7 @@ body {
   height: 15px;
 }
 .hero-section-container .home-navbar .cart .eventCart .textEvent {
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-weight: bold;
 }
 .hero-section-container .hero-section-cards {
@@ -87,10 +89,11 @@ body {
 }
 .hero-section-container .hero-section-first-card {
   display: flex;
-  padding: 50px 50px;
+  padding: 5vh;
   align-items: flex-end;
   color: white;
   font-family: "Playfair Display", sans-serif;
-  font-size: 2em;
+  font-size: 6vh;
   font-weight: bold;
+  line-height: 1em;
 }/*# sourceMappingURL=style.css.map */

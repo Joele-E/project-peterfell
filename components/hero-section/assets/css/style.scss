@@ -1,7 +1,7 @@
 @import url("../../../hero-section-card/style.css");
 @import url("../../../homepage_navbar/style.css");
 
-$nav-desc-font-size: 0.6em;
+$nav-desc-font-size: 0.7em;
 
 body {
   margin: 0 auto;
@@ -26,16 +26,18 @@ body {
   .home-navbar {
     position: fixed;
     font-family: "Heebo", sans-serif;
+    padding: 3vh;
+    gap: 1vh;
 
     * {
       transition: 0.3s all;
     }
     .logo {
-      font-size: 1em;
+      font-size: 1.7em;
       margin-bottom: unset;
     }
     .menu {
-      img {
+      svg {
         height: 18px;
         width: 18px;
       }
@@ -44,7 +46,7 @@ body {
       }
     }
     .designTool {
-      img {
+      svg {
         height: 18px;
         width: 18px;
       }
@@ -53,7 +55,7 @@ body {
       }
     }
     .cart {
-      img {
+      svg {
         height: 18px;
         width: 18px;
       }
@@ -111,11 +113,12 @@ body {
   }
   .hero-section-first-card {
     display: flex;
-    padding: 50px 50px;
+    padding: 5vh;
     align-items: flex-end;
     color: white;
     font-family: "Playfair Display", sans-serif;
-    font-size: 2em;
+    font-size: 6vh;
     font-weight: bold;
+    line-height: 1em;
   }
 }
