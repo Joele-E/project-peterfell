@@ -4,7 +4,7 @@ function copyColor(id) {
   let bgColor = window.getComputedStyle(colorDiv).backgroundColor;
   colorDiv.navigator.clipboard.writeText(bgColor);
   console.log(`Copiato testo: ${bgColor}`);
-  colorDiv.no;
+  colorDiv.children;
 }
 
 function copyElement(element) {
