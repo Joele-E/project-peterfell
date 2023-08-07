@@ -5,107 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design System</title>
-    <link rel="stylesheet" href="assets/css/ds.css">
+    <!-- <link rel="stylesheet" href="assets/css/ds.css"> -->
     <link rel="stylesheet" href="./assets/css/output.css">
 </head>
 
-<body>
-    <div class="sections">
-        <div class="logo-section">
-            <div class="logos-title">LOGOS</div>
-            <div class="logos">
-                <div class="primary-logo">
-                    <div class="primary-logo-title">PRIMARY</div>
-                    <div class="all-white"><span>Peter</span><span>Fell</span></div>
-                    <div class="standard-logo"><span class="first-half">Peter</span><span
-                            class="second-half">Fell</span>
+<body class="bg-[#7ac7cd]">
+    <div class="sections flex flex-col flex-nowrap items-center gap-5 p-4 font-Heebo">
+        <div class="logo-section box-border w-full bg-white p-4 rounded">
+            <div class="logos-title text-2xl font-semibold border-b-lDark border-b-4">LOGOS</div>
+            <div class="logos flex flex-nowrap">
+                <div class="primary-logo mt-8 flex flex-col flex-nowrap gap-5 text-4xl">
+                    <div class="primary-logo-title text-lg font-semibold">PRIMARY</div>
+                    <div class="all-white font-bold p-4 bg-lDark text-white cursor-pointer" onclick="copyElement(this)">
+                        <span>Peter</span><span>Fell</span>
                     </div>
-                    <div class="dark-logo"><span class="first-half">Peter</span><span class="second-half">Fell</span>
+                    <div class="standard-logo font-bold p-4 bg-lDark text-white cursor-pointer"
+                        onclick="copyElement(this)"><span class="first-half">Peter</span><span
+                            class="second-half text-cBlue">Fell</span>
+                    </div>
+                    <div class="dark-logo font-bold p-4 border-black border-2 text-white cursor-pointer"
+                        onclick="copyElement(this)"><span class="first-half text-lDark">Peter</span><span
+                            class="second-half text-cBlue">Fell</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="colors-section">
-            <div class="colors-title">BRAND COLORS</div>
-            <div class="colors">
-                <div class="primary-colors">
-                    <div class="primary-colors-title">PRIMARY</div>
-                    <div class="color-cards">
-                        <div class="color-card" id="colorCard1">
-                            <div class="color" onclick="copyColor(this.parentElement.id)"></div>
-                            <div class="color-description">
-                                <div class="color-description-title">Regent Grey</div>
-                                <div class="color-description-text"></div>
+        <div class="colors-section box-border w-full bg-white p-4 rounded">
+            <div class="colors-title text-2xl font-semibold border-b-lDark border-b-4">BRAND COLORS</div>
+            <div class="colors flex flex-nowrap gap-10">
+                <div class="primary-colors flex flex-col flex-nowrap mt-7 min-w-[50%]">
+                    <div class="primary-colors-title text-lg font-semibold">PRIMARY</div>
+                    <div class="color-cards flex flex-wrap ">
+                        <div class="color-card h-[135px] w-[100px] p-2 flex flex-col flex-nowrap " id="colorCard1">
+                            <div class="color min-h-[60px] rounded cursor-pointer bg-cBlue"
+                                onclick="copyColor(this.id)"></div>
+                            <div class="color-description h-full flex flex-col flex-nowrap gap-5">
+                                <div class="color-description-title font-bold text-lg">Regent Grey</div>
+                                <div class="color-description-text text-xs"></div>
                             </div>
                         </div>
-                        <div class="color-card" id="colorCard2" onclick="copyColor(this.parentElement.id)">
-                            <div class="color"></div>
-                            <div class="color-description">
-                                <div class="color-description-title">Charcoal Grey</div>
-                                <div class="color-description-text"></div>
+                        <div class="color-card h-[135px] w-[100px] p-2 flex flex-col flex-nowrap" id="colorCard2"
+                            onclick="copyColor(this.id)">
+                            <div class="color min-h-[60px] rounded cursor-pointer bg-lDark"></div>
+                            <div class="color-description h-full flex flex-col flex-nowrap gap-5">
+                                <div class="color-description-title font-bold text-lg">Charcoal Grey</div>
+                                <div class="color-description-text text-xs"></div>
                             </div>
                         </div>
-                        <div class="color-card" id="colorCard3" onclick="copyColor(this.parentElement.id)">
-                            <div class="color"></div>
-                            <div class="color-description">
-                                <div class="color-description-title">White</div>
-                                <div class="color-description-text"></div>
+                        <div class="color-card h-[135px] w-[100px] p-2 flex flex-col flex-nowrap" id="colorCard3"
+                            onclick="copyColor(this.id)">
+                            <div class="color min-h-[60px] rounded cursor-pointer bg-white border-[1px] border-black">
+                            </div>
+                            <div class="color-description h-full flex flex-col flex-nowrap gap-5">
+                                <div class="color-description-title font-bold text-lg">White</div>
+                                <div class="color-description-text text-xs"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="secondary-colors">
-                    <div class="secondary-colors-title">SECONDARY</div>
-                    <div class="color-cards">
-                        <div class="color-card" id="colorCard4">
-                            <div class="color" onclick="copyColor(this.parentElement.id)"></div>
-                            <div class="color-description">
-                                <div class="color-description-title">Pink Daisy</div>
-                                <div class="color-description-text"></div>
+                <div class="secondary-colors mt-7">
+                    <div class="secondary-colors-title text-lg font-semibold">SECONDARY</div>
+                    <div class="color-cards flex flex-wrap">
+                        <div class="color-card h-[135px] w-[100px] p-2 flex flex-col flex-nowrap" id="colorCard4"
+                            onclick="copyColor(this.id)">
+                            <div class="color min-h-[60px] rounded cursor-pointer bg-[#e09c9e]">
+                            </div>
+                            <div class="color-description h-full flex flex-col flex-nowrap gap-5">
+                                <div class="color-description-title font-bold text-lg">Pink Daisy</div>
+                                <div class="color-description-text text-xs"></div>
                             </div>
                         </div>
-
-                        <div class="color-card" id="colorCard5">
-                            <div class="color" onclick="copyColor(this.parentElement.id)"></div>
-                            <div class="color-description">
-                                <div class="color-description-title">Raw Sienna</div>
-                                <div class="color-description-text"></div>
+                        <div class="color-card h-[135px] w-[100px] p-2 flex flex-col flex-nowrap" id="colorCard5"
+                            onclick="copyColor(this.id)">
+                            <div class="color min-h-[60px] rounded cursor-pointer bg-[#d27846]">
+                            </div>
+                            <div class="color-description h-full flex flex-col flex-nowrap gap-5">
+                                <div class="color-description-title font-bold text-lg">Raw Sienna</div>
+                                <div class="color-description-text text-xs"></div>
                             </div>
                         </div>
-                        <div class="color-card" id="colorCard6">
-                            <div class="color" onclick="copyColor(this.parentElement.id)"></div>
-                            <div class="color-description">
-                                <div class="color-description-title">Faded Blue</div>
-                                <div class="color-description-text"></div>
+                        <div class="color-card h-[135px] w-[100px] p-2 flex flex-col flex-nowrap" id="colorCard6"
+                            onclick="copyColor(this.id)">
+                            <div class="color min-h-[60px] rounded cursor-pointer bg-[#6496be]">
+                            </div>
+                            <div class="color-description h-full flex flex-col flex-nowrap gap-5">
+                                <div class="color-description-title font-bold text-lg">Faded Blue</div>
+                                <div class="color-description-text text-xs"></div>
                             </div>
                         </div>
-                        <div class="color-card" id="colorCard7">
-                            <div class="color" onclick="copyColor(this.parentElement.id)"></div>
-                            <div class="color-description">
-                                <div class="color-description-title">Camo</div>
-                                <div class="color-description-text"></div>
+                        <div class="color-card h-[135px] w-[100px] p-2 flex flex-col flex-nowrap" id="colorCard7"
+                            onclick="copyColor(this.id)">
+                            <div class="color min-h-[60px] rounded cursor-pointer bg-[#788c50]">
+                            </div>
+                            <div class="color-description h-full flex flex-col flex-nowrap gap-5">
+                                <div class="color-description-title font-bold text-lg">Camo</div>
+                                <div class="color-description-text text-xs"></div>
                             </div>
                         </div>
-                        <div class="color-card" id="colorCard8">
-                            <div class="color" onclick="copyColor(this.parentElement.id)"></div>
-                            <div class="color-description">
-                                <div class="color-description-title">Satin Sheen Gold</div>
-                                <div class="color-description-text"></div>
+                        <div class="color-card h-[135px] w-[100px] p-2 flex flex-col flex-nowrap" id="colorCard8"
+                            onclick="copyColor(this.id)">
+                            <div class="color min-h-[60px] rounded cursor-pointer bg-[#dca03c]">
+                            </div>
+                            <div class="color-description h-full flex flex-col flex-nowrap gap-5">
+                                <div class="color-description-title font-bold text-lg">Satin Sheen Gold</div>
+                                <div class="color-description-text text-xs"></div>
                             </div>
                         </div>
-                        <div class="color-card" id="colorCard9">
-                            <div class="color" onclick="copyColor(this.parentElement.id)"></div>
-                            <div class="color-description">
-                                <div class="color-description-title">Bullet Shell</div>
-                                <div class="color-description-text"></div>
+                        <div class="color-card h-[135px] w-[100px] p-2 flex flex-col flex-nowrap" id="colorCard9"
+                            onclick="copyColor(this.id)">
+                            <div class="color min-h-[60px] rounded cursor-pointer bg-[#aaa050]">
+                            </div>
+                            <div class="color-description h-full flex flex-col flex-nowrap gap-5">
+                                <div class="color-description-title font-bold text-lg">Bullet Shell</div>
+                                <div class="color-description-text text-xs"></div>
                             </div>
                         </div>
-                        <div class="color-card" id="colorCard10">
-                            <div class="color" onclick="copyColor(this.parentElement.id)"></div>
-                            <div class="color-description">
-                                <div class="color-description-title">Terracotta</div>
-                                <div class="color-description-text"></div>
+                        <div class="color-card h-[135px] w-[100px] p-2 flex flex-col flex-nowrap" id="colorCard10"
+                            onclick="copyColor(this.id)">
+                            <div class="color min-h-[60px] rounded cursor-pointer bg-[#c85f3c]">
+                            </div>
+                            <div class="color-description h-full flex flex-col flex-nowrap gap-5">
+                                <div class="color-description-title font-bold text-lg">Terracotta</div>
+                                <div class="color-description-text text-xs"></div>
                             </div>
                         </div>
 
@@ -114,31 +136,31 @@
             </div>
 
         </div>
-        <div class="typography-section">
-            <div class="typography-title">TYPOGRAPHY</div>
-            <div class="typography">
-                <div class="typography-card" id="typography-header">
-                    <div class="typography-ref">Header</div>
-                    <div class="typography-desc">
-                        <div class="typography-desc-title">Playfair Display</div>
-                        <div class="typography-desc-subtitle">38px</div>
+        <div class="typography-section box-border w-full bg-white p-4 rounded">
+            <div class="typography-title text-2xl font-semibold border-b-4 border-b-black">TYPOGRAPHY</div>
+            <div class="typography flex flex-wrap items-baseline gap-7">
+                <div class="typography-card cursor-pointer" id="typography-header" onclick="copyElement(this)">
+                    <div class="typography-ref font-PlayfairSerif text-4xl font-bold">Header</div>
+                    <div class="typography-desc flex flex-col flex-nowrap">
+                        <div class="typography-desc-title font-bold text-xs">Playfair Display</div>
+                        <div class="typography-desc-subtitle text-[10px]">38px</div>
                     </div>
                 </div>
-                <div class="typography-card" id="typography-description">
-                    <div class="typography-ref">Description</div>
+                <div class="typography-card" id="typography-description" onclick="copyElement(this)">
+                    <div class="typography-ref font-Heebo text-xl">Description</div>
                     <div class="typography-desc">
                         <div class="typography-desc-title">Heebo</div>
                         <div class="typography-desc-subtitle">20px</div>
                     </div>
                 </div>
                 <div class="typography-card" id="typography-text-button">
-                    <div
-                        class="group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-2xl font-bold text-cBlue border-b-2 border-cBlue w-fit transition-all duration-300 mt-8">
+                    <div class="group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-xl font-bold text-cBlue border-b-2 border-cBlue w-fit transition-all duration-300 mt-8 cursor-pointer"
+                        onclick="copyElement(this)">
                         Use the design tool <img src="assets/img/buttonPf.png" alt="buttonPf"
                             class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0">
                     </div>
-                    <div
-                        class="group/myLink1 bg-black hover:text-white hover:border-white flex items-center gap-1 font-PlayfairSans text-2xl font-bold text-cBlue border-b-2 border-cBlue w-fit transition-all duration-300 mt-8">
+                    <div class="group/myLink1 bg-black hover:text-white hover:border-white flex items-center gap-1 font-PlayfairSans text-xl font-bold text-cBlue border-b-2 border-cBlue w-fit transition-all duration-300 mt-8 cursor-pointer"
+                        onclick="copyElement(this)">
                         Use the design tool <img src="assets/img/buttonPf.png" alt="buttonPf"
                             class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-200">
                     </div>
@@ -151,9 +173,9 @@
             </div>
 
         </div>
-        <div class="icons-section">
-            <div class="icons-title">ICONS</div>
-            <div class="icons">
+        <div class="icons-section box-border w-full bg-white p-4 rounded ">
+            <div class="icons-title text-3xl font-bold border-b-4 border-b-black">ICONS</div>
+            <div class="icons flex flex-wrap mt-5 gap-5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
                     <path
@@ -232,13 +254,14 @@
 
             </div>
         </div>
-        <div class="forms-section">
-            <div class="forms-title">FORM FIELDS</div>
-            <div class="forms">
-                <div class="form-card">
-                    <div class="form-card-title">Generic field</div>
-                    <div class="form-card-ref">
-                        <input type="text" placeholder="Generic" class="generic-field">
+        <div class="forms-section  box-border w-full bg-white p-4 rounded">
+            <div class="forms-title text-3xl font-bold border-b-4 border-b-black">FORM FIELDS</div>
+            <div class="forms flex">
+                <div class="form-card flex flex-col flex-nowrap">
+                    <div class="form-card-title text-xs font-bold">Generic field</div>
+                    <div class="form-card-ref bg-black p-4">
+                        <input type="text" placeholder="Generic"
+                            class="generic-field border-2 border-white bg-transparent w-[15vw] h-[4vh] box-border p-2 font-thin outline-none text-gray-500 brightness-75">
                     </div>
                 </div>
 

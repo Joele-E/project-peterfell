@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         pink: "#e09c9e",
         cBlue: "#7a99ac",
+        lDark: "#404041",
       },
       fontFamily: {
         Heebo: ["Heebo", "sans-serif"],
