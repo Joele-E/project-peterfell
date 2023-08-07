@@ -5,16 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeroCard</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="assets/css/output.css">
 </head>
 
-<body>
-    <div class="hero-card">
-        <div class="hero-card-text">Floors</div>
-        <div class="hero-card-description">
-            <div class="hero-card-description-title">Floors</div>
-            <div class="hero-card-description-text">More comfortable with a coloured concrete floor</div>
-            <div class="hero-card-description-link">Floors inspirations</div>
+<body class="h-screen">
+    <div
+        class="hero-card flex flex-col group border border-gray-400 bg-pink h-full p-12  hover:cursor-pointer justify-center">
+        <div
+            class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+            Floors</div>
+        <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+            <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Floors</div>
+            <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">More comfortable with
+                a
+                coloured
+                concrete floor</div>
+            <div
+                class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                Floors
+                inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                    class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+            </div>
 
         </div>
 
