@@ -14,3 +14,16 @@
 .typography-desc-subtitle {
   @apply text-[10px];
 }
+
+.text-rl {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+.text-lr {
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+}
+
+.icons * {
+  cursor: pointer;
+}

@@ -798,6 +798,11 @@ video {
   height: 4vh;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-full {
   height: 100%;
 }
@@ -867,6 +872,11 @@ video {
   border-collapse: separate;
 }
 
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .\!transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
@@ -885,6 +895,10 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
 .cursor-pointer {
@@ -1978,6 +1992,18 @@ video {
   background-origin: content-box;
 }
 
+.fill-cBlue {
+  fill: #7a99ac;
+}
+
+.fill-gray-100 {
+  fill: #f3f4f6;
+}
+
+.fill-transparent {
+  fill: transparent;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -2011,8 +2037,16 @@ video {
   padding: 1rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-left {
@@ -2107,6 +2141,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -2119,6 +2158,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-semibold {
@@ -2270,6 +2313,10 @@ video {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .bg-blend-normal {
@@ -2572,6 +2619,20 @@ video {
 
 .typography-desc-subtitle {
   font-size: 10px;
+}
+
+.text-rl {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.text-lr {
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+}
+
+.icons * {
+  cursor: pointer;
 }
 
 @media (min-width: 640px) {
