@@ -13,7 +13,11 @@
               blueP: "#7a99ac",
               greyP: "#6d6e70",
             },
-            font: {},
+            fontFamily: {
+              Heebo: ["Heebo", "sans-serif"],
+              PlayfairSerif: ["Playfair Display", "serif"],
+              PlayfairSans: ["Playfair Display", "sans-serif"],
+            },
           },
         },
       };
@@ -27,20 +31,26 @@
         class="coulored-concrete w-full max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]"
       >
         <div
-          class="colored-concrete-desc-title font-PlayfairSans font-bold text-5xl"
+          class="colored-concrete-desc-title font-Heebo font-bold text-5xl mb-10"
         >
           Coloured concrete for any space.
         </div>
         <div
-          class="colored-concrete-desc-text font-Heebo font-light text-base mt-8 text-greyP"
+          class="colored-concrete-desc-text font-Heebo font-medium text-base mt-8 text-greyP mb-10 lg:pl-52"
         >
           Using coloured concrete can take a space and make it special. With
           over 80 colours to choose from, you’ll find the hue that’s a perfect
           match for your plans.
         </div>
-        <div class="colored-concrete-link text-blueP flex">
+        <div
+          class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-8 lg:ml-52"
+        >
           Choose your colour
-          <!-- <img src="buttonPf.png" alt="buttonPf" class="" /> -->
+          <img
+            src="buttonPf.png"
+            alt="buttonPf"
+            class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0"
+          />
         </div>
       </div>
       <div
