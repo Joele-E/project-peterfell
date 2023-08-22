@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blueP: "#7a99ac",
+              greyP: "#6d6e70",
+            },
+            font: {},
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="colored-concrete-section w-full flex flex-wrap justify-evenly flex-col items-center lg:flex-row"
+    >
+      <div
+        class="coulored-concrete w-full max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]"
+      >
+        <div
+          class="colored-concrete-desc-title font-PlayfairSans font-bold text-5xl"
+        >
+          Coloured concrete for any space.
+        </div>
+        <div
+          class="colored-concrete-desc-text font-Heebo font-light text-base mt-8 text-greyP"
+        >
+          Using coloured concrete can take a space and make it special. With
+          over 80 colours to choose from, you’ll find the hue that’s a perfect
+          match for your plans.
+        </div>
+        <div class="colored-concrete-link text-blueP flex">
+          Choose your colour
+          <!-- <img src="buttonPf.png" alt="buttonPf" class="" /> -->
+        </div>
+      </div>
+      <div
+        class="colored-concrete-img min-w-[40%] max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]"
+      >
+        <img
+          width="848"
+          height="505"
+          src="https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space.png"
+          class="vc_single_image-img attachment-full"
+          alt="Coloured concrete colour samples"
+          loading="lazy"
+          title="Coloured-concrete-for-any-space"
+          srcset="
+            https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space.png         848w,
+            https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space-600x357.png 600w,
+            https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space-300x179.png 300w,
+            https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space-768x457.png 768w
+          "
+          sizes="(max-width: 848px) 100vw, 848px"
+        />
+      </div>
+    </div>
+  </body>
+</html>
