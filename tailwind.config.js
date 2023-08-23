@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./components/hero-section-card/**/*.{html,js}"],
+  content: ["./components/hero-section/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
-        pink: "#e09c9e",
+        pink: "#e09c9ee6",
         cBlue: "#7a99ac",
       },
       fontFamily: {

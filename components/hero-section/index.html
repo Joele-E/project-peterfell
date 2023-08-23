@@ -5,141 +5,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Section</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/output.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 </head>
 
 <body>
-    <div class="hero-section-container">
-        <div class="hero-section-overlay" id="hero-overlay"></div>
-        <nav class="home-navbar" id="home-navbar">
-            <div class="logo">
-                <span class="firstSpan">Peter</span><span class="secondSpan">Fell</span>
-            </div>
-            <div class="menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="navbar-icon"
-                    style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
-                    <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path>
-                </svg>
-                <div class="textMenu navbarText" id="navbar-text-menu">Menu</div>
-            </div>
-            <div class="designTool">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="navbar-icon"
-                    style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
-                    <path
-                        d="M13.4 2.096a10.08 10.08 0 0 0-8.937 3.331A10.054 10.054 0 0 0 2.096 13.4c.53 3.894 3.458 7.207 7.285 8.246a9.982 9.982 0 0 0 2.618.354l.142-.001a3.001 3.001 0 0 0 2.516-1.426 2.989 2.989 0 0 0 .153-2.879l-.199-.416a1.919 1.919 0 0 1 .094-1.912 2.004 2.004 0 0 1 2.576-.755l.412.197c.412.198.85.299 1.301.299A3.022 3.022 0 0 0 22 12.14a9.935 9.935 0 0 0-.353-2.76c-1.04-3.826-4.353-6.754-8.247-7.284zm5.158 10.909-.412-.197c-1.828-.878-4.07-.198-5.135 1.494-.738 1.176-.813 2.576-.204 3.842l.199.416a.983.983 0 0 1-.051.961.992.992 0 0 1-.844.479h-.112a8.061 8.061 0 0 1-2.095-.283c-3.063-.831-5.403-3.479-5.826-6.586-.321-2.355.352-4.623 1.893-6.389a8.002 8.002 0 0 1 7.16-2.664c3.107.423 5.755 2.764 6.586 5.826.198.73.293 1.474.282 2.207-.012.807-.845 1.183-1.441.894z">
-                    </path>
-                    <circle cx="7.5" cy="14.5" r="1.5"></circle>
-                    <circle cx="7.5" cy="10.5" r="1.5"></circle>
-                    <circle cx="10.5" cy="7.5" r="1.5"></circle>
-                    <circle cx="14.5" cy="7.5" r="1.5"></circle>
-                </svg>
-                <div class="textDesignTool navbarText" id="navbar-text-dt">Design Tool</div>
-            </div>
-            <div class="cart">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="navbar-icon"
-                    style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
-                    <path
-                        d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z">
-                    </path>
-                    <circle cx="10.5" cy="19.5" r="1.5"></circle>
-                    <circle cx="17.5" cy="19.5" r="1.5"></circle>
-                </svg>
-                <div class="eventCart">
-                    <div class="textEvent">0</div>
-                </div>
-            </div>
-        </nav>
-        <div class="hero-section-cards">
-            <div class="hero-section-first-card">
+    <div class="hero-section-container h-screen">
+        <div id="hero-overlay" class="hero-section-overlay h-screen w-screen brightness-75 absolute -z-10 "></div>
+        <!-- NAVBAR -->
+        <div class="hero-section-cards grid grid-cols-4 grid-rows-2 z-[2] h-full">
+            <div
+                class="hero-section-first-card flex p-[5vh] items-end text-white font-PlayfairSerif text-5xl font-bold leading-snug">
                 Get
                 inspired.
             </div>
-            <div class="hero-card" id="hero-card-1">
-                <div class="hero-card-text">Floors</div>
-                <div class="hero-card-description">
-                    <div class="hero-card-description-title">Floors</div>
-                    <div class="hero-card-description-text">More comfortable with a coloured concrete floor</div>
-                    <div class="hero-card-description-link">Floors inspirations <img src="assets/img/buttonPf.png"
-                            alt="buttonPf"></div>
-
-                </div>
-
-            </div>
-            <div class="hero-card" id="hero-card-2">
-                <div class="hero-card-text">Patios & Courtyards</div>
-                <div class="hero-card-description">
-                    <div class="hero-card-description-title">Patios & Courtyards</div>
-                    <div class="hero-card-description-text">Beauty that lasts with a coloured patio.</div>
-                    <div class="hero-card-description-link">Patios & Courtyards inspirations<img
-                            src="assets/img/buttonPf.png" alt="buttonPf"></div>
-
-                </div>
-
-            </div>
-            <div class="hero-card" id="hero-card-3">
-                <div class="hero-card-text">Driveways & paths</div>
-                <div class="hero-card-description">
-                    <div class="hero-card-description-title">Driveways & paths</div>
-                    <div class="hero-card-description-text">Stand apart with a coloured concrete driveway and path</div>
-                    <div class="hero-card-description-link">Driveways & paths inspirations<img
-                            src="assets/img/buttonPf.png" alt="buttonPf"></div>
-
-                </div>
-
-            </div>
-            <div class="hero-card" id="hero-card-4">
-                <div class="hero-card-text">Walls</div>
-                <div class="hero-card-description">
-                    <div class="hero-card-description-title">Walls</div>
-                    <div class="hero-card-description-text">Make more of your walls with coloured concrete.</div>
-                    <div class="hero-card-description-link">Walls inspirations<img src="assets/img/buttonPf.png"
-                            alt="buttonPf"></div>
-
-                </div>
-
-            </div>
-            <div class="hero-card" id="hero-card-5">
-                <div class="hero-card-text">Pool surrounds</div>
-                <div class="hero-card-description">
-                    <div class="hero-card-description-title">Pool surrounds</div>
-                    <div class="hero-card-description-text">Add sparkle to your pool wiht a coloured concrete surround.
+            <div id=""
+                class="hero-card flex flex-col group/card1 border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-pink">
+                <div
+                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover/card1:hidden">
+                    Floors</div>
+                <div class="hero-card-description group-hover/card1:flex flex-col self-center hidden">
+                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Floors
                     </div>
-                    <div class="hero-card-description-link">Pool suorrounds inspirations<img
-                            src="assets/img/buttonPf.png" alt="buttonPf"></div>
+                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">More
+                        comfortable with
+                        a
+                        coloured
+                        concrete floor</div>
+                    <div
+                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                        Floors
+                        inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                    </div>
 
                 </div>
 
             </div>
-            <div class="hero-card" id="hero-card-6">
-                <div class="hero-card-text">Commercial</div>
-                <div class="hero-card-description">
-                    <div class="hero-card-description-title">Commercial</div>
-                    <div class="hero-card-description-text">Durability and flair for yout commercial space with a
+            <div id=""
+                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#d27746e6]">
+                <div
+                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                    Patios & Courtyards</div>
+                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Patios &
+                        Courtyards
+                    </div>
+                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Beauty that
+                        lasts with a coloured patio.</div>
+                    <div
+                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                        Patios & Courtyards inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
+                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                    </div>
+
+                </div>
+
+            </div>
+            <div id=""
+                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#6496bee6]">
+                <div
+                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                    Driveways & paths</div>
+                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Driveways
+                        & paths
+                    </div>
+                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Stand apart
+                        with a coloured concrete driveway and path</div>
+                    <div
+                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                        Driveways & paths inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                    </div>
+
+                </div>
+
+            </div>
+            <div id=""
+                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#788c50e6]">
+                <div
+                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                    Walls</div>
+                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Walls
+                    </div>
+                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Make more of
+                        your walls with coloured concrete.</div>
+                    <div
+                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                        Walls inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                    </div>
+
+                </div>
+
+            </div>
+            <div id=""
+                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#dca03ce6]">
+                <div
+                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                    Pool surrounds</div>
+                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Pool
+                        surrounds
+                    </div>
+                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Add sparkle to
+                        your pool wiht a coloured concrete surround.</div>
+                    <div
+                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                        Pool suorrounds inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                    </div>
+
+                </div>
+
+            </div>
+            <div id=""
+                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#aaa050e6]">
+                <div
+                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                    Commercial</div>
+                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Commercial
+                    </div>
+                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Durability and
+                        flair for yout commercial space with a
                         coloured concrete floor.</div>
-                    <div class="hero-card-description-link">Commercial inspirations<img src="assets/img/buttonPf.png"
-                            alt="buttonPf"></div>
+                    <div
+                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                        Commercial inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
+                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                    </div>
 
                 </div>
 
             </div>
-            <div class="hero-card" id="hero-card-7">
-                <div class="hero-card-text">Public spaces</div>
-                <div class="hero-card-description">
-                    <div class="hero-card-description-title">Public spaces</div>
-                    <div class="hero-card-description-text">Create inviting public spaces with coloured concrete.</div>
-                    <div class="hero-card-description-link">Public spaces inspirations<img src="assets/img/buttonPf.png"
-                            alt="buttonPf"></div>
+            <div id=""
+                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#c85f3ce6]">
+                <div
+                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                    Public spaces</div>
+                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Public
+                        spaces
+                    </div>
+                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Create
+                        inviting public spaces with coloured concrete.</div>
+                    <div
+                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                        Public spaces inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
+                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                    </div>
 
                 </div>
 
             </div>
+
         </div>
 
-    </div>
 
 
-
-    <script src="assets/js/home.js"></script>
+        <script src="assets/js/home.js"></script>
 </body>
 
 </html>
