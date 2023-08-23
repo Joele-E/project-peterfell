@@ -4,26 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage Navbar</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Ho creato una classe unica per i "button menu" -->
+    <style type="text/tailwindcss">
+      @layer components {
+        .btn {
+          @apply flex items-center gap-2 hover:opacity-50 text-white cursor-pointer font-bold;
+        }
+      }
+    </style>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <span class="firstSpan">Peter</span><span class="secondSpan">Fell</span>
+    <!-- background image di prova -->
+    <nav
+      class="flex flex-col h-1/5 w-1/12 p-2 gap-2"
+      style="background-image: url(assets/background.png)"
+    >
+      <div class="text-4xl font-bold text-white mb-3 cursor-pointer">
+        <span class="">Peter</span><span class="secondSpan">Fell</span>
       </div>
-      <div class="menu">
+      <div class="btn">
         <img src="assets/menù.svg" alt="iconMenù" />
         <div class="textMenu">Menù</div>
       </div>
-      <div class="designTool">
+      <div class="btn">
         <img src="assets/designTool.svg" alt="iconColor" />
         <div class="textDesignTool">Design Tool</div>
       </div>
-      <div class="cart">
-        <img src="assets/cart.svg" alt="iconCart" />
+      <div class="flex">
+        <img
+          src="assets/cart.svg"
+          alt="iconCart"
+          class="hover:opacity-50 cursor-pointer"
+        />
         <div class="eventCart">
-          <div class="textEvent">0</div>
+          <p
+            class="w-5 h-6 ml-2 font-bold text-center text-white bg-slate-400 rounded-full"
+          >
+            0
+          </p>
         </div>
       </div>
     </nav>
