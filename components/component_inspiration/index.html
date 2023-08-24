@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              Heebo: ["Heebo", "sans-serif"],
+              PlayfairSerif: ["Playfair Display", "serif"],
+              PlayfairSans: ["Playfair Display", "sans-serif"],
+            },
+            colors: {
+              blueP: "#7a99ac",
+              greyP: "#6d6e70",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="p-10">
+      <div class="w-1/3 max-2xl:w-[100%]">
+        <h1
+          class="text-7xl font-PlayfairSerif font-bold mb-8 max-2xl:text-5xl max-xl:ml-4 max-lg:w-1/3 max-md:w-[100%] max-md:text-4xl"
+        >
+          Looking for inspiration?
+        </h1>
+      </div>
+      <div class="flex self-center gap-10 max-2xl:flex-col-reverse">
+        <div
+          class="textandLink w-[10%] max-2xl:w-[50%] max-2xl:text-center max-md:w-[100%]"
+        >
+          <div class="mb-10 text-greyP font-Heebo">
+            <p>
+              We've been helping New Zealanders create their dream space since
+              1991. Find out more about how coloured concrete can create the
+              design statement you want indoors and out.
+            </p>
+          </div>
+          <div class="">
+            <div
+              class="flex items-center group/myLink1 hover:text-black hover:border-black gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-4 border-blueP w-fit transition-all duration-300"
+            >
+              <div
+                class="text-blueP font-PlayfairSerif text-2xl font-semibold cursor-pointer group-hover/myLink1:text-black transition-all duration-300"
+              >
+                Be inspired
+              </div>
+              <img
+                src="assets/Button-Space-1.png"
+                alt="iconButton"
+                class="w-4 h-4 ml-2 pt-1 group-hover/myLink1:brightness-0 max-2xl:self-end max-2xl:mb-2 max-2xl:mr-9"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="imgInspiration">
+          <img
+            src="assets/PeterFell.jpg"
+            alt="img"
+            class="w-[70%] h-[100%] max-2xl:w-[50%] max-md:w-[100%]"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
