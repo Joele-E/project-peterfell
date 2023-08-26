@@ -2,7 +2,7 @@
 let heroCards = document.querySelectorAll(".hero-card");
 let heroSecOverlay = document.getElementById("hero-overlay");
 let firstCard = document.querySelector(".hero-section-first-card");
-let homeNavbar = document.getElementById("home-navbar");
+/* let homeNavbar = document.getElementById("home-navbar"); */
 
 // evento per hover su prima card hero-section (resetta bg)
 firstCard.addEventListener("mouseover", (event) => {
@@ -22,13 +22,13 @@ for (let i = 0; i < heroCards.length; i++) {
 // evento scroll per cambiare colore navbar
 document.addEventListener("scroll", (event) => {
   let scroll = this.scrollY;
-  let firstSpan = homeNavbar.querySelector(".logo").children[0];
-  let secondSpan = homeNavbar.querySelector(".logo").children[1];
+  let firstSpan = document.getElementById("firstLogoHalf");
+  let secondSpan = document.getElementById("secondLogoHalf");
   let menuText = document.getElementById("navbar-text-menu");
   let menuDt = document.getElementById("navbar-text-dt");
   let heroHeight = heroSecOverlay.offsetHeight;
 
-  let navbarIcons = homeNavbar.querySelectorAll(".navbar-icon");
+  let navbarIcons = document.querySelectorAll(".navbar-icon");
 
   navbarIcons.forEach((el) => {
     el.style.transition = "0.1s all";

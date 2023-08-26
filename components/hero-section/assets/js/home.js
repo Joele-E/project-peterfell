@@ -22,8 +22,8 @@ for (let i = 0; i < heroCards.length; i++) {
 // evento scroll per cambiare colore navbar
 document.addEventListener("scroll", (event) => {
   let scroll = this.scrollY;
-  let firstSpan = homeNavbar.querySelector(".logo").children[0];
-  let secondSpan = homeNavbar.querySelector(".logo").children[1];
+  let firstSpan = document.getElementById("firstLogoHalf");
+  let secondSpan = document.getElementById("secondLogoHalf");
   let menuText = document.getElementById("navbar-text-menu");
   let menuDt = document.getElementById("navbar-text-dt");
   let heroHeight = heroSecOverlay.offsetHeight;

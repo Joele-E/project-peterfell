@@ -35,237 +35,246 @@
 
 </head>
 
-<body>
-    <nav class=" fixed flex lg:flex-col h-1/3 p-2 gap-1 max-lg:bg-black w-fit">
+<body class="overflow-x-hidden">
+    <nav class=" fixed flex flex-col h-1/3 p-2 gap-1  w-fit">
         <div class="text-4xl font-Heebo text-white mb-3 cursor-pointer max-2xl:text-2xl max-2xl:mb-1 max-lg:w-[88%]">
-            <span>Peter</span><span class="max-lg:text-blueP">Fell</span>
+            <span id="firstLogoHalf">Peter</span><span id="secondLogoHalf">Fell</span>
         </div>
-        <div class="flex lg:flex-col gap-1 max-lg:flex-row-reverse">
+        <div class="flex flex-col gap-1 ">
             <div class="btn">
-                <img src="../homepage_navbar/assets/menù.svg" alt="iconMenù"
-                    class="max-2xl:w-5 max-sm:w-6 max-sm:ml-1" />
-                <div class="textMenu max-lg:hidden">Menu</div>
+                <img src="../homepage_navbar/assets/menù.svg" alt="iconMenù" class="navbar-icon" />
+                <div class="textMenu " id="navbar-text-menu">Menu</div>
             </div>
             <div class="btn">
-                <img src="../homepage_navbar/assets/designTool.svg" alt="iconColor" class="max-2xl:w-5 max-lg:mx-3" />
-                <div class="textDesignTool max-lg:hidden">Design Tool</div>
+                <img src="../homepage_navbar/assets/designTool.svg" alt="iconColor" class="navbar-icon" />
+                <div class="textDesignTool" id="navbar-text-dt">Design Tool</div>
             </div>
-            <div class="flex max-lg:flex-row-reverse">
-                <img src="../homepage_navbar/assets/cart.svg" alt="iconCart" class="hover:opacity-50 cursor-pointer"
-                    class="max-2xl:w-5" />
-                <div class="eventCart max-lg:mt-1">
-                    <p
-                        class="w-5 h-6 ml-2 font-bold text-center text-white bg-slate-400 rounded-full max-2xl:text-sm max-2xl:w-4 max-2xl:h-5 max-2xl:mt-1">
+            <div class="flex ">
+                <img src="../homepage_navbar/assets/cart.svg" alt="iconCart"
+                    class=" navbar-icon hover:opacity-50 cursor-pointer " class="" />
+                <div class="eventCart">
+                    <p class=" w-5 h-6 ml-2 font-bold text-center text-white bg-slate-400 rounded-full max-2xl:text-sm
+                    max-2xl:w-4 max-2xl:h-5 max-2xl:mt-1">
                         0
                     </p>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="hero-section-container h-screen">
-        <div id="hero-overlay" class="hero-section-overlay h-screen w-screen brightness-75 absolute -z-10 "></div>
+    <div class="home-container flex flex-col gap-8">
+        <div class="hero-section-container h-screen">
+            <div id="hero-overlay" class="hero-section-overlay h-screen w-screen brightness-75 absolute -z-10 "></div>
 
-        <div class="hero-section-cards grid grid-cols-4 grid-rows-2 z-[2] h-full">
-            <div
-                class="hero-section-first-card flex p-[5vh] items-end text-white font-PlayfairSerif text-5xl font-bold leading-snug">
-                Get
-                inspired.
-            </div>
-            <div id=""
-                class="hero-card flex flex-col group/card1 border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-pink">
+            <div class="hero-section-cards grid grid-cols-4 grid-rows-2 z-[2] h-full">
                 <div
-                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover/card1:hidden">
-                    Floors</div>
-                <div class="hero-card-description group-hover/card1:flex flex-col self-center hidden">
-                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Floors
-                    </div>
-                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">More
-                        comfortable with
-                        a
-                        coloured
-                        concrete floor</div>
+                    class="hero-section-first-card flex p-[5vh] items-end text-white font-PlayfairSerif text-5xl font-bold leading-snug">
+                    Get
+                    inspired.
+                </div>
+                <div id=""
+                    class="hero-card flex flex-col group/card1 border border-r-0 border-b-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-pink">
                     <div
-                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                        Floors
-                        inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
-                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover/card1:hidden">
+                        Floors</div>
+                    <div class="hero-card-description group-hover/card1:flex flex-col self-center hidden">
+                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Floors
+                        </div>
+                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">More
+                            comfortable with
+                            a
+                            coloured
+                            concrete floor</div>
+                        <div
+                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                            Floors
+                            inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
-            <div id=""
-                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#d27746e6]">
-                <div
-                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                    Patios & Courtyards</div>
-                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Patios &
-                        Courtyards
-                    </div>
-                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Beauty that
-                        lasts with a coloured patio.</div>
+                <div id=""
+                    class="hero-card flex flex-col group border border border-r-0 border-b-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#d27746e6]">
                     <div
-                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                        Patios & Courtyards inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
-                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                        Patios & Courtyards</div>
+                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Patios
+                            &
+                            Courtyards
+                        </div>
+                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Beauty
+                            that
+                            lasts with a coloured patio.</div>
+                        <div
+                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                            Patios & Courtyards inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
+                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
-            <div id=""
-                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#6496bee6]">
-                <div
-                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                    Driveways & paths</div>
-                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Driveways
-                        & paths
-                    </div>
-                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Stand apart
-                        with a coloured concrete driveway and path</div>
+                <div id=""
+                    class="hero-card flex flex-col group border border border-r-0 border-b-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#6496bee6]">
                     <div
-                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                        Driveways & paths inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
-                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                        Driveways & paths</div>
+                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
+                            Driveways
+                            & paths
+                        </div>
+                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Stand
+                            apart
+                            with a coloured concrete driveway and path</div>
+                        <div
+                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                            Driveways & paths inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
-            <div id=""
-                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#788c50e6]">
-                <div
-                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                    Walls</div>
-                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Walls
-                    </div>
-                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Make more of
-                        your walls with coloured concrete.</div>
+                <div id=""
+                    class="hero-card flex flex-col group border border border-r-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#788c50e6]">
                     <div
-                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                        Walls inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
-                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                        Walls</div>
+                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Walls
+                        </div>
+                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Make more
+                            of
+                            your walls with coloured concrete.</div>
+                        <div
+                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                            Walls inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
-            <div id=""
-                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#dca03ce6]">
-                <div
-                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                    Pool surrounds</div>
-                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Pool
-                        surrounds
-                    </div>
-                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Add sparkle to
-                        your pool wiht a coloured concrete surround.</div>
+                <div id=""
+                    class="hero-card flex flex-col group border border border-r-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#dca03ce6]">
                     <div
-                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                        Pool suorrounds inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
-                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                        Pool surrounds</div>
+                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Pool
+                            surrounds
+                        </div>
+                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Add
+                            sparkle to
+                            your pool wiht a coloured concrete surround.</div>
+                        <div
+                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                            Pool suorrounds inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
-            <div id=""
-                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#aaa050e6]">
-                <div
-                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                    Commercial</div>
-                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Commercial
-                    </div>
-                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Durability and
-                        flair for yout commercial space with a
-                        coloured concrete floor.</div>
+                <div id=""
+                    class="hero-card flex flex-col group border border border-r-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#aaa050e6]">
                     <div
-                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                        Commercial inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
-                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                        Commercial</div>
+                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
+                            Commercial
+                        </div>
+                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Durability
+                            and
+                            flair for yout commercial space with a
+                            coloured concrete floor.</div>
+                        <div
+                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                            Commercial inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
+                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
-            <div id=""
-                class="hero-card flex flex-col group border border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#c85f3ce6]">
-                <div
-                    class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                    Public spaces</div>
-                <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                    <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Public
-                        spaces
-                    </div>
-                    <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Create
-                        inviting public spaces with coloured concrete.</div>
+                <div id=""
+                    class="hero-card flex flex-col group border border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#c85f3ce6]">
                     <div
-                        class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                        Public spaces inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
-                            class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                        Public spaces</div>
+                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Public
+                            spaces
+                        </div>
+                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Create
+                            inviting public spaces with coloured concrete.</div>
+                        <div
+                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                            Public spaces inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
+                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
-    <div
-        class="colored-concrete-section w-full flex flex-wrap justify-evenly flex-col-reverse items-center lg:flex-row">
-        <div class="coulored-concrete w-full max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
-            <div class="colored-concrete-desc-title font-PlayfairSerif font-bold text-5xl mb-10">
-                Coloured concrete for any space.
+        <div
+            class="colored-concrete-section w-full flex flex-wrap justify-evenly flex-col-reverse items-center lg:flex-row">
+            <div class="coulored-concrete w-full max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
+                <div class="colored-concrete-desc-title font-PlayfairSerif font-bold text-5xl mb-10">
+                    Coloured concrete for any space.
+                </div>
+                <div class="colored-concrete-desc-text font-Heebo font-medium text-base mt-8 text-greyP mb-10 lg:pl-52">
+                    Using coloured concrete can take a space and make it special. With
+                    over 80 colours to choose from, you’ll find the hue that’s a perfect
+                    match for your plans.
+                </div>
+                <div
+                    class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-8 lg:ml-52">
+                    Choose your colour
+                    <img src="../coloured-concrete/buttonPf.png" alt="buttonPf"
+                        class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0" />
+                </div>
             </div>
-            <div class="colored-concrete-desc-text font-Heebo font-medium text-base mt-8 text-greyP mb-10 lg:pl-52">
-                Using coloured concrete can take a space and make it special. With
-                over 80 colours to choose from, you’ll find the hue that’s a perfect
-                match for your plans.
-            </div>
-            <div
-                class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-8 lg:ml-52">
-                Choose your colour
-                <img src="../coloured-concrete/buttonPf.png" alt="buttonPf"
-                    class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0" />
-            </div>
-        </div>
-        <div class="colored-concrete-img min-w-[40%] max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
-            <img width="848" height="505"
-                src="https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space.png"
-                class="vc_single_image-img attachment-full" alt="Coloured concrete colour samples" loading="lazy"
-                title="Coloured-concrete-for-any-space" srcset="
+            <div class="colored-concrete-img min-w-[40%] max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
+                <img width="848" height="505"
+                    src="https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space.png"
+                    class="vc_single_image-img attachment-full" alt="Coloured concrete colour samples" loading="lazy"
+                    title="Coloured-concrete-for-any-space" srcset="
             https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space.png         848w,
             https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space-600x357.png 600w,
             https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space-300x179.png 300w,
             https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space-768x457.png 768w
           " sizes="(max-width: 848px) 100vw, 848px" />
-        </div>
-    </div>
-    <div class="create-look-section w-full flex justify-evenly flex-col items-center lg:flex-row">
-        <div class="create-look-img min-w-[40%] max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
-            <img src="../create-look-tailwind/assets/img/create-look-img.png" alt="Screenshot of design tool"
-                class="w-full">
-        </div>
-        <div class="create-look-desc w-full max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
-            <div class="create-look-desc-title font-PlayfairSerif font-bold text-5xl">Create the look you want.</div>
-            <div class="create-look-desc-text font-Heebo font-light text-base mt-8">We’ve developed a step-by-step
-                design
-                tool that
-                will help you create a
-                space that’s right for your lifestyle. So, let’s get started.</div>
-            <div
-                class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-2xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-8">
-                Use the design tool <img src="../create-look-tailwind/assets/img/buttonPf.png" alt="buttonPf"
-                    class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0">
             </div>
+        </div>
+        <div class="create-look-section w-full flex justify-evenly flex-col items-center lg:flex-row">
+            <div class="create-look-img min-w-[40%] max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
+                <img src="../create-look-tailwind/assets/img/create-look-img.png" alt="Screenshot of design tool"
+                    class="w-full">
+            </div>
+            <div class="create-look-desc w-full max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
+                <div class="create-look-desc-title font-PlayfairSerif font-bold text-5xl">Create the look you want.
+                </div>
+                <div class="create-look-desc-text font-Heebo font-light text-base mt-8">We’ve developed a step-by-step
+                    design
+                    tool that
+                    will help you create a
+                    space that’s right for your lifestyle. So, let’s get started.</div>
+                <div
+                    class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-2xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-8">
+                    Use the design tool <img src="../create-look-tailwind/assets/img/buttonPf.png" alt="buttonPf"
+                        class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0">
+                </div>
 
+            </div>
         </div>
     </div>
-
     <script src="assets/js/home.js"></script>
 </body>
 
