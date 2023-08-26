@@ -42,19 +42,25 @@ document.addEventListener("scroll", (event) => {
     menuText.innerHTML = "";
     menuDt.innerHTML = "";
 
-    if (scroll > heroHeight - 5) {
+    /* if (scroll > heroHeight - 5) {
       firstSpan.style.color = "#404041";
       secondSpan.style.color = "#7a99ac";
       navbarIcons.forEach((el) => {
         el.style.transition = "0.1s all";
         el.style.fill = "#7a99ac";
-      });
+      }); */
+    if (scroll > heroHeight - 5) {
+      firstSpan.style.color = "#404041";
+      secondSpan.style.color = "#7a99ac";
+      navbarIcons[0].src = "assets/img/Icon-Menu-1.png";
+      navbarIcons[1].src = "assets/img/Icon-Tool-1.png";
+      navbarIcons[2].src = "assets/img/Icon-Cart-1.png";
     } else {
       firstSpan.style.color = "#fff";
       secondSpan.style.color = "#fff";
-      navbarIcons.forEach((el) => {
-        el.style.fill = "#fff";
-      });
+      navbarIcons[0].src = "assets/img/Icon-Menu-White.png";
+      navbarIcons[1].src = "assets/img/Icon-Tool-White.png";
+      navbarIcons[2].src = "assets/img/Icon-Cart-White.png";
     }
   } else {
     firstSpan.style.fontSize = "1em";
