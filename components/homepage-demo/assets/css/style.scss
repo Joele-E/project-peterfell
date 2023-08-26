@@ -1,0 +1,126 @@
+@import url("../../../hero-section-card/style.css");
+@import url("../../../homepage_navbar/style.css");
+
+$nav-desc-font-size: 0.7em;
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hero-section-container {
+  height: 100vh;
+
+  .hero-section-overlay {
+    height: 100vh;
+    width: 100vw;
+    filter: brightness(0.75);
+    position: absolute;
+    z-index: -10;
+    background-image: url("../img/bgimage1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s all;
+  }
+  .home-navbar {
+    position: fixed;
+    font-family: "Heebo", sans-serif;
+    padding: 3vh;
+    gap: 1vh;
+
+    * {
+      transition: 0.3s all ease;
+    }
+    .logo {
+      font-size: 1.7em;
+      margin-bottom: unset;
+    }
+    .menu {
+      svg {
+        height: 18px;
+        width: 18px;
+        transition: 0.1s all;
+      }
+      .textMenu {
+        font-size: $nav-desc-font-size;
+      }
+    }
+    .designTool {
+      svg {
+        height: 18px;
+        width: 18px;
+        transition: 0.1s all;
+      }
+      .textDesignTool {
+        font-size: $nav-desc-font-size;
+      }
+    }
+    .cart {
+      svg {
+        height: 18px;
+        width: 18px;
+      }
+      .eventCart {
+        padding: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15px;
+        height: 15px;
+
+        .textEvent {
+          font-size: $nav-desc-font-size;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .hero-section-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    z-index: 2;
+
+    #hero-card-2 {
+      &:hover {
+        background-color: #d27746e6;
+      }
+    }
+    #hero-card-3 {
+      &:hover {
+        background-color: #6496bee6;
+      }
+    }
+    #hero-card-4 {
+      &:hover {
+        background-color: #788c50e6;
+      }
+    }
+    #hero-card-5 {
+      &:hover {
+        background-color: #dca03ce6;
+      }
+    }
+    #hero-card-6 {
+      &:hover {
+        background-color: #aaa050e6;
+      }
+    }
+    #hero-card-7 {
+      &:hover {
+        background-color: xxxxxxx;
+      }
+    }
+  }
+  .hero-section-first-card {
+    display: flex;
+    padding: 5vh;
+    align-items: flex-end;
+    color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 6vh;
+    font-weight: bold;
+    line-height: 1em;
+  }
+}
