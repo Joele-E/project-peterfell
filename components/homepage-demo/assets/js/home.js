@@ -39,8 +39,10 @@ document.addEventListener("scroll", (event) => {
   if (scroll > 0) {
     firstSpan.style.fontSize = ".6em";
     secondSpan.style.fontSize = ".6em";
-    menuText.innerHTML = "";
-    menuDt.innerHTML = "";
+    /* menuText.innerHTML = ""; */
+
+    menuText.style.fontSize = 0;
+    menuDt.style.fontSize = 0;
 
     /* if (scroll > heroHeight - 5) {
       firstSpan.style.color = "#404041";
@@ -65,7 +67,8 @@ document.addEventListener("scroll", (event) => {
   } else {
     firstSpan.style.fontSize = "1em";
     secondSpan.style.fontSize = "1em";
-    menuText.innerHTML = "Menu";
-    menuDt.innerHTML = "Design Tool";
+    /* menuText.innerHTML = "Menu"; */
+    menuText.style.fontSize = "14px";
+    menuDt.style.fontSize = "14px";
   }
 });
