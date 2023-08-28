@@ -93,12 +93,14 @@ class DesignTool {
         let doc = parser.parseFromString(myPage, "text/html");
         let div = document.createElement("div");
         let content = doc.querySelector("body").outerHTML;
-        let btn1 = doc.querySelector("#btn-1");
+        let btn1 = doc.getElementById("btn-1");
         btn1.addEventListener("click", () => console.log("ciao"));
         div.innerHTML = content;
         div.style.top = "0";
         div.style.zIndex = "1000";
         div.style.position = "absolute";
+        div.classList.add("w-full", "h-full");
+
         let containerHp = document.querySelector("#container-hp");
         containerHp.classList.add("hidden");
 
@@ -113,6 +115,34 @@ class DesignTool {
 
 let prova = new DesignTool();
 prova.fetchPage();
+
+class Menu {
+  openMenu() {
+    fetch("../menu/index.html")
+      .then((res) => res.text())
+      .then((myPage) => {
+        let parser = new DOMParser();
+        let doc = parser.parseFromString(myPage, "text/html");
+        let div = document.createElement("div");
+        let content = doc.querySelector("body").outerHTML;
+        div.innerHTML = content;
+        div.style.top = "0";
+        div.style.zIndex = "1000";
+        div.style.position = "absolute";
+        div.classList.add("w-full", "h-full");
+        let containerHp = document.querySelector("#container-hp");
+        containerHp.classList.add("hidden");
+
+        document.body.appendChild(div);
+      });
+  }
+}
+// let provaMenu = new Menu();
+
+// let btnMenu = document.getElementById("navbar-text-menu");
+// console.log(btnMenu);
+// btnMenu.addEventListener("click", provaMenu.openMenu);
+
 // prova.nextPage();
 // function nextStep() {
 //   fetch("../step2/index.html")
