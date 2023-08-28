@@ -8,13 +8,13 @@
     <script>
       tailwind.config = {
         theme: {
-          screens: {
-            screen1: "1760px",
-            screen2: "1600px",
-            screen3: "1450px",
-            screen4: "1110px",
-            screen5: "951px",
-          },
+          // screens: {
+          //   screen1: "1760px",
+          //   screen2: "1600px",
+          //   screen3: "1450px",
+          //   screen4: "1110px",
+          //   screen5: "951px",
+          // },
           extend: {
             colors: {
               blueP: "#7a99ac",
@@ -35,7 +35,7 @@
     <style type="text/tailwindcss">
       @layer components {
         .responseImg {
-          @apply w-[420px] h-[300px] brightness-50 hover:brightness-100 hover:delay-[110ms] max-screen1:w-[350px] max-screen1:h-[250px] max-screen2:w-[300px] max-screen2:h-[200px] max-screen3:w-[240px] max-screen3:h-[160px] max-screen4:w-[200px] max-screen4:h-[150px] max-screen5:w-[100%] max-screen5:h-[20%] max-screen5:self-center;
+          @apply w-[22vw] h-[33vh] brightness-50 hover:brightness-100 hover:delay-[110ms] max-screen1:w-[350px] max-screen1:h-[250px] max-screen2:w-[300px] max-screen2:h-[200px] max-screen3:w-[240px] max-screen3:h-[160px] max-screen4:w-[200px] max-screen4:h-[150px] max-screen5:w-[100%] max-screen5:h-[20%] max-screen5:self-center;
         }
       }
     </style>
@@ -169,13 +169,21 @@
             <div
               class="img cursor-pointer p-5 mx-1 border border-white hover:border-gray-400 max-screen5:mx-5 max-screen5:p-0 max-screen5:mb-10"
             >
-              <img src="assets/floors.jpg" alt="img" class="responseImg" />
+              <img
+                src="assets/floors.jpg"
+                alt="img"
+                class="w-[22vw] h-[33vh] brightness-50 hover:brightness-100 hover:delay-[110ms]"
+              />
               <p class="font-Heebo text-gray-400 text-[25px] p-1">Floors</p>
             </div>
             <div
               class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-screen5:mx-5 max-screen5:p-0 max-screen5:mb-10"
             >
-              <img src="assets/patios.jpg" alt="img" class="responseImg" />
+              <img
+                src="assets/patios.jpg"
+                alt="img"
+                class="w-[22vw] h-[33vh] brightness-50 hover:brightness-100 hover:delay-[110ms]"
+              />
               <p
                 class="font-Heebo text-gray-400 text-[25px] p-1 max-screen4:max-w-[110px] max-screen5:max-w-full"
               >
@@ -190,7 +198,11 @@
               <div
                 class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-screen5:mx-5 max-screen5:p-0 max-screen5:mb-10"
               >
-                <img src="assets/driveways.jpg" alt="img" class="responseImg" />
+                <img
+                  src="assets/driveways.jpg"
+                  alt="img"
+                  class="w-[22vw] h-[33vh] brightness-50 hover:brightness-100 hover:delay-[110ms]"
+                />
                 <p
                   class="font-Heebo text-gray-400 text-[25px] p-1 max-screen4:max-w-[110px] max-screen5:max-w-full"
                 >
@@ -200,13 +212,21 @@
               <div
                 class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-screen5:mx-5 max-screen5:p-0 max-screen5:mb-10"
               >
-                <img src="assets/walls.jpg" alt="img" class="responseImg" />
+                <img
+                  src="assets/walls.jpg"
+                  alt="img"
+                  class="w-[22vw] h-[33vh] brightness-50 hover:brightness-100 hover:delay-[110ms]"
+                />
                 <p class="font-Heebo text-gray-400 text-[25px] p-1">Walls</p>
               </div>
               <div
                 class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-screen5:mx-5 max-screen5:p-0 max-screen5:mb-10"
               >
-                <img src="assets/pool.jpg" alt="img" class="responseImg" />
+                <img
+                  src="assets/pool.jpg"
+                  alt="img"
+                  class="w-[22vw] h-[33vh] brightness-50 hover:brightness-100 hover:delay-[110ms]"
+                />
                 <p class="font-Heebo text-gray-400 text-[25px] p-1">
                   Pool surrounds
                 </p>
@@ -221,7 +241,7 @@
                 <img
                   src="assets/commercial.jpg"
                   alt="img"
-                  class="responseImg"
+                  class="w-[22vw] h-[33vh] brightness-50 hover:brightness-100 hover:delay-[110ms]"
                 />
                 <p class="font-Heebo text-gray-400 text-[25px] p-1">
                   Commercial
@@ -233,7 +253,7 @@
                 <img
                   src="assets/publicSpaces.jpg"
                   alt="img"
-                  class="responseImg"
+                  class="w-[22vw] h-[33vh] brightness-50 hover:brightness-100 hover:delay-[110ms]"
                 />
                 <p class="font-Heebo text-gray-400 text-[25px] p-1">
                   Public spaces
