@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/8c02bb5e5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            lg2: "1183px",
+          },
+          extend: {
+            colors: {
+              blueP: "#7a99ac",
+              greyP: "#6d6e70",
+            },
+            fontFamily: {
+              Heebo: ["Heebo", "sans-serif"],
+              PlayfairSerif: ["Playfair Display", "serif"],
+              PlayfairSans: ["Playfair Display", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Style hover icon di prova -->
+    <style>
+      .icon:hover {
+        filter: invert(0.27) sepia(1) saturate(15.4) hue-rotate(180deg)
+          brightness(0.5);
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div class="container max-w-full p-2">
+      <div class="navbarMenu flex items-center justify-between p-3 mt-3">
+        <div class="text-4xl font-Heebo text-white mb-3 cursor-pointer">
+          <span>Peter</span><span class="text-blueP">Fell</span>
+        </div>
+        <div
+          class="close space items-center cursor-pointer hover:brightness-50 transition delay-75"
+        >
+          <img src="assets/Icon-Close-Menu.png" alt="imgCloseMenù" />
+        </div>
+      </div>
+      <div
+        class="modalBody flex mt-[8%] ml-[5%] justify-center max-xl:ml-0 max-lg2:flex-col max-lg2:w-[100%] max-lg2:mt-[5%]"
+      >
+        <div class="col1 w-[25%] max-lg2:w-[100%]">
+          <div class="text-white font-PlayfairSerif text-3xl cursor-pointer">
+            <div class="cont group/myLink1">
+              <div class="text&s flex gap-10 items-center">
+                <div
+                  class="text group-hover/myLink1:text-blueP transition delay-100"
+                >
+                  Choose your space
+                </div>
+                <div class="iconGreater text-lg mt-2">
+                  <img src="assets/greater.svg" alt="iconGreater" />
+                </div>
+              </div>
+            </div>
+            <div class="cont group/myLink1 my-10">
+              <div class="text&s flex gap-10 items-center">
+                <div
+                  class="text group-hover/myLink1:text-blueP transition delay-100"
+                >
+                  Colour range
+                </div>
+                <div class="iconGreater text-lg mt-2">
+                  <img src="assets/greater.svg" alt="iconGreater" />
+                </div>
+              </div>
+            </div>
+            <div class="cont group/myLink1 my-10">
+              <div class="text&s flex gap-10 items-center">
+                <div
+                  class="text group-hover/myLink1:text-blueP transition delay-100"
+                >
+                  Polished concrete
+                </div>
+                <div class="iconGreater text-lg mt-2">
+                  <img src="assets/greater.svg" alt="iconGreater" />
+                </div>
+              </div>
+            </div>
+            <div class="cont group/myLink1 my-10">
+              <div class="text&s flex gap-10 items-center">
+                <div
+                  class="text group-hover/myLink1:text-blueP transition delay-100"
+                >
+                  Texture Safe System
+                </div>
+              </div>
+            </div>
+            <div class="cont group/myLink1 my-10">
+              <div class="text&s flex gap-10 items-center">
+                <div
+                  class="text group-hover/myLink1:text-blueP transition delay-100"
+                >
+                  Products
+                </div>
+                <div class="iconGreater text-lg mt-2">
+                  <img src="assets/greater.svg" alt="iconGreater" />
+                </div>
+              </div>
+            </div>
+            <div class="cont group/myLink1">
+              <div class="text&s flex gap-10 items-center">
+                <div
+                  class="text group-hover/myLink1:text-blueP transition delay-100"
+                >
+                  Contact us
+                </div>
+                <div class="iconGreater text-lg mt-2">
+                  <img src="assets/greater.svg" alt="iconGreater" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space w-[10%] max-lg:w-[20%] max-lg2:hidden"></div>
+        <div class="col2">
+          <div
+            class="text-gray-500 font-Heebo text-xl ml-[14%] cursor-pointer max-lg:mr-[10%] max-lg2:m-0 max-lg2:mt-10"
+          >
+            <div class="cont hover:text-blueP transition delay-100">
+              Rejuvenate your concrete
+            </div>
+            <div class="cont flex gap-10 my-5 group/myLink1">
+              <p class="group-hover/myLink1:text-blueP transition delay-100">
+                Technical
+              </p>
+              <div class="iconGreater text-lg mt-1">
+                <img src="assets/greater.svg" alt="iconGreater" />
+              </div>
+            </div>
+            <div class="cont hover:text-blueP transition delay-100">
+              News & case studies
+            </div>
+            <div class="cont my-5 hover:text-blueP transition delay-100">
+              Sustainability
+            </div>
+            <div class="icons flex gap-3 mt-8 mb-5">
+              <div class="icon">
+                <img src="assets/pinterest.svg" alt="iconPinterest" />
+              </div>
+              <div class="icon">
+                <img src="assets/facebook.svg" alt="iconFacebook" />
+              </div>
+              <div class="icon">
+                <img src="assets/linkedin.svg" alt="iconLinkedin" />
+              </div>
+              <div class="icon">
+                <img src="assets/instagram.svg" alt="iconInstagram" />
+              </div>
+              <div class="icon">
+                <img src="assets/youtube.svg" alt="iconYouTube" />
+              </div>
+            </div>
+            <div
+              class="number text-white font-Heebo font-semibold text-lg mb-5"
+            >
+              0800 422 65687
+            </div>
+            <div
+              class="searchbar flex items-center border-b w-[85%] max-lg2:w-56"
+            >
+              <input
+                class="inputSearch bg-transparent outline-none p-2 w-80 text-lg text-greyP max-lg2:w-48"
+                type="text"
+                placeholder="Search..."
+                class="text"
+              />
+              <img
+                class="lente w-8"
+                src="assets/lenteIngrandimento.png"
+                alt="lente"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
