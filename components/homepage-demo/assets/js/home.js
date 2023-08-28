@@ -34,7 +34,7 @@ document.addEventListener("scroll", (event) => {
     el.style.transition = "0.1s all";
   });
 
-  console.log(navbarIcons);
+  // console.log(navbarIcons);
 
   if (scroll > 0) {
     firstSpan.style.fontSize = ".6em";
@@ -72,3 +72,66 @@ document.addEventListener("scroll", (event) => {
     menuDt.style.fontSize = "14px";
   }
 });
+
+class DesignTool {
+  step;
+  currentStep;
+  constructor() {
+    this.steps = {
+      1: "../component-step1/index.html",
+      2: "../step2/index.html",
+    };
+    this.currentStep = 1;
+  }
+
+  fetchPage() {
+    // console.log(this.steps[`${this.currentStep}`]);
+    fetch("../component-step1/index.html")
+      .then((res) => res.text())
+      .then((myPage) => {
+        let parser = new DOMParser();
+        let doc = parser.parseFromString(myPage, "text/html");
+        let div = document.createElement("div");
+        let content = doc.querySelector("body").outerHTML;
+        let btn1 = doc.querySelector("#btn-1");
+        btn1.addEventListener("click", () => console.log("ciao"));
+        div.innerHTML = content;
+        div.style.top = "0";
+        div.style.zIndex = "1000";
+        div.style.position = "absolute";
+        let containerHp = document.querySelector("#container-hp");
+        containerHp.classList.add("hidden");
+
+        document.body.appendChild(div);
+      });
+  }
+  nextPage() {
+    this.currentStep++;
+    this.fetchPage();
+  }
+}
+
+let prova = new DesignTool();
+prova.fetchPage();
+// prova.nextPage();
+// function nextStep() {
+//   fetch("../step2/index.html")
+//     .then((res) => res.text())
+//     .then((myPage) => {
+//       let parser = new DOMParser();
+//       let doc = parser.parseFromString(myPage, "text/html");
+//       let div = document.createElement("div");
+//       let content = doc.querySelector("body").outerHTML;
+//       div.innerHTML = content;
+//       div.style.top = "0";
+//       div.style.zIndex = "1000";
+//       div.style.position = "absolute";
+//       // let content1 = document.createTextNode(content);
+//       // div.appendChild(content1);
+//       // let body=document.querySelector("body")
+//       let containerHp = document.querySelector("#container-hp");
+//       containerHp.classList.add("hidden");
+//       document.body.appendChild(div);
+//     });
+// }
+// nextStep();

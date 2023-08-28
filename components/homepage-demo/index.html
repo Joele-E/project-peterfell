@@ -22,20 +22,30 @@
                     colors: {
                         blueP: "#7a99ac",
                         greyP: "#6d6e70",
+                        gray2: "#6d6e70",
+                        cBlue: "#7a99ac",
+                        nav: "f6f6f5",
                     },
                     fontFamily: {
                         Heebo: ["Heebo", "sans-serif"],
                         PlayfairSerif: ["Playfair Display", "serif"],
                         PlayfairSans: ["Playfair Display", "sans-serif"],
                     },
+                  
                 },
             },
         };
     </script>
 
+<style>
+    .text-btn {
+      transform: rotate(180deg);
+    }
+  </style>
 </head>
 
 <body class="overflow-x-hidden">
+    <main id="container-hp">
     <nav class=" fixed flex flex-col h-1/3 p-2 gap-2  w-fit pt-8 pl-8">
         <div
             class="text-4xl font-Heebo font-semibold text-white mb-3 cursor-pointer max-2xl:text-2xl max-2xl:mb-1 max-lg:w-[88%] ">
@@ -466,6 +476,7 @@
             <p class="text-greyP font-PlayfairSerif mt-8 pb-8">@Peter Fell Ltd 2022 Designed by Forge</p>
         </footer>
     </div>
+</main>
     <script src="assets/js/home.js"></script>
 </body>
 
