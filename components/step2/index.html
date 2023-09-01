@@ -35,29 +35,116 @@
   </head>
   <body>
     <main id="contento-step">
-      <div class="flex mt-4 mr-2">
-        <div class="w-[100%]"></div>
-        <img src="Icon-Close-Blue-1.png" alt="" class="cursor-pointer" />
-      </div>
-
-      <button
-        class="text-blueP border-2 border-blueP font-black rotate-90 fixed mt-[350px] p-[25px] hover:bg-blueP hover:text-white"
-      >
-        Choose your space
-      </button>
-      <div
-        class="buttonP hover:brightness-110 w-[100px] fixed left-[94vw] max-screen1:left-[93%] max-screen3:left-[92%] max-screen5:hidden"
-      >
+      <nav class="p-4 mt-5">
+        <div class="flex w-full mb-11 fixed top-7 right-3">
+          <div class="space w-full"></div>
+          <img
+            src="assets/Icon-Close-Blue-1.png"
+            alt=""
+            class="cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75"
+            id="close-step2"
+          />
+        </div>
+        <div class="flex items-center justify-between w-full text-sm mt-16">
+          <div class="w-full">
+            <button
+              class="items-center text-white bg-cBlue w-full h-10 cursor-not-allowed opacity-25"
+            >
+              Step 1:<strong>Space</strong>
+            </button>
+          </div>
+          <img
+            src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+            alt="iconArrow"
+            class="cursor-not-allowed"
+          />
+          <div class="w-full">
+            <button
+              class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed"
+            >
+              Step 2:<strong>Colour</strong>
+            </button>
+          </div>
+          <img
+            src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+            alt="iconArrow"
+            class="cursor-not-allowed opacity-25"
+          />
+          <div class="w-full">
+            <button
+              class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+            >
+              Step 3:<strong>Texture</strong>
+            </button>
+          </div>
+          <img
+            src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+            alt="iconArrow"
+            class="cursor-not-allowed opacity-25"
+          />
+          <div class="w-full">
+            <button
+              class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+            >
+              Step 4:<strong>Patterns</strong>
+            </button>
+          </div>
+          <img
+            src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+            alt="iconArrow"
+            class="cursor-not-allowed opacity-25"
+          />
+          <div class="w-full">
+            <button
+              class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+            >
+              Step 5:<strong>Protection</strong>
+            </button>
+          </div>
+          <img
+            src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+            alt="iconArrow"
+            class="cursor-not-allowed opacity-25"
+          />
+          <div class="w-full">
+            <button
+              class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+            >
+              <strong>Confirmation</strong>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="buttonP hover:brightness-110 fixed rotate-180 mt-24" id="btn-prev">
         <button
-          onclick="copyElement(this)"
-          class="text-btn flex items-center text-white bg-cBlue pr-6 py-12 max-screen4:pr-[5px] max-screen4:py-[25px] max-screen4:delay-[200ms] max-screen4:mt-[100px]"
+          class="text-btn flex items-center text-white bg-cBlue pr-6 h-72"
         >
-          <p class="[writing-mode:vertical-lr] font-Heebo font-bold text-xl">
-            Choose your colour
+          <img
+            src="assets/arrow_forward-white.svg"
+            alt="iconArrow"
+            class="brightness-[.8] rotate-180"
+          />
+          <p class="[writing-mode:vertical-lr] font-Heebo font-bold text-xl ">
+            Choose your testspace
           </p>
         </button>
       </div>
-      <div class="p-[250px] pr-[250px]" id="contenitore">
+      <div class="buttonP hover:brightness-110 fixed -right-0 mt-24" id="btn-1">
+        <button
+          class="text-btn flex items-center text-white bg-cBlue pr-6 h-72"
+        >
+          <img
+            src="assets/arrow_forward-white.svg"
+            alt="iconArrow"
+            class="brightness-[.8] rotate-180"
+          />
+          <p class="[writing-mode:vertical-lr] font-Heebo font-bold text-xl">
+            Choose your texture
+          </p>
+        </button>
+      </div>
+      </div>
+      <div class=" mt-24 pl-[250px] pr-[250px]" id="contenitore">
         <div class="max-md:flex-wrap md:flex">
           <div class="md:w-[60%]">
             <h1 class="text-[3.5vw] font-bold mb-[20px] font-PlayfairSerif">

@@ -110,7 +110,7 @@ class DesignTool {
           case 2:
             this.addEventsStep2();
           default:
-            console.log("non funziona");
+            console.log("Step not found");
         }
       });
   };
@@ -145,6 +145,8 @@ class DesignTool {
     });
     let btnNext = document.getElementById("btn-1");
     btnNext.addEventListener("click", this.nextPage);
+    let closeStep = document.getElementById("close-step");
+    closeStep.addEventListener("click", () => location.reload());
   };
   addEventsStep2 = () => {
     let color1 = document.getElementById("color1");
@@ -159,6 +161,12 @@ class DesignTool {
     color3.addEventListener("click", () => {
       this.saveChoiceMultiple(color3);
     });
+    let closeStep2 = document.getElementById("close-step2");
+    closeStep2.addEventListener("click", () => location.reload());
+    let btnNext = document.getElementById("btn-1");
+    btnNext.addEventListener("click", this.nextPage);
+    let btnPrev = document.getElementById("btn-prev");
+    btnPrev.addEventListener("click", this.prevPage);
   };
   saveChoiceMultiple = (el) => {
     let currentStepN = Number(this.currentStep);
@@ -171,11 +179,19 @@ class DesignTool {
     this.choices[currentStepN] = el.id;
     localStorage.setItem("choices", JSON.stringify(this.choices));
   };
+  clearDiv = () => {
+    let contenutoStep = document.getElementById("container-step");
+    contenutoStep.remove();
+  };
   nextPage = () => {
     // console.log("funziona");
     this.currentStep++;
-    let contenutoStep = document.getElementById("container-step");
-    contenutoStep.classList.add("hidden");
+    this.clearDiv();
+    this.openDesignTool();
+  };
+  prevPage = () => {
+    this.currentStep--;
+    this.clearDiv();
     this.openDesignTool();
   };
 }
@@ -225,9 +241,9 @@ function addEvents() {
 }
 let provaMenu = new Menu();
 
-let btnMenu = document.getElementById("navbar-text-menu");
+let btnMenu = document.getElementById("btn-menu");
 btnMenu.addEventListener("click", provaMenu.openMenu);
-let btnDesignTool = document.getElementById("navbar-text-dt");
+let btnDesignTool = document.getElementById("btn-dt");
 btnDesignTool.addEventListener("click", prova.openDesignTool);
 // prova.nextPage();
 // function nextStep() {
