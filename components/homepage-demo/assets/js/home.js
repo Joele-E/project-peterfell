@@ -76,9 +76,13 @@ document.addEventListener("scroll", (event) => {
 class DesignTool {
   step;
   currentStep;
+  choices;
+  multipleChoices;
   constructor() {
     this.steps = ["../component-step1/index.html", "../step2/index.html"];
     this.currentStep = 1;
+    this.choices = {};
+    this.multipleChoices = [];
   }
 
   openDesignTool = () => {
@@ -103,34 +107,91 @@ class DesignTool {
           case 1:
             this.addEventsStep1();
             break;
+          case 2:
+            this.addEventsStep2();
           default:
-            console.log("non funziona");
+            console.log("Step not found");
         }
       });
   };
   addEventsStep1 = () => {
     let img1Step1 = document.getElementById("img-step1-1");
-    img1Step1.addEventListener("click", this.saveChoice);
+    img1Step1.addEventListener("click", () => {
+      this.saveChoice(img1Step1);
+    });
     let img2Step1 = document.getElementById("img-step1-2");
-    img1Step1.addEventListener("click", this.saveChoice);
+    img2Step1.addEventListener("click", () => {
+      this.saveChoice(img2Step1);
+    });
     let img3Step1 = document.getElementById("img-step1-3");
-    img1Step1.addEventListener("click", this.saveChoice);
+    img3Step1.addEventListener("click", () => {
+      this.saveChoice(img3Step1);
+    });
     let img4Step1 = document.getElementById("img-step1-4");
-    img1Step1.addEventListener("click", this.saveChoice);
+    img4Step1.addEventListener("click", () => {
+      this.saveChoice(img4Step1);
+    });
     let img5Step1 = document.getElementById("img-step1-5");
-    img1Step1.addEventListener("click", this.saveChoice);
+    img5Step1.addEventListener("click", () => {
+      this.saveChoice(img5Step1);
+    });
     let img6Step1 = document.getElementById("img-step1-6");
-    img1Step1.addEventListener("click", this.saveChoice);
+    img6Step1.addEventListener("click", () => {
+      this.saveChoice(img6Step1);
+    });
     let img7Step1 = document.getElementById("img-step1-7");
-    img1Step1.addEventListener("click", this.saveChoice);
+    img7Step1.addEventListener("click", () => {
+      this.saveChoice(img7Step1);
+    });
     let btnNext = document.getElementById("btn-1");
     btnNext.addEventListener("click", this.nextPage);
+    let closeStep = document.getElementById("close-step");
+    closeStep.addEventListener("click", () => location.reload());
+  };
+  addEventsStep2 = () => {
+    let color1 = document.getElementById("color1");
+    color1.addEventListener("click", () => {
+      this.saveChoiceMultiple(color1);
+    });
+    let color2 = document.getElementById("color2");
+    color2.addEventListener("click", () => {
+      this.saveChoiceMultiple(color2);
+    });
+    let color3 = document.getElementById("color3");
+    color3.addEventListener("click", () => {
+      this.saveChoiceMultiple(color3);
+    });
+    let closeStep2 = document.getElementById("close-step2");
+    closeStep2.addEventListener("click", () => location.reload());
+    let btnNext = document.getElementById("btn-1");
+    btnNext.addEventListener("click", this.nextPage);
+    let btnPrev = document.getElementById("btn-prev");
+    btnPrev.addEventListener("click", this.prevPage);
+  };
+  saveChoiceMultiple = (el) => {
+    let currentStepN = Number(this.currentStep);
+    this.multipleChoices.push(el.id);
+    this.choices[currentStepN] = this.multipleChoices;
+    localStorage.setItem("choices", JSON.stringify(this.choices));
+  };
+  saveChoice = (el) => {
+    let currentStepN = Number(this.currentStep);
+    this.choices[currentStepN] = el.id;
+    localStorage.setItem("choices", JSON.stringify(this.choices));
+  };
+  clearDiv = () => {
+    let contenutoStep = document.getElementById("container-step");
+    contenutoStep.remove();
   };
   nextPage = () => {
     // console.log("funziona");
     this.currentStep++;
-    let contenutoStep = document.getElementById("container-step");
-    contenutoStep.classList.add("hidden");
+    this.clearDiv();
+    this.openDesignTool();
+  };
+  prevPage = () => {
+    this.currentStep--;
+    this.clearDiv();
     this.openDesignTool();
   };
 }
@@ -180,9 +241,9 @@ function addEvents() {
 }
 let provaMenu = new Menu();
 
-let btnMenu = document.getElementById("navbar-text-menu");
+let btnMenu = document.getElementById("btn-menu");
 btnMenu.addEventListener("click", provaMenu.openMenu);
-let btnDesignTool = document.getElementById("navbar-text-dt");
+let btnDesignTool = document.getElementById("btn-dt");
 btnDesignTool.addEventListener("click", prova.openDesignTool);
 // prova.nextPage();
 // function nextStep() {
