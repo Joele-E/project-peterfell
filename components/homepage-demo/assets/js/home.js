@@ -2,6 +2,18 @@
 let heroCards = document.querySelectorAll(".hero-card");
 let heroSecOverlay = document.getElementById("hero-overlay");
 let firstCard = document.querySelector(".hero-section-first-card");
+let menuText = document.getElementById("navbar-text-menu");
+let menuDt = document.getElementById("navbar-text-dt");
+let firstSpan = document.getElementById("firstLogoHalf");
+let secondSpan = document.getElementById("secondLogoHalf");
+
+if (window.innerWidth < 1024) {
+  menuText.innerHTML = "";
+  menuDt.innerHTML = "";
+} else {
+  menuText.innerHTML = "Menu";
+  menuDt.innerHTML = "Design Tool";
+}
 /* let homeNavbar = document.getElementById("home-navbar"); */
 
 // evento per hover su prima card hero-section (resetta bg)
@@ -19,13 +31,21 @@ for (let i = 0; i < heroCards.length; i++) {
   });
 }
 
+function checkWindowSize() {
+  if (window.innerWidth < 1024) {
+    menuText.innerHTML = "";
+    menuDt.innerHTML = "";
+  } else {
+    menuText.innerHTML = "Menu";
+    menuDt.innerHTML = "Design Tool";
+  }
+}
+window.onresize = checkWindowSize;
+
 // evento scroll per cambiare colore navbar
 document.addEventListener("scroll", (event) => {
   let scroll = this.scrollY;
-  let firstSpan = document.getElementById("firstLogoHalf");
-  let secondSpan = document.getElementById("secondLogoHalf");
-  let menuText = document.getElementById("navbar-text-menu");
-  let menuDt = document.getElementById("navbar-text-dt");
+
   let heroHeight = heroSecOverlay.offsetHeight;
 
   let navbarIcons = document.querySelectorAll(".navbar-icon");
@@ -36,7 +56,7 @@ document.addEventListener("scroll", (event) => {
 
   // console.log(navbarIcons);
 
-  if (scroll > 0) {
+  if (scroll > 0 && window.innerWidth > 1024) {
     firstSpan.style.fontSize = ".6em";
     secondSpan.style.fontSize = ".6em";
     /* menuText.innerHTML = ""; */
@@ -86,6 +106,7 @@ class DesignTool {
     ];
     this.currentStep = 1;
     this.choices = {};
+    // this.choices = JSON.parse(localStorage.getItem("choices"));
     this.multipleChoices = [];
   }
 
@@ -113,6 +134,8 @@ class DesignTool {
             break;
           case 2:
             this.addEventsStep2();
+          case 3:
+            this.addEventsStep3();
           default:
             console.log("Step not found");
         }
@@ -165,13 +188,43 @@ class DesignTool {
     color3.addEventListener("click", () => {
       this.saveChoiceMultiple(color3);
     });
-    let closeStep2 = document.getElementById("close-step2");
-    closeStep2.addEventListener("click", () => location.reload());
+    let closeStep = document.getElementById("close-step2");
+    closeStep.addEventListener("click", () => location.reload());
     let btnNext = document.getElementById("btn-1");
     btnNext.addEventListener("click", this.nextPage);
     let btnPrev = document.getElementById("btn-prev");
     btnPrev.addEventListener("click", this.prevPage);
   };
+
+  addEventsStep3 = () => {
+    let textures = document.querySelectorAll(".texture");
+    textures.forEach((el) => {
+      el.addEventListener("click", () => {
+        this.saveChoice(el);
+        textures.forEach((el2) => {
+          el2.classList.remove("bg-[#d7e0e3]");
+        });
+        el.classList.add("bg-[#d7e0e3]");
+        let textureImg = document.getElementById("texture-imgL");
+        let textureUrl = el.querySelector("img").src;
+        textureImg.src = textureUrl;
+      });
+      let closeStep = document.getElementById("close-step3");
+      closeStep.addEventListener("click", () => location.reload());
+      let closeStep3 = document.getElementById("close-step3-small");
+      closeStep3.addEventListener("click", () => location.reload());
+    });
+
+    let btnNext = document.getElementById("btn-1");
+    btnNext.addEventListener("click", this.nextPage);
+    let btnPrev = document.getElementById("btn-prev");
+    btnPrev.addEventListener("click", this.prevPage);
+    let btnNextSmall = document.getElementById("btn-1-small");
+    btnNextSmall.addEventListener("click", this.nextPage);
+    let btnPrevSmall = document.getElementById("btn-prev-small");
+    btnPrevSmall.addEventListener("click", this.prevPage);
+  };
+
   saveChoiceMultiple = (el) => {
     let currentStepN = Number(this.currentStep);
     this.multipleChoices.push(el.id);
