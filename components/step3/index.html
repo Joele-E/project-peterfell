@@ -38,10 +38,67 @@
 </head>
 
 <body>
+    <nav class="p-4 mt-5 min-[0px]:hidden min-[950px]:flex ">
+        <div class="flex w-full mb-11 fixed top-7 right-3">
+            <div class="space w-full"></div>
+            <img src="assets/Icon-Close-Blue-1.png" alt=""
+                class="cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75" id="close-step" />
+        </div>
+        <div class="flex items-center justify-between w-full text-sm mt-16">
+            <div class="w-full">
+                <button class="items-center text-white bg-cBlue w-full h-10 cursor-not-allowed opacity-25">
+                    Step 1:<strong>Space</strong>
+                </button>
+            </div>
+            <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
+                class="cursor-not-allowed opacity-25" />
+            <div class="w-full">
+                <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
+                    Step 2:<strong>Colour</strong>
+                </button>
+            </div>
+            <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
+                class="cursor-not-allowed opacity-25" />
+            <div class="w-full">
+                <button class="items-center text-white p-2 bg-cBlue w-full">
+                    Step 3:<strong>Texture</strong>
+                </button>
+            </div>
+            <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
+                class="cursor-not-allowed " />
+            <div class="w-full">
+                <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
+                    Step 4:<strong>Patterns</strong>
+                </button>
+            </div>
+            <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
+                class="cursor-not-allowed opacity-25" />
+            <div class="w-full">
+                <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
+                    Step 5:<strong>Protection</strong>
+                </button>
+            </div>
+            <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
+                class="cursor-not-allowed opacity-25" />
+            <div class="w-full">
+                <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
+                    <strong>Confirmation</strong>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <nav class="min-[950px]:hidden mb-20 w-screen flex">
+        <div class="w-screen flex">
+            <button class="text-white bg-cBlue w-screen h-10 ">
+                Step 3:<strong>Texture</strong>
+            </button>
+        </div>
+
+    </nav>
     <div class="container flex gap-2">
-        <div class="buttonLeft w-40">
+        <div class="buttonLeft mt-24 z-10">
             <button
-                class="fixed left-0 rotate-180 text-btn flex flex-row-reverse items-center text-cBlue border border-cBlue pl-6 py-12 max-screen4:pr-[5px] max-screen4:py-[25px] max-screen4:delay-[200ms] max-screen4:mt-[100px]">
+                class="min-[0px]:hidden min-[950px]:fixed min-[950px]:left-0 min-[950px]:rotate-180 text-btn min-[950px]:flex min-[950px]:flex-row-reverse min-[950px]:items-center min-[950px]:text-cBlue min-[950px]:border min-[950px]:border-cBlue min-[950px]:pl-6 min-[950px]:py-12 max-screen4:pr-[5px] max-screen4:py-[25px] max-screen4:delay-[200ms] max-screen4:mt-[100px]">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="42" viewBox="0 -960 960 960" width="48"
                     class="fill-cBlue">
                     <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
@@ -50,32 +107,42 @@
                     Choose your colour
                 </p>
             </button>
+            <button
+                class="min-[950px]:hidden fixed flex border-2 border-cBlue p-2 items-center bottom-0 w-[50vw] justify-center bg-white ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="42" viewBox="0 -960 960 960" width="48"
+                    class="fill-cBlue rotate-180">
+                    <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+                    <p class="font-Heebo font-bold text-xl text-cBlue">
+                        Previous
+                    </p>
+
+            </button>
         </div>
-        <div class="centerContent ">
-            <div class="topCenter flex gap-x-32">
-                <div class="topLeft max-w-[50%]">
-                    <div class="topLeftTitle text-5xl font-bold font-PlayfairSerif mb-10">
+        <div class="centerContent pl-4 min-[950px]:px-40">
+            <div class="topCenter flex flex-col md:flex-row gap-x-32">
+                <div class="topLeft w-full md:max-w-[50%]">
+                    <div class="topLeftTitle text-5xl md:text-5xl font-bold font-PlayfairSerif mb-10">
                         Choose your texture.
                     </div>
 
-                    <div class="topLeftSub font-Heebo text-gray-500 text-2xl mb-4 ml-10">
+                    <div class="topLeftSub font-Heebo text-gray-500 text-lg md:text-2xl mb-4 ml-10">
                         The most common consideration is how easy the floor is to clean and how safe and non-slip your
                         exterior surface is.
 
                     </div>
-                    <div class="topLeftDesc font-Heebo text-gray-500 text-base ml-10">
+                    <div class="topLeftDesc font-Heebo text-gray-500 text-lg md:text-base ml-10">
                         Select one of the options below. We recommend, however, that you talk to your contractor first
                         about
                         the right texture for your project.
 
                     </div>
                 </div>
-                <div class="topRight w-[20vw] max-w-[500px]">
+                <div class="topRight mt-8 md:w-[20vw] md:max-w-[500px]">
                     <img src="assets/img/ccSample.png" alt="coloured concrete texture blocks sample">
                 </div>
             </div>
-            <div class="bottomCenter flex">
-                <div class="bottomLeft max-w-[45vw]">
+            <div class="bottomCenter flex flex-col md:flex-row ">
+                <div class="bottomLeft md:max-w-[45vw]">
                     <div class="bottomTitle font-PlayfairSerif text-3xl font-bold mt-16">Recommended concrete textures
                         for
                         {NOME DINAMICO}</div>
@@ -169,20 +236,32 @@
                     </div>
                 </div>
                 <div class="bottomRight">
+
                     <img src="https://www.peterfell.co.nz/wp-content/uploads/Deep_grind.png" alt=""
-                        class="mt-40 sticky">
+                        class="mt-10 md:mt-40 sticky">
+
                 </div>
             </div>
         </div>
-        <div class="buttonRight w-40">
+        <div class="buttonRight mt-24">
             <button
-                class="fixed right-0 text-btn flex flex-row-reverse items-center text-white bg-cBlue  pl-6 py-12 max-screen4:pr-[5px] max-screen4:py-[25px] max-screen4:delay-[200ms] max-screen4:mt-[100px]">
+                class="min-[0px]:hidden min-[950px]:fixed min-[950px]:right-0 text-btn min-[950px]:flex min-[950px]:flex-row-reverse min-[950px]:items-center min-[950px]:text-white min-[950px]:bg-cBlue  min-[950px]:pl-6 min-[950px]:py-12 max-screen4:pr-[5px] max-screen4:py-[25px] max-screen4:delay-[200ms] max-screen4:mt-[100px]">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="42" viewBox="0 -960 960 960" width="48">
                     <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
                 </svg>
                 <p class="[writing-mode:vertical-lr] font-Heebo font-bold text-xl rotate-180">
                     Choose your pattern
                 </p>
+            </button>
+            <button
+                class="min-[950px]:hidden fixed flex flex-row-reverse border-2 border-cBlue p-2 items-center bottom-0 w-1/2 justify-center bg-cBlue right-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="42" viewBox="0 -960 960 960" width="48"
+                    class="fill-white opacity-40">
+                    <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+                    <p class="font-Heebo font-bold text-xl text-white">
+                        Next
+                    </p>
+
             </button>
         </div>
     </div>
