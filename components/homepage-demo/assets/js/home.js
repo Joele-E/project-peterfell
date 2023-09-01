@@ -79,7 +79,11 @@ class DesignTool {
   choices;
   multipleChoices;
   constructor() {
-    this.steps = ["../component-step1/index.html", "../step2/index.html"];
+    this.steps = [
+      "../component-step1/index.html",
+      "../step2/index.html",
+      "../step3/index.html",
+    ];
     this.currentStep = 1;
     this.choices = {};
     this.multipleChoices = [];
