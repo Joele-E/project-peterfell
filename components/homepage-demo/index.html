@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/output.css">
     <title>Coloured Concrete - Peter Fell Specialists in Coloured Concrete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script
-    src="https://kit.fontawesome.com/8c02bb5e5e.js"
-    crossorigin="anonymous"
-  ></script>
+    <script src="https://kit.fontawesome.com/8c02bb5e5e.js" crossorigin="anonymous"></script>
     <!-- Ho creato una classe unica per i "button menu" -->
     <style type="text/tailwindcss">
         @layer components {
@@ -35,458 +42,477 @@
                         PlayfairSerif: ["Playfair Display", "serif"],
                         PlayfairSans: ["Playfair Display", "sans-serif"],
                     },
-                  
+
                 },
             },
         };
     </script>
 
-<style>
-    .text-btn {
-      transform: rotate(180deg);
-    }
-  </style>
-  <style>
-    .icon:hover {
-      filter: invert(0.27) sepia(1) saturate(15.4) hue-rotate(180deg)
-        brightness(0.5);
-    }
-  </style>
+    <style>
+        .text-btn {
+            transform: rotate(180deg);
+        }
+    </style>
+    <style>
+        .icon:hover {
+            filter: invert(0.27) sepia(1) saturate(15.4) hue-rotate(180deg) brightness(0.5);
+        }
+    </style>
 </head>
 
 <body class="overflow-x-hidden">
     <main id="container-hp">
-    <nav class=" fixed flex flex-col h-1/3 p-2 gap-2  w-fit pt-8 pl-8">
-        <div
-            class="text-4xl font-Heebo font-semibold text-white mb-3 cursor-pointer max-2xl:text-2xl max-2xl:mb-1 max-lg:w-[88%] ">
-            <span id="firstLogoHalf" class="transition-all delay-300 ease-in-out">Peter</span><span
-                class="transition-all delay-300 ease-in-out" id="secondLogoHalf">Fell</span>
-        </div>
-        <div class="flex flex-col gap-2 ">
-            <div class="btn">
-                <img src="../homepage_navbar/assets/Icon-Menu-White.png" alt="iconMenù" class="navbar-icon w-4 h-3" />
-                <div class="textMenu text-sm transition-all delay-300 " id="navbar-text-menu">Menu</div>
+        <nav class=" fixed flex flex-col h-1/3 p-2 gap-2  w-fit pt-8 pl-8">
+            <div
+                class="text-4xl font-Heebo font-semibold text-white mb-3 cursor-pointer max-2xl:text-2xl max-2xl:mb-1 max-lg:w-[88%] ">
+                <span id="firstLogoHalf" class="transition-all delay-300 ease-in-out">Peter</span><span
+                    class="transition-all delay-300 ease-in-out" id="secondLogoHalf">Fell</span>
             </div>
-            <div class="btn">
-                <img src="../homepage_navbar/assets/Icon-Tool-White.png" alt="iconColor" class="navbar-icon w-4 h-4" />
-                <div class="textDesignTool text-sm transition-all delay-300" id="navbar-text-dt">Design Tool
+            <div class="flex flex-col gap-2 ">
+                <div class="btn">
+                    <img src="../homepage_navbar/assets/Icon-Menu-White.png" alt="iconMenù"
+                        class="navbar-icon w-4 h-3" />
+                    <div class="textMenu text-sm transition-all delay-300 " id="navbar-text-menu">Menu</div>
                 </div>
-            </div>
-            <div class="flex items-center">
-                <img src="../homepage_navbar/assets/Icon-Cart-White.png" alt="iconCart"
-                    class=" navbar-icon w-4 h-4 hover:opacity-50 cursor-pointer " class="" />
-                <div class="eventCart">
-                    <p class=" w-5 h-6 ml-2 font-bold text-center text-white bg-slate-400 rounded-full max-2xl:text-sm
+                <div class="btn">
+                    <img src="../homepage_navbar/assets/Icon-Tool-White.png" alt="iconColor"
+                        class="navbar-icon w-4 h-4" />
+                    <div class="textDesignTool text-sm transition-all delay-300" id="navbar-text-dt">Design Tool
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img src="../homepage_navbar/assets/Icon-Cart-White.png" alt="iconCart"
+                        class=" navbar-icon w-4 h-4 hover:opacity-50 cursor-pointer " class="" />
+                    <div class="eventCart">
+                        <p class=" w-5 h-6 ml-2 font-bold text-center text-white bg-slate-400 rounded-full max-2xl:text-sm
                     max-2xl:w-4 max-2xl:h-5 max-2xl:mt-1">
-                        0
-                    </p>
+                            0
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <div class="home-container flex flex-col gap-16">
-        <div class="hero-section-container h-screen">
-            <div id="hero-overlay" class="hero-section-overlay h-screen w-screen brightness-75 absolute -z-10 "></div>
-
-            <div class="hero-section-cards grid grid-cols-4 grid-rows-2 z-[2] h-full">
-                <div
-                    class="hero-section-first-card flex p-[5vh] items-end text-white font-PlayfairSerif text-5xl font-bold leading-snug">
-                    Get
-                    inspired.
+        </nav>
+        <div class="home-container flex flex-col gap-16">
+            <div class="hero-section-container h-screen">
+                <div id="hero-overlay" class="hero-section-overlay h-screen w-screen brightness-75 absolute -z-10 ">
                 </div>
-                <div id=""
-                    class="hero-card flex flex-col group/card1 border border-r-0 border-b-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-pink">
+
+                <div class="hero-section-cards grid grid-cols-4 grid-rows-2 z-[2] h-full">
                     <div
-                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover/card1:hidden">
-                        Floors</div>
-                    <div class="hero-card-description group-hover/card1:flex flex-col self-center hidden">
-                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Floors
-                        </div>
-                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">More
-                            comfortable with
-                            a
-                            coloured
-                            concrete floor</div>
+                        class="hero-section-first-card flex p-[5vh] items-end text-white font-PlayfairSerif text-5xl font-bold leading-snug">
+                        Get
+                        inspired.
+                    </div>
+                    <div id=""
+                        class="hero-card flex flex-col group/card1 border border-r-0 border-b-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-pink">
                         <div
-                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                            Floors
-                            inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
-                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover/card1:hidden">
+                            Floors</div>
+                        <div class="hero-card-description group-hover/card1:flex flex-col self-center hidden">
+                            <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
+                                Floors
+                            </div>
+                            <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">More
+                                comfortable with
+                                a
+                                coloured
+                                concrete floor</div>
+                            <div
+                                class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                                Floors
+                                inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                                    class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
-                <div id=""
-                    class="hero-card flex flex-col group border border-r-0 border-b-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#d27746e6]">
-                    <div
-                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                        Patios & Courtyards</div>
-                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Patios
-                            &
-                            Courtyards
-                        </div>
-                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Beauty
-                            that
-                            lasts with a coloured patio.</div>
+                    <div id=""
+                        class="hero-card flex flex-col group border border-r-0 border-b-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#d27746e6]">
                         <div
-                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                            Patios & Courtyards inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
-                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                            Patios & Courtyards</div>
+                        <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                            <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
+                                Patios
+                                &
+                                Courtyards
+                            </div>
+                            <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Beauty
+                                that
+                                lasts with a coloured patio.</div>
+                            <div
+                                class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                                Patios & Courtyards inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
+                                    class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
-                <div id=""
-                    class="hero-card flex flex-col group border border border-r-0 border-b-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#6496bee6]">
-                    <div
-                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                        Driveways & paths</div>
-                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
-                            Driveways
-                            & paths
-                        </div>
-                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Stand
-                            apart
-                            with a coloured concrete driveway and path</div>
+                    <div id=""
+                        class="hero-card flex flex-col group border border border-r-0 border-b-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#6496bee6]">
                         <div
-                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                            Driveways & paths inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
-                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                            Driveways & paths</div>
+                        <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                            <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
+                                Driveways
+                                & paths
+                            </div>
+                            <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Stand
+                                apart
+                                with a coloured concrete driveway and path</div>
+                            <div
+                                class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                                Driveways & paths inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                                    class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
-                <div id=""
-                    class="hero-card flex flex-col group border border border-r-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#788c50e6]">
-                    <div
-                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                        Walls</div>
-                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Walls
-                        </div>
-                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Make more
-                            of
-                            your walls with coloured concrete.</div>
+                    <div id=""
+                        class="hero-card flex flex-col group border border border-r-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#788c50e6]">
                         <div
-                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                            Walls inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
-                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                            Walls</div>
+                        <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                            <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
+                                Walls
+                            </div>
+                            <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Make
+                                more
+                                of
+                                your walls with coloured concrete.</div>
+                            <div
+                                class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                                Walls inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                                    class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
-                <div id=""
-                    class="hero-card flex flex-col group border border border-r-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#dca03ce6]">
-                    <div
-                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                        Pool surrounds</div>
-                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Pool
-                            surrounds
-                        </div>
-                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Add
-                            sparkle to
-                            your pool wiht a coloured concrete surround.</div>
+                    <div id=""
+                        class="hero-card flex flex-col group border border border-r-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#dca03ce6]">
                         <div
-                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                            Pool suorrounds inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
-                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                            Pool surrounds</div>
+                        <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                            <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
+                                Pool
+                                surrounds
+                            </div>
+                            <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Add
+                                sparkle to
+                                your pool wiht a coloured concrete surround.</div>
+                            <div
+                                class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                                Pool suorrounds inspirations <img src="assets/img/buttonPf.png" alt="buttonPf"
+                                    class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
-                <div id=""
-                    class="hero-card flex flex-col group border border border-r-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#aaa050e6]">
-                    <div
-                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                        Commercial</div>
-                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
-                            Commercial
-                        </div>
-                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Durability
-                            and
-                            flair for yout commercial space with a
-                            coloured concrete floor.</div>
+                    <div id=""
+                        class="hero-card flex flex-col group border border border-r-0 border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#aaa050e6]">
                         <div
-                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                            Commercial inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
-                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                            Commercial</div>
+                        <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                            <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
+                                Commercial
+                            </div>
+                            <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">
+                                Durability
+                                and
+                                flair for yout commercial space with a
+                                coloured concrete floor.</div>
+                            <div
+                                class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                                Commercial inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
+                                    class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
-                <div id=""
-                    class="hero-card flex flex-col group border border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#c85f3ce6]">
-                    <div
-                        class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
-                        Public spaces</div>
-                    <div class="hero-card-description group-hover:flex flex-col self-center hidden">
-                        <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">Public
-                            spaces
-                        </div>
-                        <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Create
-                            inviting public spaces with coloured concrete.</div>
+                    <div id=""
+                        class="hero-card flex flex-col group border border-opacity-30 border-gray-400 bg-transparent h-full p-12  hover:cursor-pointer justify-center hover:bg-[#c85f3ce6]">
                         <div
-                            class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
-                            Public spaces inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
-                                class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            class="hero-card-text  h-full flex flex-col justify-end self-end text-white font-Heebo text-sm font-light group-hover:hidden">
+                            Public spaces</div>
+                        <div class="hero-card-description group-hover:flex flex-col self-center hidden">
+                            <div class="hero-card-description-title font-PlayfairSerif text-4xl text-white font-bold">
+                                Public
+                                spaces
+                            </div>
+                            <div class="hero-card-description-text text-sm text-white font-light font-Heebo mt-5">Create
+                                inviting public spaces with coloured concrete.</div>
+                            <div
+                                class=" mt-14 transition-all duration-300 hero-card-description-link border-b-2 border-black w-fit text-black font-PlayfairSerif font-semibold flex group/link1 hover:text-white hover:border-white">
+                                Public spaces inspirations<img src="assets/img/buttonPf.png" alt="buttonPf"
+                                    class="transition-all duration-300 w-2.5 h-2 self-center ml-1 brightness-0 group-hover/link1:brightness-200">
+                            </div>
+
                         </div>
 
                     </div>
-
                 </div>
             </div>
-        </div>
-        <div
-            class="colored-concrete-section w-full flex flex-wrap justify-evenly flex-col-reverse items-center lg:flex-row">
-            <div class="coulored-concrete w-full max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
-                <div class="colored-concrete-desc-title font-PlayfairSerif font-bold text-5xl mb-10">
-                    Coloured concrete for any space.
+            <div
+                class="colored-concrete-section w-full flex flex-wrap justify-evenly flex-col-reverse items-center lg:flex-row">
+                <div class="coulored-concrete w-full max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
+                    <div class="colored-concrete-desc-title font-PlayfairSerif font-bold text-5xl mb-10">
+                        Coloured concrete for any space.
+                    </div>
+                    <div
+                        class="colored-concrete-desc-text font-Heebo font-medium text-base mt-8 text-greyP mb-10 lg:pl-52">
+                        Using coloured concrete can take a space and make it special. With
+                        over 80 colours to choose from, you’ll find the hue that’s a perfect
+                        match for your plans.
+                    </div>
+                    <div
+                        class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-8 lg:ml-52">
+                        Choose your colour
+                        <img src="../coloured-concrete/buttonPf.png" alt="buttonPf"
+                            class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0" />
+                    </div>
                 </div>
-                <div class="colored-concrete-desc-text font-Heebo font-medium text-base mt-8 text-greyP mb-10 lg:pl-52">
-                    Using coloured concrete can take a space and make it special. With
-                    over 80 colours to choose from, you’ll find the hue that’s a perfect
-                    match for your plans.
-                </div>
-                <div
-                    class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-8 lg:ml-52">
-                    Choose your colour
-                    <img src="../coloured-concrete/buttonPf.png" alt="buttonPf"
-                        class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0" />
-                </div>
-            </div>
-            <div class="colored-concrete-img min-w-[40%] max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
-                <img width="848" height="505"
-                    src="https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space.png"
-                    class="vc_single_image-img attachment-full" alt="Coloured concrete colour samples" loading="lazy"
-                    title="Coloured-concrete-for-any-space" srcset="
+                <div class="colored-concrete-img min-w-[40%] max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
+                    <img width="848" height="505"
+                        src="https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space.png"
+                        class="vc_single_image-img attachment-full" alt="Coloured concrete colour samples"
+                        loading="lazy" title="Coloured-concrete-for-any-space" srcset="
             https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space.png         848w,
             https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space-600x357.png 600w,
             https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space-300x179.png 300w,
             https://www.peterfell.co.nz/wp-content/uploads/Coloured-concrete-for-any-space-768x457.png 768w
           " sizes="(max-width: 848px) 100vw, 848px" />
-            </div>
-        </div>
-        <div class="create-look-section w-full flex justify-evenly flex-col items-center lg:flex-row">
-            <div class="create-look-img min-w-[40%] max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
-                <img src="../create-look-tailwind/assets/img/create-look-img.png" alt="Screenshot of design tool"
-                    class="w-full">
-            </div>
-            <div class="create-look-desc w-full max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
-                <div class="create-look-desc-title font-PlayfairSerif font-bold text-5xl">Create the look you want.
                 </div>
-                <div class="create-look-desc-text font-Heebo font-light text-base mt-8">We’ve developed a step-by-step
-                    design
-                    tool that
-                    will help you create a
-                    space that’s right for your lifestyle. So, let’s get started.</div>
-                <div
-                    class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-2xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-8">
-                    Use the design tool <img src="../create-look-tailwind/assets/img/buttonPf.png" alt="buttonPf"
-                        class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0">
+            </div>
+            <div class="create-look-section w-full flex justify-evenly flex-col items-center lg:flex-row">
+                <div class="create-look-img min-w-[40%] max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
+                    <img src="../create-look-tailwind/assets/img/create-look-img.png" alt="Screenshot of design tool"
+                        class="w-full">
                 </div>
+                <div class="create-look-desc w-full max-w-[75%] lg:min-w-[25%] lg:max-w-[40%]">
+                    <div class="create-look-desc-title font-PlayfairSerif font-bold text-5xl">Create the look you want.
+                    </div>
+                    <div class="create-look-desc-text font-Heebo font-light text-base mt-8">We’ve developed a
+                        step-by-step
+                        design
+                        tool that
+                        will help you create a
+                        space that’s right for your lifestyle. So, let’s get started.</div>
+                    <div
+                        class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-2xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-8">
+                        Use the design tool <img src="../create-look-tailwind/assets/img/buttonPf.png" alt="buttonPf"
+                            class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0">
+                    </div>
 
-            </div>
-        </div>
-        <div class="inspiration pl-[20vw] mt-10">
-            <div class="">
-                <div class="w-1/3 max-2xl:w-[100%]">
-                    <h1
-                        class="text-7xl font-PlayfairSerif font-bold mb-8 max-2xl:text-5xl max-xl:ml-4 max-lg:w-1/3 max-md:w-[100%] max-md:text-4xl">
-                        Looking for inspiration?
-                    </h1>
                 </div>
-                <div class="flex self-center gap-10 max-2xl:flex-col-reverse">
-                    <div class="textandLink w-[10%] max-2xl:w-[50%]  max-md:w-[100%]">
-                        <div class="mb-10 text-greyP font-Heebo">
-                            <p>
-                                We've been helping New Zealanders create their dream space since
-                                1991. Find out more about how coloured concrete can create the
-                                design statement you want indoors and out.
-                            </p>
-                        </div>
-                        <div class="">
-                            <div
-                                class="flex items-center group/myLink1 hover:text-black hover:border-black gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-4 border-blueP w-fit transition-all duration-300">
+            </div>
+            <div class="inspiration pl-[20vw] mt-10">
+                <div class="">
+                    <div class="w-1/3 max-2xl:w-[100%]">
+                        <h1
+                            class="text-7xl font-PlayfairSerif font-bold mb-8 max-2xl:text-5xl max-xl:ml-4 max-lg:w-1/3 max-md:w-[100%] max-md:text-4xl">
+                            Looking for inspiration?
+                        </h1>
+                    </div>
+                    <div class="flex self-center gap-10 max-2xl:flex-col-reverse">
+                        <div class="textandLink w-[10%] max-2xl:w-[50%]  max-md:w-[100%]">
+                            <div class="mb-10 text-greyP font-Heebo">
+                                <p>
+                                    We've been helping New Zealanders create their dream space since
+                                    1991. Find out more about how coloured concrete can create the
+                                    design statement you want indoors and out.
+                                </p>
+                            </div>
+                            <div class="">
                                 <div
-                                    class="text-blueP font-PlayfairSerif text-2xl font-semibold cursor-pointer group-hover/myLink1:text-black transition-all duration-300">
-                                    Be inspired
+                                    class="flex items-center group/myLink1 hover:text-black hover:border-black gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-4 border-blueP w-fit transition-all duration-300">
+                                    <div
+                                        class="text-blueP font-PlayfairSerif text-2xl font-semibold cursor-pointer group-hover/myLink1:text-black transition-all duration-300">
+                                        Be inspired
+                                    </div>
+                                    <img src="../component_inspiration/assets/Button-Space-1.png" alt="iconButton"
+                                        class="w-4 h-4 ml-2 pt-1 group-hover/myLink1:brightness-0 max-2xl:self-end max-2xl:mb-2 max-2xl:mr-9" />
                                 </div>
-                                <img src="../component_inspiration/assets/Button-Space-1.png" alt="iconButton"
-                                    class="w-4 h-4 ml-2 pt-1 group-hover/myLink1:brightness-0 max-2xl:self-end max-2xl:mb-2 max-2xl:mr-9" />
                             </div>
                         </div>
-                    </div>
-                    <div class="imgInspiration">
-                        <img width="1200" height="675" class="md:pr-[25%]" src="https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" title="PeterFell-Scarborough-Beton-Brut-featured (1)" srcset="https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1.jpg 1200w, https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1-300x169.jpg 300w, https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1-1024x576.jpg 1024w, https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1-768x432.jpg 768w, https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1-600x338.jpg 600w" sizes="(max-width: 1200px) 100vw, 1200px">
+                        <div class="imgInspiration">
+                            <img width="1200" height="675" class="md:pr-[25%]"
+                                src="https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1.jpg"
+                                class="vc_single_image-img attachment-full" alt="" loading="lazy"
+                                title="PeterFell-Scarborough-Beton-Brut-featured (1)"
+                                srcset="https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1.jpg 1200w, https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1-300x169.jpg 300w, https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1-1024x576.jpg 1024w, https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1-768x432.jpg 768w, https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Scarborough-Beton-Brut-featured-1-600x338.jpg 600w"
+                                sizes="(max-width: 1200px) 100vw, 1200px">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="casestudies p-32">
-            <h2 class="text-7xl mb-8 font-bold font-PlayfairSerif">
-                Case studies & news.
-            </h2>
-            <div class=" ml-4 mr-4 lg:flex gap-8">
-                <div>
-                    <div class="mb-4 font-sm">
-                        <span class="text-greyP text-greyP font-light">9 August 2023</span>/<span
-                            class="text-blueP font-bold">Case Studies</span>
-                    </div>
-                    <img src="https://www.peterfell.co.nz/wp-content/uploads/3-16.png"
-                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="
+            <div class="casestudies p-32">
+                <h2 class="text-7xl mb-8 font-bold font-PlayfairSerif">
+                    Case studies & news.
+                </h2>
+                <div class=" ml-4 mr-4 lg:flex gap-8">
+                    <div>
+                        <div class="mb-4 font-sm">
+                            <span class="text-greyP text-greyP font-light">9 August 2023</span>/<span
+                                class="text-blueP font-bold">Case Studies</span>
+                        </div>
+                        <img src="https://www.peterfell.co.nz/wp-content/uploads/3-16.png"
+                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="
                       https://www.peterfell.co.nz/wp-content/uploads/3-16.png          1200w,
                       https://www.peterfell.co.nz/wp-content/uploads/3-16-300x169.png   300w,
                       https://www.peterfell.co.nz/wp-content/uploads/3-16-1024x576.png 1024w,
                       https://www.peterfell.co.nz/wp-content/uploads/3-16-768x432.png   768w,
                       https://www.peterfell.co.nz/wp-content/uploads/3-16-600x338.png   600w
                     " sizes="(max-width: 1200px) 100vw, 1200px" />
-                    <h3 class="text-2xl mb-3 font-PlayfairSerif">MATERIAL CONNECTION</h3>
-                    <div class="text-greyP text-sm font-Heebo">
-                        In a rural setting that feels far removed from the city on the
-                        outskirts of which it is located, this Auckland home unfolded over a
-                        decade or so.
+                        <h3 class="text-2xl mb-3 font-PlayfairSerif">MATERIAL CONNECTION</h3>
+                        <div class="text-greyP text-sm font-Heebo">
+                            In a rural setting that feels far removed from the city on the
+                            outskirts of which it is located, this Auckland home unfolded over a
+                            decade or so.
+                        </div>
+                        <a href="" class="text-blueP">read more</a>
                     </div>
-                    <a href="" class="text-blueP">read more</a>
-                </div>
-                <div>
-                    <div class="mb-4">
-                        <span class="text-greyP font-light">25 July 2023</span>/<span class="text-blueP font-bold">Case
-                            Studies</span>
-                    </div>
-                    <img src="https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Te-Pae-Surf-Life-saving-Tower-FEATURED.jpg"
-                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
-                        srcset="
+                    <div>
+                        <div class="mb-4">
+                            <span class="text-greyP font-light">25 July 2023</span>/<span
+                                class="text-blueP font-bold">Case
+                                Studies</span>
+                        </div>
+                        <img src="https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Te-Pae-Surf-Life-saving-Tower-FEATURED.jpg"
+                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
+                            srcset="
                       https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Te-Pae-Surf-Life-saving-Tower-FEATURED.jpg          1200w,
                       https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Te-Pae-Surf-Life-saving-Tower-FEATURED-300x169.jpg   300w,
                       https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Te-Pae-Surf-Life-saving-Tower-FEATURED-1024x576.jpg 1024w,
                       https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Te-Pae-Surf-Life-saving-Tower-FEATURED-768x432.jpg   768w,
                       https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Te-Pae-Surf-Life-saving-Tower-FEATURED-600x338.jpg   600w
                     " sizes="(max-width: 1200px) 100vw, 1200px" />
-                    <h3 class="text-2xl mb-3 font-PlayfairSerif">ELEMENTAL</h3>
-                    <div class="text-greyP text-sm font-Heebo">
-                        Wedged between bush and sea, this Coromandel home is devised as a
-                        place of quiet; a place to bunker down, a place to escape to – and a
-                        place from which to enjoy the outdoors.
+                        <h3 class="text-2xl mb-3 font-PlayfairSerif">ELEMENTAL</h3>
+                        <div class="text-greyP text-sm font-Heebo">
+                            Wedged between bush and sea, this Coromandel home is devised as a
+                            place of quiet; a place to bunker down, a place to escape to – and a
+                            place from which to enjoy the outdoors.
+                        </div>
+                        <a href="" class="text-blueP">read more</a>
                     </div>
-                    <a href="" class="text-blueP">read more</a>
-                </div>
-                <div>
-                    <div class="mb-4">
-                        <span class="text-greyP text-greyP font-light">21 June 2023</span>/<span
-                            class="text-blueP font-bold">Case Studies</span>
-                    </div>
-                    <img src="https://www.peterfell.co.nz/wp-content/uploads/Untitled-1200-×-1000-px-1200-×-675-px.png"
-                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="
+                    <div>
+                        <div class="mb-4">
+                            <span class="text-greyP text-greyP font-light">21 June 2023</span>/<span
+                                class="text-blueP font-bold">Case Studies</span>
+                        </div>
+                        <img src="https://www.peterfell.co.nz/wp-content/uploads/Untitled-1200-×-1000-px-1200-×-675-px.png"
+                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="
                       https://www.peterfell.co.nz/wp-content/uploads/Untitled-1200-×-1000-px-1200-×-675-px.png          1200w,
                       https://www.peterfell.co.nz/wp-content/uploads/Untitled-1200-×-1000-px-1200-×-675-px-300x169.png   300w,
                       https://www.peterfell.co.nz/wp-content/uploads/Untitled-1200-×-1000-px-1200-×-675-px-1024x576.png 1024w,
                       https://www.peterfell.co.nz/wp-content/uploads/Untitled-1200-×-1000-px-1200-×-675-px-768x432.png   768w,
                       https://www.peterfell.co.nz/wp-content/uploads/Untitled-1200-×-1000-px-1200-×-675-px-600x338.png   600w
                     " sizes="(max-width: 1200px) 100vw, 1200px" />
-                    <h3 class="text-2xl mb-3 font-PlayfairSerif">URBAN GALLERY</h3>
-                    <div class="text-greyP text-sm font-Heebo">
-                        On the threshold between residential and commercial precincts, a
-                        concrete building was designed as a link between the two .
-                    </div>
-                    <a href="" class="text-blueP">read more</a>
-                    <div
-                        class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-24">
-                        View all articles
-                        <img src="../cards-case-studies/buttonPf.png" alt="buttonPf"
-                            class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0" />
+                        <h3 class="text-2xl mb-3 font-PlayfairSerif">URBAN GALLERY</h3>
+                        <div class="text-greyP text-sm font-Heebo">
+                            On the threshold between residential and commercial precincts, a
+                            concrete building was designed as a link between the two .
+                        </div>
+                        <a href="" class="text-blueP">read more</a>
+                        <div
+                            class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-24">
+                            View all articles
+                            <img src="../cards-case-studies/buttonPf.png" alt="buttonPf"
+                                class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0" />
+                        </div>
                     </div>
                 </div>
+                <div></div>
             </div>
-            <div></div>
-        </div>
-        <footer class="w-full h-1/2 bg-black">
-            <h2 class="text-white font-bold text-4xl md:text-7xl w-3/5 mb-4 font-PlayfairSerif">Specialists in coloured
-                concrete.</h2>
-            <h3 class="text-white font-bold text-4xl mb-4 font-PlayfairSerif">Visit our showroom.</h3>
-            <div class=" flex-wrap sm: md:flex">
-                <div class=" mb-4 md:w-1/3">
-                    <p class="text-greyP font-PlayfairSerif">81 Patiki Road,Rosebank</p>
-                    <p class="text-greyP font-PlayfairSerif">Auckland,New Zealand</p>
-                </div>
-                <div class=" mb-4 md:w-1/3">
-                    <div class="flex">
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                style="fill: white;">
-                                <path
-                                    d="M11.99 2C6.472 2 2 6.473 2 11.99c0 4.232 2.633 7.85 6.35 9.306-.088-.79-.166-2.006.034-2.868.182-.78 1.172-4.966 1.172-4.966s-.299-.599-.299-1.484c0-1.388.805-2.425 1.808-2.425.853 0 1.264.64 1.264 1.407 0 .858-.546 2.139-.827 3.327-.235.994.499 1.805 1.479 1.805 1.775 0 3.141-1.872 3.141-4.575 0-2.392-1.719-4.064-4.173-4.064-2.843 0-4.512 2.132-4.512 4.335 0 .858.331 1.779.744 2.28a.3.3 0 0 1 .069.286c-.076.315-.245.994-.277 1.133-.044.183-.145.222-.335.134-1.247-.581-2.027-2.405-2.027-3.871 0-3.151 2.289-6.045 6.601-6.045 3.466 0 6.159 2.469 6.159 5.77 0 3.444-2.171 6.213-5.184 6.213-1.013 0-1.964-.525-2.29-1.146l-.623 2.374c-.225.868-.834 1.956-1.241 2.62a10 10 0 0 0 2.958.445c5.517 0 9.99-4.473 9.99-9.99S17.507 2 11.99 2">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                style="fill: white ;">
-                                <path
-                                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                style="fill: white;">
-                                <path
-                                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                style="fill: white;">
-                                <path
-                                    d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z">
-                                </path>
-                                <circle cx="16.806" cy="7.207" r="1.078"></circle>
-                                <path
-                                    d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z">
-                                </path>
-                            </svg>
+            <footer class="w-full h-1/2 bg-black">
+                <h2 class="text-white font-bold text-4xl md:text-7xl w-3/5 mb-4 font-PlayfairSerif">Specialists in
+                    coloured
+                    concrete.</h2>
+                <h3 class="text-white font-bold text-4xl mb-4 font-PlayfairSerif">Visit our showroom.</h3>
+                <div class=" flex-wrap sm: md:flex">
+                    <div class=" mb-4 md:w-1/3">
+                        <p class="text-greyP font-PlayfairSerif">81 Patiki Road,Rosebank</p>
+                        <p class="text-greyP font-PlayfairSerif">Auckland,New Zealand</p>
+                    </div>
+                    <div class=" mb-4 md:w-1/3">
+                        <div class="flex">
                             <a href="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     style="fill: white;">
                                     <path
-                                        d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z">
+                                        d="M11.99 2C6.472 2 2 6.473 2 11.99c0 4.232 2.633 7.85 6.35 9.306-.088-.79-.166-2.006.034-2.868.182-.78 1.172-4.966 1.172-4.966s-.299-.599-.299-1.484c0-1.388.805-2.425 1.808-2.425.853 0 1.264.64 1.264 1.407 0 .858-.546 2.139-.827 3.327-.235.994.499 1.805 1.479 1.805 1.775 0 3.141-1.872 3.141-4.575 0-2.392-1.719-4.064-4.173-4.064-2.843 0-4.512 2.132-4.512 4.335 0 .858.331 1.779.744 2.28a.3.3 0 0 1 .069.286c-.076.315-.245.994-.277 1.133-.044.183-.145.222-.335.134-1.247-.581-2.027-2.405-2.027-3.871 0-3.151 2.289-6.045 6.601-6.045 3.466 0 6.159 2.469 6.159 5.77 0 3.444-2.171 6.213-5.184 6.213-1.013 0-1.964-.525-2.29-1.146l-.623 2.374c-.225.868-.834 1.956-1.241 2.62a10 10 0 0 0 2.958.445c5.517 0 9.99-4.473 9.99-9.99S17.507 2 11.99 2">
                                     </path>
                                 </svg>
                             </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    style="fill: white ;">
+                                    <path
+                                        d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    style="fill: white;">
+                                    <path
+                                        d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    style="fill: white;">
+                                    <path
+                                        d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z">
+                                    </path>
+                                    <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                                    <path
+                                        d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z">
+                                    </path>
+                                </svg>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: white;">
+                                        <path
+                                            d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z">
+                                        </path>
+                                    </svg>
+                                </a>
 
+                        </div>
+                        <p class="text-white font-PlayfairSerif font-bold">080042265687</p>
                     </div>
-                    <p class="text-white font-PlayfairSerif font-bold">080042265687</p>
+                    <div class="md:w-1/3">
+                        <h3 class="text-white font-bold text-4xl font-PlayfairSerif mb-8">Subscribe to our newsletter
+                        </h3>
+                        <div class="flex-wrap w-full lg: flex-none pr-4">
+                            <input type="text" placeholder="name"
+                                class="h-12 bg-black border-greyP border-2 w-full lg:w-1/2" />
+                            <input type="text" placeholder="email address"
+                                class="h-12 bg-black border-greyP border-2 w-full lg:w-1/2 " />
+                        </div>
+                        <div
+                            class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-24">
+                            Subscribe
+                            <img src="../footer/buttonPf.png" alt="buttonPf"
+                                class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0" />
+                        </div>
+                    </div>
                 </div>
-                <div class="md:w-1/3">
-                    <h3 class="text-white font-bold text-4xl font-PlayfairSerif mb-8">Subscribe to our newsletter</h3>
-                    <div class="flex-wrap w-full lg: flex-none pr-4">
-                        <input type="text" placeholder="name"
-                            class="h-12 bg-black border-greyP border-2 w-full lg:w-1/2" />
-                        <input type="text" placeholder="email address"
-                            class="h-12 bg-black border-greyP border-2 w-full lg:w-1/2 " />
-                    </div>
-                    <div
-                        class="create-look-desc-link group/myLink1 hover:text-black hover:border-black flex items-center gap-1 font-PlayfairSans text-xl font-bold text-blueP border-b-2 border-blueP w-fit transition-all duration-300 mt-24">
-                        Subscribe
-                        <img src="../footer/buttonPf.png" alt="buttonPf"
-                            class="pt-1 transition-all duration-300 group-hover/myLink1:brightness-0" />
-                    </div>
-                </div>
-            </div>
-            <p class="text-greyP font-PlayfairSerif mt-8 pb-8">@Peter Fell Ltd 2022 Designed by Forge</p>
-        </footer>
-    </div>
-</main>
+                <p class="text-greyP font-PlayfairSerif mt-8 pb-8">@Peter Fell Ltd 2022 Designed by Forge</p>
+            </footer>
+        </div>
+    </main>
     <script src="assets/js/home.js"></script>
 </body>
 
