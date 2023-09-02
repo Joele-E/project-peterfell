@@ -32,8 +32,8 @@
     }
   </style>
   <body>
-    <nav class="p-4 mt-5">
-      <div class="flex w-full mb-11 fixed top-7 right-3">
+    <nav class="p-4 mt-5 max-lg:p-0 max-xl:mt-0">
+      <div class="flex w-full mb-11 fixed top-7 right-3 max-lg:top-3">
         <div class="space w-full"></div>
         <img
           src="assets/Icon-Close-Blue-1.png"
@@ -42,7 +42,9 @@
           id="close-step"
         />
       </div>
-      <div class="flex items-center justify-between w-full text-sm mt-16">
+      <div
+        class="flex items-center justify-between w-full text-sm mt-16 max-lg:mt-10"
+      >
         <div class="w-full">
           <button
             class="items-center text-white bg-cBlue w-full h-10 cursor-not-allowed"
@@ -53,9 +55,9 @@
         <img
           src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
           alt="iconArrow"
-          class="cursor-not-allowed"
+          class="cursor-not-allowed max-lg:hidden"
         />
-        <div class="w-full">
+        <div class="w-full max-lg:hidden">
           <button
             class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
           >
@@ -65,9 +67,9 @@
         <img
           src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
           alt="iconArrow"
-          class="cursor-not-allowed opacity-25"
+          class="cursor-not-allowed opacity-25 max-lg:hidden"
         />
-        <div class="w-full">
+        <div class="w-full max-lg:hidden">
           <button
             class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
           >
@@ -77,9 +79,9 @@
         <img
           src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
           alt="iconArrow"
-          class="cursor-not-allowed opacity-25"
+          class="cursor-not-allowed opacity-25 max-lg:hidden"
         />
-        <div class="w-full">
+        <div class="w-full max-lg:hidden">
           <button
             class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
           >
@@ -89,9 +91,9 @@
         <img
           src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
           alt="iconArrow"
-          class="cursor-not-allowed opacity-25"
+          class="cursor-not-allowed opacity-25 max-lg:hidden"
         />
-        <div class="w-full">
+        <div class="w-full max-lg:hidden">
           <button
             class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
           >
@@ -101,9 +103,9 @@
         <img
           src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
           alt="iconArrow"
-          class="cursor-not-allowed opacity-25"
+          class="cursor-not-allowed opacity-25 max-lg:hidden"
         />
-        <div class="w-full">
+        <div class="w-full max-lg:hidden">
           <button
             class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
           >
@@ -112,22 +114,26 @@
         </div>
       </div>
     </nav>
-    <div class="step1Res hidden pt-6 max-screen5:block">
+    <!-- <div class="step1Res hidden pt-6 max-screen5:block">
       <button
         class="items-center text-white bg-cBlue w-[1000px] cursor-not-allowed max-h-[35px] text-sm p-2"
       >
         Step 1:<strong>Space</strong>
       </button>
-    </div>
-    <div class="modalBody mt-24 w-full flex justify-between box-border">
+    </div> -->
+    <div
+      class="modalBody mt-24 w-full flex justify-between box-border max-lg:mt-5"
+    >
       <div class="container flex max-w-full">
-        <div class="space w-1/6"></div>
+        <div class="space w-1/6 max-lg:hidden"></div>
         <div class="elements w-full">
-          <h1 class="font-PlayfairSerif text-7xl font-bold mb-5">
+          <h1
+            class="font-PlayfairSerif text-7xl font-bold mb-5 max-lg:text-5xl max-lg:p-5"
+          >
             Choose your space.
           </h1>
-          <div class="textAndImg flex w-5/6">
-            <div class="text p-5 w-2/6">
+          <div class="textAndImg flex w-5/6 max-lg:flex-col max-lg:w-full">
+            <div class="text p-5 w-2/6 max-lg:w-full">
               <h3
                 class="mb-5 text-2xl font-PlayfairSerif text-greyP leading-7 w-full"
               >
@@ -143,9 +149,11 @@
                 So click on the space you’re creating, and let’s get started.
               </p>
             </div>
-            <div class="imgLine1 flex w-4/6">
+            <div
+              class="imgLine1 flex w-4/6 max-lg:flex-col max-lg:w-full max-lg:mt-12"
+            >
               <div
-                class="img cursor-pointer p-5 mx-1 border border-white hover:border-gray-400"
+                class="img cursor-pointer p-5 mx-1 border border-white hover:border-gray-400 max-lg:m-0"
                 id="img-step1-1"
               >
                 <img
@@ -156,7 +164,7 @@
                 <p class="font-Heebo text-gray-400 text-2xl p-1">Floors</p>
               </div>
               <div
-                class="img cursor-pointer p-5 border border-white hover:border-gray-400"
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-lg:m-0"
                 id="img-step1-2"
               >
                 <img
@@ -170,10 +178,10 @@
               </div>
             </div>
           </div>
-          <div class="images cursor-pointer w-5/6">
-            <div class="imagesLine2 flex gap-2 justify-start">
+          <div class="images cursor-pointer w-5/6 max-lg:w-full">
+            <div class="imagesLine2 flex gap-2 justify-start max-lg:flex-col">
               <div
-                class="img cursor-pointer p-5 border border-white hover:border-gray-400"
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-lg:m-0"
                 id="img-step1-3"
               >
                 <img
@@ -186,7 +194,7 @@
                 </p>
               </div>
               <div
-                class="img cursor-pointer p-5 border border-white hover:border-gray-400"
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-lg:m-0"
                 id="img-step1-4"
               >
                 <img
@@ -197,7 +205,7 @@
                 <p class="font-Heebo text-gray-400 text-2xl p-1">Walls</p>
               </div>
               <div
-                class="img cursor-pointer p-5 border border-white hover:border-gray-400"
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-lg:m-0"
                 id="img-step1-5"
               >
                 <img
@@ -210,9 +218,11 @@
                 </p>
               </div>
             </div>
-            <div class="imagesLine3 flex gap-2 justify-start w-2/3">
+            <div
+              class="imagesLine3 flex gap-2 justify-start w-2/3 max-lg:flex-col max-lg:w-full"
+            >
               <div
-                class="img cursor-pointer p-5 border border-white hover:border-gray-400 w-1/2"
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 w-1/2 max-lg:w-full max-lg:m-0"
                 id="img-step1-6"
               >
                 <img
@@ -223,7 +233,7 @@
                 <p class="font-Heebo text-gray-400 text-2xl p-1">Commercial</p>
               </div>
               <div
-                class="img cursor-pointer p-5 border border-white hover:border-gray-400 w-1/2"
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 w-1/2 mb-32 max-lg:w-full max-lg:m-0 max-lg:mb-48"
                 id="img-step1-7"
               >
                 <img
@@ -239,18 +249,26 @@
           </div>
         </div>
       </div>
-      <div class="buttonP hover:brightness-110 fixed -right-0" id="btn-1">
+      <div
+        class="buttonP hover:brightness-110 fixed rotate-90 mt-20 -right-24 max-lg:block max-lg:-left-0 max-lg:-bottom-0 max-lg:w-full max-lg:rotate-180"
+        id="btn-1"
+      >
         <button
-          class="text-btn flex items-center text-white bg-cBlue pr-6 h-72"
+          class="text-btn flex flex-col items-center text-white bg-cBlue p-4 pt-8 h-24 w-72 max-lg:h-16 max-lg:w-full max-lg:pr-0 max-lg:justify-center max-lg:flex-row"
         >
+          <p class="font-Heebo font-bold text-xl max-lg:hidden lg:visible">
+            Choose your colour
+          </p>
+          <p
+            class="font-Heebo font-bold text-xl lg:hidden max-lg:visible max-lg:font-semibold"
+          >
+            Next
+          </p>
           <img
             src="assets/arrow_forward-white.svg"
             alt="iconArrow"
-            class="brightness-[.8] rotate-180"
+            class="brightness-[.8] rotate-90 max-lg:rotate-0"
           />
-          <p class="[writing-mode:vertical-lr] font-Heebo font-bold text-xl">
-            Choose your colour
-          </p>
         </button>
       </div>
     </div>
