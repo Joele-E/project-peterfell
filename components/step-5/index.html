@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blueP: "#7a99ac",
+              greyP: "#6d6e70",
+              cBlue: "#7a99ac",
+              lDark: "#404041",
+            },
+            fontFamily: {
+              Heebo: ["Heebo", "sans-serif"],
+              PlayfairSerif: ["Playfair Display", "serif"],
+              PlayfairSans: ["Playfair Display", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href=" https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap "
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href=" https://fonts.googleapis.com/ " />
+    <link rel="preconnect" href=" https://fonts.gstatic.com/ " crossorigin />
+    <link
+      href=" https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap "
+      rel="stylesheet"
+    />
+    <title>Step5</title>
+  </head>
+  <body>
+    <nav class="p-4 mt-5 max-lg:p-0 max-xl:mt-0">
+      <div class="flex w-full mb-11 fixed top-7 right-3 max-lg:top-3">
+        <div class="space w-full"></div>
+        <img
+          src="assets/Icon-Close-Blue-1.png"
+          alt=""
+          class="cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75"
+          id="close-step"
+        />
+      </div>
+      <div
+        class="flex items-center justify-between w-full text-sm mt-16 max-lg:mt-10"
+      >
+        <div class="w-full">
+          <button class="items-center text-white p-2 bg-greyP w-full">
+            Step 1:<strong>Space</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-pointer max-lg:hidden"
+        />
+        <div class="w-full max-lg:hidden">
+          <button class="items-center text-white p-2 bg-greyP w-full">
+            Step 2:<strong>Colour</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-pointer max-lg:hidden"
+        />
+        <div class="w-full max-lg:hidden">
+          <button class="items-center text-white p-2 bg-greyP w-full">
+            Step 3:<strong>Texture</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-pointer max-lg:hidden"
+        />
+        <div class="w-full max-lg:hidden">
+          <button class="items-center text-white p-2 bg-greyP w-full">
+            Step 4:<strong>Patterns</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-pointer max-lg:hidden"
+        />
+        <div class="w-full max-lg:hidden">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed"
+          >
+            Step 5:<strong>Protection</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed max-lg:hidden"
+        />
+        <div class="w-full max-lg:hidden">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+          >
+            <strong>Confirmation</strong>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="modalBody mt-32 flex">
+      <div class="space w-1/6"></div>
+      <div class="cont">
+        <div class="container1 flex w-full p-2">
+          <div class="text_img flex">
+            <div class="text w-7/12">
+              <div class="title_text">
+                <h1 class="title font-PlayfairSerif font-bold text-7xl">
+                  Choose your protection.
+                </h1>
+                <div class="text w-2/3 mt-12 ml-12">
+                  <p class="text-2xl font-PlayfairSerif text-greyP leading-7">
+                    Your coloured concrete is laid. Now it’s time to protect it
+                    from staining and marking.
+                  </p>
+                  <p class="font-Heebo text-gray-400 text-lg leading-5 mt-5">
+                    Sealing or polishing the concrete surface makes it easy to
+                    clean, maintain and prolongs the life of your concrete. The
+                    sealer you choose has an impact on the final look and feel,
+                    it also provides the finishing touch to your space.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="textImg_img w-1/4">
+              <img src="assets/coloured-concrete.png" alt="imgColoured" />
+              <div class="textImg font-Heebo text-gray-400 leading-6 text-lg">
+                <p>
+                  The use of different sealers will impact on the final colour,
+                  as you’ll see from the swatches we supply.
+                </p>
+                <p class="my-3">
+                  <b class="text-zinc-500">A</b> = PFL Acrylic Sealer, PFL Epoxy
+                  Sealer & PFL C2 Polish Concrete
+                </p>
+                <p class="mb-3">
+                  <b class="text-zinc-500">B</b> = PFL Natural Sealer
+                </p>
+                <p>
+                  <b class="text-zinc-500">C</b> = PFL Glaze Sealer & PFL Satin
+                  Sealer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2 p-2 mt-32">
+          <h2 class="font-PlayfairSerif font-bold text-4xl">
+            Recommended concrete sealers or densifiers for your
+          </h2>
+          <div class="subgroup flex mt-10 w-11/12">
+            <div class="groups grid grid-cols-2 grid-rows-4 w-3/5 gap-2">
+              <div
+                class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
+              >
+                <div class="img w-2/6 mt-3">
+                  <img src="assets/C2-Gloss-10L.png" alt="" />
+                </div>
+                <div class="text_table w-full">
+                  <div class="text flex w-full">
+                    <p class="text-2xl font-PlayfairSerif text-greyP">
+                      PFL C<span class="">2</span>Gloss
+                    </p>
+                    <div class="info w-4 flex items-center ml-2">
+                      <img src="assets/info-circle-solid-24.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="table w-full">
+                    <div class="type flex gap-[26px] font-Heebo text-gray-400">
+                      <p>Type:</p>
+                      <p>Densifier</p>
+                    </div>
+                    <div class="const flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400">Const:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                      </div>
+                    </div>
+                    <div class="lasts flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400 mr-[3px]">Lasts:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gloss flex items-center gap-5">
+                    <p class="font-Heebo text-gray-400 mr-[1.5px]">Gloss:</p>
+                    <div class="cont_grade flex gap-1 h-4 w-3/4">
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
+              >
+                <div class="img w-2/6 mt-3">
+                  <img src="assets/f16-PFL-Acrylic-Sealer-2L.png" alt="" />
+                </div>
+                <div class="text_table w-full">
+                  <div class="text flex w-full">
+                    <p class="text-2xl font-PlayfairSerif text-greyP">
+                      PFL Acrylic Sealer
+                    </p>
+                    <div class="info w-4 flex items-center ml-2">
+                      <img src="assets/info-circle-solid-24.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="table w-full">
+                    <div class="type flex gap-[26px] font-Heebo text-gray-400">
+                      <p>Type:</p>
+                      <p>Water based</p>
+                    </div>
+                    <div class="const flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400">Const:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                      </div>
+                    </div>
+                    <div class="lasts flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400 mr-[3px]">Lasts:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gloss flex items-center gap-5">
+                    <p class="font-Heebo text-gray-400 mr-[1.5px]">Gloss:</p>
+                    <div class="cont_grade flex gap-1 h-4 w-3/4">
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade border border-cBlue w-full"></div>
+                      <div class="grade border border-cBlue w-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
+              >
+                <div class="img w-2/6 mt-3">
+                  <img src="assets/f16-PFL-Glaze-Sealer-2L.png" alt="" />
+                </div>
+                <div class="text_table w-full">
+                  <div class="text flex w-full">
+                    <p class="text-2xl font-PlayfairSerif text-greyP">
+                      PFL Glaze Sealer
+                    </p>
+                    <div class="info w-4 flex items-center ml-2">
+                      <img src="assets/info-circle-solid-24.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="table w-full">
+                    <div class="type flex gap-[26px] font-Heebo text-gray-400">
+                      <p>Type:</p>
+                      <p>Water-based</p>
+                    </div>
+                    <div class="const flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400">Const:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                      </div>
+                    </div>
+                    <div class="lasts flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400 mr-[3px]">Lasts:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gloss flex items-center gap-5">
+                    <p class="font-Heebo text-gray-400 mr-[1.5px]">Gloss:</p>
+                    <div class="cont_grade flex gap-1 h-4 w-3/4">
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade border border-cBlue w-full"></div>
+                      <div class="grade border border-cBlue w-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
+              >
+                <div class="img w-2/6 mt-3">
+                  <img src="assets/C2-Shield-10L.png" alt="" />
+                </div>
+                <div class="text_table w-full">
+                  <div class="text flex w-full">
+                    <p class="text-2xl font-PlayfairSerif text-greyP">
+                      PFL C<span class="">2</span>Shield
+                    </p>
+                    <div class="info w-4 flex items-center ml-2">
+                      <img src="assets/info-circle-solid-24.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="table w-full">
+                    <div class="type flex gap-[26px] font-Heebo text-gray-400">
+                      <p>Type:</p>
+                      <p>Densifier</p>
+                    </div>
+                    <div class="const flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400">Const:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                      </div>
+                    </div>
+                    <div class="lasts flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400 mr-[3px]">Lasts:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gloss flex items-center gap-5">
+                    <p class="font-Heebo text-gray-400 mr-[1.5px]">Gloss:</p>
+                    <div class="cont_grade flex gap-1 h-4 w-3/4">
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade border border-cBlue w-full"></div>
+                      <div class="grade border border-cBlue w-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
+              >
+                <div class="img w-2/6 mt-3">
+                  <img src="assets/C2-Gloss-10L.png" alt="" />
+                </div>
+                <div class="text_table w-full">
+                  <div class="text flex w-full">
+                    <p class="text-2xl font-PlayfairSerif text-greyP">
+                      PFL Epoxy Sealer
+                    </p>
+                    <div class="info w-4 flex items-center ml-2">
+                      <img src="assets/info-circle-solid-24.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="table w-full">
+                    <div class="type flex gap-[26px] font-Heebo text-gray-400">
+                      <p>Type:</p>
+                      <p>Water-based</p>
+                    </div>
+                    <div class="const flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400">Const:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                      </div>
+                    </div>
+                    <div class="lasts flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400 mr-[3px]">Lasts:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade border border-cBlue w-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gloss flex items-center gap-5">
+                    <p class="font-Heebo text-gray-400 mr-[1.5px]">Gloss:</p>
+                    <div class="cont_grade flex gap-1 h-4 w-3/4">
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade border border-cBlue w-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
+              >
+                <div class="img w-2/6 mt-3">
+                  <img src="assets/C2-Super-Hard-Label-10L.png" alt="" />
+                </div>
+                <div class="text_table w-full">
+                  <div class="text flex w-full">
+                    <p class="text-2xl font-PlayfairSerif text-greyP">
+                      PFL C<span class="">2</span>Super Hard
+                    </p>
+                    <div class="info w-4 flex items-center ml-2">
+                      <img src="assets/info-circle-solid-24.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="table w-full">
+                    <div class="type flex gap-[26px] font-Heebo text-gray-400">
+                      <p>Type:</p>
+                      <p>Water-based</p>
+                    </div>
+                    <div class="const flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400">Const:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                      </div>
+                    </div>
+                    <div class="lasts flex items-center gap-5">
+                      <p class="font-Heebo text-gray-400 mr-[3px]">Lasts:</p>
+                      <div class="cont_grade flex gap-1 h-4 w-3/4">
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                        <div class="grade bg-cBlue w-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gloss flex items-center gap-5">
+                    <p class="font-Heebo text-gray-400 mr-[1.5px]">Gloss:</p>
+                    <div class="cont_grade flex gap-1 h-4 w-3/4">
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                      <div class="grade bg-cBlue w-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imgTanica"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
