@@ -21,6 +21,7 @@
             colors: {
               blueP: "#7a99ac",
               greyP: "#6d6e70",
+              cBlue:"#7a99ac"
             },
             fontFamily: {
               Heebo: ["Heebo", "sans-serif"],
@@ -115,7 +116,7 @@
           </div>
         </div>
       </nav>
-      <div class="buttonP hover:brightness-110 fixed rotate-180 mt-24" id="btn-prev">
+      <div class="buttonP hover:brightness-110 fixed rotate-180 mt-24 max-[950px]:hidden min-[950px]:visible">
         <button
           class="text-btn flex items-center text-white bg-cBlue pr-6 h-72"
         >
@@ -129,7 +130,7 @@
           </p>
         </button>
       </div>
-      <div class="buttonP hover:brightness-110 fixed -right-0 mt-24" id="btn-1">
+      <div class="buttonP hover:brightness-110 fixed -right-0 mt-24 max-[950px]:hidden min-[950px]:visible" id="btn-1">
         <button
           class="text-btn flex items-center text-white bg-cBlue pr-6 h-72"
         >
@@ -1119,6 +1120,38 @@
           </div>
           <div class="w-[2/5]"><img src="" alt="" id="img-choice-step2 max-lg:fixed max-lg:w-[94px] max-lg:h-[71px] max-lg:-right-0">ciaoooo</div>
         </div>
+      </div>
+      <div class="buttonRight mt-24">
+        <button
+          class="min-[950px]:hidden fixed flex border-2 border-cBlue p-2 items-center bottom-0 w-[50vw] justify-center bg-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="white"
+            height="42"
+            viewBox="0 -960 960 960"
+            width="48"
+            class="fill-cBlue rotate-180"
+          >
+            <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+          </svg>
+          <p class="font-Heebo font-bold text-xl text-cBlue">Previous</p>
+        </button>
+        <button
+          class="min-[950px]:hidden fixed flex flex-row-reverse border-2 border-cBlue p-2 items-center bottom-0 w-1/2 justify-center bg-cBlue right-0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="white"
+            height="42"
+            viewBox="0 -960 960 960"
+            width="48"
+            class="fill-white opacity-40"
+          >
+            <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+          </svg>
+          <p class="font-Heebo font-bold text-xl text-white">Next</p>
+        </button>
       </div>
     </main>
   </body>
