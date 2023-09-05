@@ -197,6 +197,19 @@ class DesignTool {
   };
 
   addEventsStep3 = () => {
+    let recText = document.getElementById("step3-reccomended");
+    let recs = [
+      "Floors",
+      "Patios & courtyards",
+      "DriveWays & paths",
+      "Walls",
+      "Pool surrounds",
+      "Commercial",
+      "Public spaces",
+    ];
+    let step1Choice = JSON.parse(localStorage.getItem("choices"))["1"];
+    let myIndex = step1Choice.split("-")[2];
+    recText.innerText = recs[myIndex - 1];
     let textures = document.querySelectorAll(".texture");
     textures.forEach((el) => {
       el.addEventListener("click", () => {
