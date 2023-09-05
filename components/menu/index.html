@@ -1,190 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://kit.fontawesome.com/8c02bb5e5e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              blueP: "#7a99ac",
-              greyP: "#6d6e70",
-            },
-            fontFamily: {
-              Heebo: ["Heebo", "sans-serif"],
-              PlayfairSerif: ["Playfair Display", "serif"],
-              PlayfairSans: ["Playfair Display", "sans-serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/8c02bb5e5e.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blueP: "#7a99ac",
+            greyP: "#6d6e70",
+          },
+          fontFamily: {
+            Heebo: ["Heebo", "sans-serif"],
+            PlayfairSerif: ["Playfair Display", "serif"],
+            PlayfairSans: ["Playfair Display", "sans-serif"],
           },
         },
-      };
-    </script>
-    <!-- Style hover icon di prova -->
-    <style>
-      .icon:hover {
-        filter: invert(0.27) sepia(1) saturate(15.4) hue-rotate(180deg)
-          brightness(0.5);
-      }
-    </style>
-  </head>
-  <body class="bg-black">
-    <div class="container max-w-full p-2 bg-black">
-      <div class="navbarMenu w-full flex items-center justify-between p-3 mt-2">
-        <div class="text-4xl font-Heebo text-white mb-3 cursor-pointer">
-          <span>Peter</span><span class="text-blueP">Fell</span>
-        </div>
-        <div
-          class="close space items-center cursor-pointer hover:brightness-50 transition delay-75"
-          id="closeMenu"
-        >
-          <img src="assets/Icon-Close-Menu.png" alt="imgCloseMenù" />
-        </div>
+      },
+    };
+  </script>
+  <!-- Style hover icon di prova -->
+  <style>
+    .icon:hover {
+      filter: invert(0.27) sepia(1) saturate(15.4) hue-rotate(180deg) brightness(0.5);
+    }
+  </style>
+</head>
+
+<body class="bg-black">
+  <div class="container max-w-full p-2 bg-black h-screen">
+    <div class="navbarMenu w-full flex items-center justify-between p-3 mt-2">
+      <div class="text-4xl font-Heebo text-white mb-3 cursor-pointer">
+        <span>Peter</span><span class="text-blueP">Fell</span>
       </div>
-      <div
-        class="modalBody max-w-full flex my-[191.5px] justify-center max-2xl:ml-0 max-2xl:my-40 max-xl:ml-20 max-lg:flex-col max-lg:my-0 max-lg:p-2 max-md:p-0 max-md:mt-5"
-      >
+      <div class="close space items-center cursor-pointer hover:brightness-50 transition delay-75" id="closeMenu">
+        <img src="assets/Icon-Close-Menu.png" alt="imgCloseMenù" />
+      </div>
+    </div>
+    <div
+      class="modalBody max-w-full flex my-[191.5px] justify-center max-2xl:ml-0 max-2xl:my-40 max-xl:ml-20 max-lg:flex-col max-lg:my-0 max-lg:p-2 max-md:p-0 max-md:mt-5">
+      <div class="col1 w-1/4 max-2xl:w-1/3 max-xl:w-1/2 max-lg:mb-10 max-lg:w-full">
         <div
-          class="col1 w-1/4 max-2xl:w-1/3 max-xl:w-1/2 max-lg:mb-10 max-lg:w-full"
-        >
-          <div
-            class="text-white font-PlayfairSerif font-semibold text-4xl cursor-pointer max-md:text-2xl max-md:delay-[500ms]"
-          >
-            <div class="cont group/myLink1">
-              <div class="text&s flex gap-10 items-center">
-                <div
-                  class="text group-hover/myLink1:text-blueP transition delay-100"
-                >
-                  Choose your space
-                </div>
-                <div class="iconGreater text-lg mt-2">
-                  <img src="assets/greater.svg" alt="iconGreater" />
-                </div>
+          class="text-white font-PlayfairSerif font-semibold text-4xl cursor-pointer max-md:text-2xl max-md:delay-[500ms]">
+          <div class="cont group/myLink1">
+            <div class="text&s flex gap-10 items-center">
+              <div class="text group-hover/myLink1:text-blueP transition delay-100">
+                Choose your space
+              </div>
+              <div class="iconGreater text-lg mt-2">
+                <img src="assets/greater.svg" alt="iconGreater" />
               </div>
             </div>
-            <div class="cont group/myLink1 my-10">
-              <div class="text&s flex gap-10 items-center">
-                <div
-                  class="text group-hover/myLink1:text-blueP transition delay-100"
-                >
-                  Colour range
-                </div>
-                <div class="iconGreater text-lg mt-2">
-                  <img src="assets/greater.svg" alt="iconGreater" />
-                </div>
+          </div>
+          <div class="cont group/myLink1 my-10">
+            <div class="text&s flex gap-10 items-center">
+              <div class="text group-hover/myLink1:text-blueP transition delay-100">
+                Colour range
+              </div>
+              <div class="iconGreater text-lg mt-2">
+                <img src="assets/greater.svg" alt="iconGreater" />
               </div>
             </div>
-            <div class="cont group/myLink1 my-10">
-              <div class="text&s flex gap-10 items-center">
-                <div
-                  class="text group-hover/myLink1:text-blueP transition delay-100"
-                >
-                  Polished concrete
-                </div>
-                <div class="iconGreater text-lg mt-2">
-                  <img src="assets/greater.svg" alt="iconGreater" />
-                </div>
+          </div>
+          <div class="cont group/myLink1 my-10">
+            <div class="text&s flex gap-10 items-center">
+              <div class="text group-hover/myLink1:text-blueP transition delay-100">
+                Polished concrete
+              </div>
+              <div class="iconGreater text-lg mt-2">
+                <img src="assets/greater.svg" alt="iconGreater" />
               </div>
             </div>
-            <div class="cont group/myLink1 my-10">
-              <div class="text&s flex gap-10 items-center">
-                <div
-                  class="text group-hover/myLink1:text-blueP transition delay-100"
-                >
-                  Texture Safe System
-                </div>
+          </div>
+          <div class="cont group/myLink1 my-10">
+            <div class="text&s flex gap-10 items-center">
+              <div class="text group-hover/myLink1:text-blueP transition delay-100">
+                Texture Safe System
               </div>
             </div>
-            <div class="cont group/myLink1 my-10">
-              <div class="text&s flex gap-10 items-center">
-                <div
-                  class="text group-hover/myLink1:text-blueP transition delay-100"
-                >
-                  Products
-                </div>
-                <div class="iconGreater text-lg mt-2">
-                  <img src="assets/greater.svg" alt="iconGreater" />
-                </div>
+          </div>
+          <div class="cont group/myLink1 my-10">
+            <div class="text&s flex gap-10 items-center">
+              <div class="text group-hover/myLink1:text-blueP transition delay-100">
+                Products
+              </div>
+              <div class="iconGreater text-lg mt-2">
+                <img src="assets/greater.svg" alt="iconGreater" />
               </div>
             </div>
-            <div class="cont group/myLink1">
-              <div class="text&s flex gap-10 items-center">
-                <div
-                  class="text group-hover/myLink1:text-blueP transition delay-100"
-                >
-                  Contact us
-                </div>
-                <div class="iconGreater text-lg mt-2">
-                  <img src="assets/greater.svg" alt="iconGreater" />
-                </div>
+          </div>
+          <div class="cont group/myLink1">
+            <div class="text&s flex gap-10 items-center">
+              <div class="text group-hover/myLink1:text-blueP transition delay-100">
+                Contact us
+              </div>
+              <div class="iconGreater text-lg mt-2">
+                <img src="assets/greater.svg" alt="iconGreater" />
               </div>
             </div>
           </div>
         </div>
-        <div class="space w-1/12 max-xl:w-2"></div>
-        <div class="col2">
-          <div class="text-gray-500 font-Heebo text-xl cursor-pointer">
-            <div class="cont hover:text-blueP transition delay-100">
-              Rejuvenate your concrete
+      </div>
+      <div class="space w-1/12 max-xl:w-2"></div>
+      <div class="col2">
+        <div class="text-gray-500 font-Heebo text-xl cursor-pointer">
+          <div class="cont hover:text-blueP transition delay-100">
+            Rejuvenate your concrete
+          </div>
+          <div class="cont flex gap-10 my-5 group/myLink1">
+            <p class="group-hover/myLink1:text-blueP transition delay-100">
+              Technical
+            </p>
+            <div class="iconGreater text-lg mt-1">
+              <img src="assets/greater.svg" alt="iconGreater" />
             </div>
-            <div class="cont flex gap-10 my-5 group/myLink1">
-              <p class="group-hover/myLink1:text-blueP transition delay-100">
-                Technical
-              </p>
-              <div class="iconGreater text-lg mt-1">
-                <img src="assets/greater.svg" alt="iconGreater" />
-              </div>
+          </div>
+          <div class="cont hover:text-blueP transition delay-100">
+            News & case studies
+          </div>
+          <div class="cont my-5 hover:text-blueP transition delay-100">
+            Sustainability
+          </div>
+          <div class="icons flex gap-3 mt-8 mb-5">
+            <div class="icon">
+              <img src="assets/pinterest.svg" alt="iconPinterest" />
             </div>
-            <div class="cont hover:text-blueP transition delay-100">
-              News & case studies
+            <div class="icon">
+              <img src="assets/facebook.svg" alt="iconFacebook" />
             </div>
-            <div class="cont my-5 hover:text-blueP transition delay-100">
-              Sustainability
+            <div class="icon">
+              <img src="assets/linkedin.svg" alt="iconLinkedin" />
             </div>
-            <div class="icons flex gap-3 mt-8 mb-5">
-              <div class="icon">
-                <img src="assets/pinterest.svg" alt="iconPinterest" />
-              </div>
-              <div class="icon">
-                <img src="assets/facebook.svg" alt="iconFacebook" />
-              </div>
-              <div class="icon">
-                <img src="assets/linkedin.svg" alt="iconLinkedin" />
-              </div>
-              <div class="icon">
-                <img src="assets/instagram.svg" alt="iconInstagram" />
-              </div>
-              <div class="icon">
-                <img src="assets/youtube.svg" alt="iconYouTube" />
-              </div>
+            <div class="icon">
+              <img src="assets/instagram.svg" alt="iconInstagram" />
             </div>
-            <div
-              class="number text-white font-Heebo font-semibold text-lg mb-5"
-            >
-              0800 422 65687
+            <div class="icon">
+              <img src="assets/youtube.svg" alt="iconYouTube" />
             </div>
-            <div class="searchbar flex items-center border-b w-60">
-              <input
-                class="inputSearch bg-transparent outline-none p-2 w-60 text-lg text-greyP"
-                type="text"
-                placeholder="Search..."
-                class="text"
-              />
-              <img
-                class="lente w-8"
-                src="assets/lenteIngrandimento.png"
-                alt="lente"
-              />
-            </div>
+          </div>
+          <div class="number text-white font-Heebo font-semibold text-lg mb-5">
+            0800 422 65687
+          </div>
+          <div class="searchbar flex items-center border-b w-60">
+            <input class="inputSearch bg-transparent outline-none p-2 w-60 text-lg text-greyP" type="text"
+              placeholder="Search..." class="text" />
+            <img class="lente w-8" src="assets/lenteIngrandimento.png" alt="lente" />
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

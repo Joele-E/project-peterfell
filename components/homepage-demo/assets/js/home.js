@@ -112,7 +112,7 @@ class DesignTool {
 
   openDesignTool = () => {
     // console.log(this.steps[`${this.currentStep}`]);
-    fetch(this.steps[this.currentStep - 1])
+    return fetch(this.steps[this.currentStep - 1])
       .then((res) => res.text())
       .then((myPage) => {
         let parser = new DOMParser();
@@ -244,7 +244,9 @@ class DesignTool {
     // console.log("funziona");
     this.currentStep++;
     this.clearDiv();
-    this.openDesignTool();
+    this.openDesignTool()
+      .then()
+      .catch((err) => console.error(err));
   };
   prevPage = () => {
     this.currentStep--;
