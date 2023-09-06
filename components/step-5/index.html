@@ -36,60 +36,67 @@
     <title>Step5</title>
   </head>
   <body>
-    <nav class="p-4 mt-5 max-lg:p-0 max-xl:mt-0">
-      <div class="flex w-full mb-11 fixed top-7 right-3 max-lg:top-3">
+    <nav class="p-4 mt-5 min-[0px]:hidden min-[950px]:flex">
+      <div class="flex w-full mb-11 fixed top-7 right-3">
         <div class="space w-full"></div>
         <img
           src="assets/Icon-Close-Blue-1.png"
           alt=""
-          class="cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75"
-          id="close-step5"
+          id="close-step3"
+          class="cursor-pointer hover:brightness-125 transition delay-75"
+          id="close-step"
         />
       </div>
-      <div
-        class="flex items-center justify-between w-full text-sm mt-16 max-lg:mt-10"
-      >
+      <div class="flex items-center justify-between w-full text-sm mt-16">
         <div class="w-full">
-          <button class="items-center text-white p-2 bg-greyP w-full">
+          <button
+            class="items-center text-white bg-slate-900 w-full h-10 opacity-50"
+          >
             Step 1:<strong>Space</strong>
           </button>
         </div>
         <img
           src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
           alt="iconArrow"
-          class="cursor-pointer max-lg:hidden"
+          class=""
         />
-        <div class="w-full max-lg:hidden">
-          <button class="items-center text-white p-2 bg-greyP w-full">
+        <div class="w-full">
+          <button
+            class="items-center text-white p-2 bg-slate-900 w-full opacity-50"
+          >
             Step 2:<strong>Colour</strong>
           </button>
         </div>
         <img
           src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
           alt="iconArrow"
-          class="cursor-pointer max-lg:hidden"
+          class="cursor-pointer"
         />
-        <div class="w-full max-lg:hidden">
-          <button class="items-center text-white p-2 bg-greyP w-full">
+        <div class="w-full">
+          <button
+            class="items-center text-white p-2 bg-slate-900 opacity-50 w-full"
+          >
             Step 3:<strong>Texture</strong>
           </button>
         </div>
         <img
           src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
           alt="iconArrow"
-          class="cursor-pointer max-lg:hidden"
+          class="cursor-pointer"
         />
-        <div class="w-full max-lg:hidden">
-          <button class="items-center text-white p-2 bg-greyP w-full">
+        <div class="w-full">
+          <button
+            class="items-center text-white p-2 bg-slate-900 opacity-50 w-full"
+          >
             Step 4:<strong>Patterns</strong>
           </button>
         </div>
         <img
           src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
           alt="iconArrow"
-          class="cursor-pointer max-lg:hidden"
+          class="cursor-pointer"
         />
-        <div class="w-full max-lg:hidden">
+        <div class="w-full">
           <button
             class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed"
           >
@@ -99,15 +106,30 @@
         <img
           src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
           alt="iconArrow"
-          class="cursor-not-allowed max-lg:hidden"
+          class="cursor-not-allowed opacity-25"
         />
-        <div class="w-full max-lg:hidden">
+        <div class="w-full">
           <button
             class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
           >
             <strong>Confirmation</strong>
           </button>
         </div>
+      </div>
+    </nav>
+    <nav class="min-[950px]:hidden w-screen flex flex-col gap-2">
+      <img
+        src="assets/Icon-Close-Blue-1.png"
+        alt=""
+        id="close-step3-small"
+        class="h-6 ml-auto cursor-pointer hover:brightness-125 transition delay-75 mt-2"
+        id="close-step"
+      />
+
+      <div class="w-screen flex">
+        <button class="text-white bg-cBlue w-screen h-10">
+          Step 5:<strong>Protection</strong>
+        </button>
       </div>
     </nav>
     <div class="modalBody mt-32 flex">
@@ -156,11 +178,11 @@
             </div>
           </div>
         </div>
-        <div class="container2 p-2 mt-32 flex">
+        <div class="container2 p-2 mt-32">
           <h2 class="font-PlayfairSerif font-bold text-4xl">
             Recommended concrete sealers or densifiers for your
           </h2>
-          <div class="subgroup flex mt-10 w-11/12">
+          <div class="subgroup flex mt-10">
             <div class="groups grid grid-cols-2 grid-rows-4 w-3/5 gap-2">
               <div
                 class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
@@ -487,9 +509,14 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="imgTanica">
-            <img src="" alt="" id="texture-imgL" class="max-w-[100px]" />
+            <div class="imgTanica max-w-[400px]">
+              <img
+                src="assets/C2-Gloss-10L.png"
+                alt=""
+                id="texture-imgL"
+                class=""
+              />
+            </div>
           </div>
         </div>
       </div>
