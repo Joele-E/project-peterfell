@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blueP: "#7a99ac",
+                        greyP: "#6d6e70",
+                        cBlue: "#7a99ac",
+                        lDark: "#404041",
+                    },
+                    fontFamily: {
+                        Heebo: ["Heebo", "sans-serif"],
+                        PlayfairSerif: ["Playfair Display", "serif"],
+                        PlayfairSans: ["Playfair Display", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <nav class="p-4 mt-5 min-[0px]:hidden min-[950px]:flex ">
+        <div class="flex w-full mb-11 fixed top-7 right-3">
+            <div class="space w-full"></div>
+            <img src="assets/Icon-Close-Blue-1.png" alt="" id="close-step3"
+                class="cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75" id="close-step" />
+        </div>
+        <div class="flex items-center justify-between w-full text-sm mt-16">
+            <div class="w-full">
+                <button class="items-center text-white bg-slate-900 w-full h-10 cursor-not-allowed opacity-50">
+                    Step 1:<strong>Space</strong>
+                </button>
+            </div>
+            <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
+                class="cursor-not-allowed opacity-40" />
+            <div class="w-full">
+                <button class="items-center text-white p-2 bg-slate-900 w-full cursor-not-allowed opacity-50">
+                    Step 2:<strong>Colour</strong>
+                </button>
+            </div>
+            <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
+                class="cursor-not-allowed opacity-40" />
+            <div class="w-full">
+                <button class="items-center text-white p-2  bg-slate-900 w-full cursor-not-allowed opacity-50">
+                    Step 3:<strong>Texture</strong>
+                </button>
+            </div>
+            <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
+                class="cursor-not-allowed opacity-40 " />
+            <div class="w-full">
+                <button class="items-center text-white p-2  bg-slate-900 w-full cursor-not-allowed opacity-50">
+                    Step 4:<strong>Patterns</strong>
+                </button>
+            </div>
+            <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
+                class="cursor-not-allowed opacity-40" />
+            <div class="w-full">
+                <button class="items-center text-white p-2  bg-slate-900 w-full cursor-not-allowed opacity-50">
+                    Step 5:<strong>Protection</strong>
+                </button>
+            </div>
+            <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
+                class="cursor-not-allowed opacity-40" />
+            <div class="w-full">
+                <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed">
+                    <strong>Confirmation</strong>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <nav class="min-[950px]:hidden mb-20 w-screen flex flex-col">
+        <img src="assets/Icon-Close-Blue-1.png" alt="" id="close-step3-small"
+            class="h-6 ml-auto  cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75" id="close-step" />
+
+        <div class="w-screen flex">
+            <button class="text-white bg-cBlue w-screen h-10 ">
+                <strong>Confirmation</strong>
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="containermain mt-24">
+        <div class="buttonLeft"><button id="btn-prev"
+                class="min-[0px]:hidden min-[950px]:fixed min-[950px]:left-0 min-[950px]:rotate-180 text-btn min-[950px]:flex min-[950px]:flex-row-reverse min-[950px]:items-center min-[950px]:text-cBlue min-[950px]:border min-[950px]:border-cBlue min-[950px]:pl-6 min-[950px]:py-12 max-screen4:pr-[5px] max-screen4:py-[25px] max-screen4:delay-[200ms] max-screen4:mt-[100px]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="42" viewBox="0 -960 960 960" width="48"
+                    class="fill-cBlue">
+                    <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+                </svg>
+                <p class="[writing-mode:vertical-lr] font-Heebo font-bold text-xl rotate-180">
+                    Choose your protection
+                </p>
+            </button>
+            <button id="btn-prev-small"
+                class="min-[950px]:hidden fixed flex border-2 border-cBlue p-2 items-center bottom-0 w-screen justify-center bg-white ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="42" viewBox="0 -960 960 960" width="48"
+                    class="fill-cBlue rotate-180">
+                    <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+                    <p class="font-Heebo font-bold text-xl text-cBlue">
+                        Previous
+                    </p>
+
+            </button>
+        </div>
+        <div class="mainCenter px-40">
+            <div class="maintitle text-5xl min-[950px]:text-5xl font-bold font-PlayfairSerif mb-10">Confirm your design.
+            </div>
+            <div class="mainContent min-[950px]:grid min-[950px]:grid-cols-3 ">
+                <div class="leftText">
+                    <div class="subText font-Heebo text-gray-500 text-lg min-[950px]:text-2xl mb-4">Almost done.</div>
+                    <div class="descText font-Heebo text-gray-500 text-lg min-[950px]:text-base">You’ve chosen a colour,
+                        a
+                        texture, a pattern, and protection for your space.
+                        Fill out the form below and we’ll send you actual concrete samples of the colours you’ve chosen.
+                        If you like, we’ll also email this report to you, or your architect, your contractor, builder,
+                        or interior designer. It’ll help give them an indication of what you want to achieve in your
+                        space. We recommend you meet with them and discuss the details using this as a starting point.
+                    </div>
+
+                </div>
+                <div
+                    class="centerColumn  min-[950px]:h-fit min-[950px]:grid min-[950px]:grid-rows-3 min-[950px]:grid-cols-1 min-[950px]:gap-10 ">
+                    <div class="stepChoice">
+                        <div class="choiceTitle text-3xl font-bold font-PlayfairSerif">Space</div>
+                        <div class="choiceImg mt-2"><img
+                                src="https://www.peterfell.co.nz/wp-content/uploads/PFL-155.png"
+                                alt="peterfell colour 155" id="choice-img-step-1"></div>
+                        <div class="choiceDesc text-2xl text-gray-500" id="choice-text-step-1">Floors</div>
+                    </div>
+                    <div class="stepChoice">
+                        <div class="choiceTitle text-3xl font-bold font-PlayfairSerif">Texture</div>
+                        <div class="choiceImg mt-2"><img
+                                src="https://www.peterfell.co.nz/wp-content/uploads/Light_trowel_tan.png"
+                                alt="light trowel" id="choice-img-step-3"></div>
+                        <div class="choiceDesc text-2xl text-gray-500" id="choice-text-step-3"></div>
+                    </div>
+                    <div class="stepChoice">
+                        <div class="choiceTitle text-3xl font-bold font-PlayfairSerif">Protection</div>
+                        <div class="choiceImg mt-2">
+                            <img src="https://www.peterfell.co.nz/wp-content/uploads/C2-Shield-10L.png"
+                                alt="light trowel" id="choice-img-step-5">
+                        </div>
+                        <div class="choiceDesc text-2xl text-gray-500" id="choice-text-step-5"></div>
+                    </div>
+                </div>
+                <div
+                    class="rightColumn min-[950px]:mb-64 min-[950px]:h-fit min-[950px]:grid min-[950px]:grid-rows-5 min-[950px]:grid-cols-1 min-[950px]:gap-12 ">
+                    <div class="stepChoice">
+                        <div class="choiceTitle text-3xl font-bold font-PlayfairSerif">Colour</div>
+                        <div class="choiceImg mt-2"><img
+                                src="https://www.peterfell.co.nz/wp-content/uploads/PFL-155.png"
+                                alt="peterfell colour 155" id="choice-img-step-2"></div>
+                        <div class="choiceDesc text-2xl text-gray-500" id="choice-text-step-2">PFL 155</div>
+                    </div>
+                    <div class="stepChoice">
+                        <div class="choiceTitle text-3xl font-bold font-PlayfairSerif">Pattern</div>
+                        <div class="choiceImg mt-2"><img
+                                src="https://www.peterfell.co.nz/wp-content/uploads/construction-cut-v1.png"
+                                alt="peterfell colour 155" id="choice-img-step-4"></div>
+                        <div class="choiceDesc text-2xl text-gray-500" id="choice-text-step-4"></div>
+                    </div>
+                    <div class="stepChoice">
+                        <div class="choiceTitle text-3xl font-bold font-PlayfairSerif ">Your Details:</div>
+                        <div class="min-[950px]:grid min-[950px]:grid-rows-3 min-[950px]:gap-4 min-[950px]:mt-3">
+                            <input type="text" placeholder="Your Name *" class="border-black border p-3">
+                            <input type="text" placeholder="Your Phone *" class="border-black border p-3">
+                            <input type="text" placeholder="Your Email *" class="border-black border p-3">
+                        </div>
+
+                    </div>
+                    <div class="stepChoice">
+                        <div class="choiceTitle text-3xl font-bold font-PlayfairSerif">Send samples to:</div>
+                        <div class="min-[950px]:grid min-[950px]:grid-rows-3 min-[950px]:gap-4 min-[950px]:mt-3">
+                            <input type="text" placeholder="House number and street name"
+                                class="border-black border p-3">
+                            <input type="text" placeholder="Apartment, suite, unit, etc.(optional)"
+                                class="border-black border p-3">
+                            <div class="min-[950px]:grid min-[950px]:grid-cols-3 min-[950px]:gap-2">
+                                <input type="text" placeholder="Town" class="border-black border p-3">
+                                <input type="text" placeholder="Region" class="border-black border p-3">
+                                <input type="text" placeholder="Postcode" class="border-black border p-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stepChoice">
+                        <div class="choiceTitle text-3xl font-bold font-PlayfairSerif">Email this report to:</div>
+                        <div class="min-[950px]:grid min-[950px]:grid-rows-3 min-[950px]:gap-4 min-[950px]:mt-3">
+                            <input type="text" placeholder="Your Name *" class="border-black border p-3">
+                            <input type="text" placeholder="Your Phone *" class="border-black border p-3">
+                            <textarea name="" id="" placeholder="Message *" class="border-black border"></textarea>
+                        </div>
+                        <button
+                            class="border border-cBlue mt-3 py-2 px-6 text-cBlue opacity-40 font-bold text-xl">Send</button>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
