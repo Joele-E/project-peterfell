@@ -105,6 +105,7 @@ class DesignTool {
       "../step3/index.html",
       "../step4/index.html",
       "../step-5/index.html",
+      "../step6/index.html",
     ];
     this.currentStep = 1;
     this.choices = {};
@@ -145,6 +146,9 @@ class DesignTool {
             break;
           case 5:
             this.addEventsStep5();
+            break;
+          case 6:
+            this.addEventsStep6();
             break;
           default:
             console.log("Step not found");
@@ -303,6 +307,14 @@ class DesignTool {
     btnPrev.addEventListener("click", this.prevPage);
     let closeStep4 = document.getElementById("close-step5");
     closeStep4.addEventListener("click", () => location.reload());
+  };
+  addEventsStep6 = () => {
+    let btnPrev = document.getElementById("btn-prev");
+    btnPrev.addEventListener("click", this.prevPage);
+    let closeStep4 = document.getElementById("close-step6");
+    closeStep4.addEventListener("click", () => location.reload());
+    let btnPrevSmall = document.getElementById("btn-prev-small");
+    btnPrevSmall.addEventListener("click", this.prevPage);
   };
   saveChoiceMultiple = (el) => {
     let currentStepN = Number(this.currentStep);
