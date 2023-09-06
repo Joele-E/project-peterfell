@@ -103,6 +103,7 @@ class DesignTool {
       "../component-step1/index.html",
       "../step2/index.html",
       "../step3/index.html",
+      "../step4/index.html",
     ];
     this.currentStep = 1;
     this.choices = {};
@@ -112,7 +113,7 @@ class DesignTool {
 
   openDesignTool = () => {
     // console.log(this.steps[`${this.currentStep}`]);
-    return fetch(this.steps[this.currentStep - 1])
+    fetch(this.steps[this.currentStep - 1])
       .then((res) => res.text())
       .then((myPage) => {
         let parser = new DOMParser();
@@ -134,8 +135,13 @@ class DesignTool {
             break;
           case 2:
             this.addEventsStep2();
+            break;
           case 3:
             this.addEventsStep3();
+            break;
+          case 4:
+            this.addEventsStep4();
+            break;
           default:
             console.log("Step not found");
         }
@@ -197,42 +203,42 @@ class DesignTool {
   };
 
   addEventsStep3 = () => {
-    try {
-      let recText = document.getElementById("step3-reccomended");
-      let recs = [
-        "Floors",
-        "Patios & courtyards",
-        "DriveWays & paths",
-        "Walls",
-        "Pool surrounds",
-        "Commercial",
-        "Public spaces",
-      ];
-      let step1Choice = JSON.parse(localStorage.getItem("choices"))["1"];
-      let myIndex = step1Choice.split("-")[2];
-      recText.innerText =
-        typeof step1Choice !== "undefined" ? recs[myIndex - 1] : "Default";
-    } catch (error) {
-      console.error("ERRORONEISSIMO ROTTO TUTTO", error);
-    }
+    // try {
+    //   let recText = document.getElementById("step3-reccomended");
+    //   let recs = [
+    //     "Floors",
+    //     "Patios & courtyards",
+    //     "DriveWays & paths",
+    //     "Walls",
+    //     "Pool surrounds",
+    //     "Commercial",
+    //     "Public spaces",
+    //   ];
+    //   let step1Choice = JSON.parse(localStorage.getItem("choices"))["1"];
+    //   let myIndex = step1Choice.split("-")[2];
+    //   recText.innerText =
+    //     typeof step1Choice !== "undefined" ? recs[myIndex - 1] : "Default";
+    // } catch (error) {
+    //   console.error("ERRORONEISSIMO ROTTO TUTTO", error);
+    // }
 
-    let textures = document.querySelectorAll(".texture");
-    textures.forEach((el) => {
-      el.addEventListener("click", () => {
-        this.saveChoice(el);
-        textures.forEach((el2) => {
-          el2.classList.remove("bg-[#d7e0e3]");
-        });
-        el.classList.add("bg-[#d7e0e3]");
-        let textureImg = document.getElementById("texture-imgL");
-        let textureUrl = el.querySelector("img").src;
-        textureImg.src = textureUrl;
-      });
-      let closeStep = document.getElementById("close-step3");
-      closeStep.addEventListener("click", () => location.reload());
-      let closeStep3 = document.getElementById("close-step3-small");
-      closeStep3.addEventListener("click", () => location.reload());
-    });
+    // let textures = document.querySelectorAll(".texture");
+    // textures.forEach((el) => {
+    //   el.addEventListener("click", () => {
+    //     this.saveChoice(el);
+    //     textures.forEach((el2) => {
+    //       el2.classList.remove("bg-[#d7e0e3]");
+    //     });
+    //     el.classList.add("bg-[#d7e0e3]");
+    //     let textureImg = document.getElementById("texture-imgL");
+    //     let textureUrl = el.querySelector("img").src;
+    //     textureImg.src = textureUrl;
+    //   });
+    let closeStep3 = document.getElementById("close-step3");
+    closeStep3.addEventListener("click", () => location.reload());
+    let closeStep3s = document.getElementById("close-step3-small");
+    closeStep3s.addEventListener("click", () => location.reload());
+    // });
 
     let btnNext = document.getElementById("btn-1");
     btnNext.addEventListener("click", this.nextPage);
@@ -243,7 +249,30 @@ class DesignTool {
     let btnPrevSmall = document.getElementById("btn-prev-small");
     btnPrevSmall.addEventListener("click", this.prevPage);
   };
-
+  addEventsStep4 = () => {
+    // let img1step4 = document.getElementById("step4-img1");
+    // img1step4.addEventListener("click", () => {
+    //   this.saveChoice(img1step4);
+    // });
+    // let img2step4 = document.getElementById("step4-img2");
+    // img2step4.addEventListener("click", () => {
+    //   this.saveChoice(img2step4);
+    // });
+    // let img3step4 = document.getElementById("step4-img3");
+    // img3step4.addEventListener("click", () => {
+    //   this.saveChoice(img3step4);
+    // });
+    let btnNext = document.getElementById("btn-1");
+    btnNext.addEventListener("click", this.nextPage);
+    let btnPrev = document.getElementById("btn-prev");
+    btnPrev.addEventListener("click", this.prevPage);
+    let closeStep4 = document.getElementById("close-step4");
+    closeStep4.addEventListener("click", () => location.reload());
+    let btnNextSmall = document.getElementById("btn-1-small");
+    btnNextSmall.addEventListener("click", this.nextPage);
+    let btnPrevSmall = document.getElementById("btn-prev-small");
+    btnPrevSmall.addEventListener("click", this.prevPage);
+  };
   saveChoiceMultiple = (el) => {
     let currentStepN = Number(this.currentStep);
     this.multipleChoices.push(el.id);
@@ -253,6 +282,16 @@ class DesignTool {
   saveChoice = (el) => {
     let currentStepN = Number(this.currentStep);
     this.choices[currentStepN] = el.id;
+    // let otherChoices = document.getElementsByClassName("bg-[#d7e0e3]");
+    // try {
+    //   otherChoices.forEach((element) => {
+    //     element.classList.remove("bg-[#d7e0e3]");
+    //   });
+    // } catch (error) {
+    //   console.error(error);
+    // }
+
+    // el.classList.add("bg-[#d7e0e3]");
     localStorage.setItem("choices", JSON.stringify(this.choices));
   };
   clearDiv = () => {
@@ -263,9 +302,7 @@ class DesignTool {
     // console.log("funziona");
     this.currentStep++;
     this.clearDiv();
-    this.openDesignTool()
-      .then()
-      .catch((err) => console.error(err));
+    this.openDesignTool();
   };
   prevPage = () => {
     this.currentStep--;
