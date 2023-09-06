@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href=" https://fonts.googleapis.com/ " />
+    <link rel="preconnect" href=" https://fonts.gstatic.com/ " crossorigin />
+    <link
+      href=" https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap "
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blueP: "#7a99ac",
+              greyP: "#6d6e70",
+              cBlue: "#7a99ac",
+            },
+            fontFamily: {
+              Heebo: ["Heebo", "sans-serif"],
+              PlayfairSerif: ["Playfair Display", "serif"],
+              PlayfairSans: ["Playfair Display", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex w-full mb-11 fixed top-7 right-3">
+      <div class="space w-full"></div>
+      <img
+        src="assets/Icon-Close-Blue-1.png"
+        alt=""
+        class="cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75"
+        id="close-step4"
+      />
+    </div>
+    <nav class="p-4 mt-5 min-[0px]:hidden min-[950px]:flex">
+      <div class="flex items-center justify-between w-full text-sm mt-16">
+        <div class="w-full">
+          <button
+            class="items-center text-white bg-cBlue w-full h-10 cursor-not-allowed opacity-25"
+          >
+            Step 1:<strong>Space</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed opacity-25"
+        />
+        <div class="w-full">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+          >
+            Step 2:<strong>Colour</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed opacity-25"
+        />
+        <div class="w-full">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full opacity-25"
+          >
+            Step 3:<strong>Texture</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed"
+        />
+        <div class="w-full">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed"
+          >
+            Step 4:<strong>Patterns</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed opacity-25"
+        />
+        <div class="w-full">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+          >
+            Step 5:<strong>Protection</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed opacity-25"
+        />
+        <div class="w-full">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+          >
+            <strong>Confirmation</strong>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav class="min-[950px]:hidden mb-20 w-screen flex">
+      <div class="w-screen flex">
+        <button class="text-white bg-cBlue w-screen h-10">
+          Step 4:<strong>Patterns</strong>
+        </button>
+      </div>
+    </nav>
+    <div>
+      <div
+        class="buttonP hover:brightness-110 fixed rotate-90 mt-24 -right-24 max-[950px]:hidden min-[950px]:visible"
+      >
+        <button
+          class="text-btn flex flex-col items-center text-white bg-cBlue py-5 px-12 h-24 w-73 rotate-180"
+        >
+          <p class="font-Heebo font-bold text-xl max-lg:hidden">
+            Choose your protection
+          </p>
+          <img
+            src="assets/arrow_forward-white.svg"
+            alt="iconArrow"
+            class="brightness-[.8] rotate-90 max-lg:rotate-0"
+          />
+        </button>
+      </div>
+      <div
+        class="buttonP hover:brightness-110 fixed rotate-90 mt-24 max-lg:block -left-20 max-[950px]:hidden min-[950px]:visible"
+      >
+        <button
+          class="text-btn flex flex-col items-center text-cBlue bg-white border-[1px] border-cBlue py-5 px-12 h-24 w-72 lg:hover:bg-cBlue lg:hover:text-white"
+        >
+          <p class="font-Heebo font-bold text-xl max-lg:hidden">
+            Choose your texture
+          </p>
+          <img
+            src="assets/arrow_forward-white.svg"
+            alt="iconArrow"
+            class="brightness-[.8] rotate-90 max-lg:rotate-0"
+          />
+        </button>
+      </div>
+      <div
+        class="max-lg:pl-[50px] max-lg:pr-[50px] lg:pl-[250px] lg: pr-[250px]"
+      >
+        <div class="max-md:flex-wrap w-full md:flex">
+          <div class="md:w-[70%]">
+            <h1 class="text-[3.5vw] font-bold mb-[20px] font-PlayfairSerif">
+              Choose your patterns.
+            </h1>
+            <div class="pl-[7%]">
+              <p class="text-greyP font-light text-[25px] mb-[10px]">
+                Here’s where you can choose the style of cuts you want in your
+                concrete to avoid the risk of cracking.
+              </p>
+              <p class="text-greyP font-light text-[17px]">
+                Construction Cuts are essential in controlling concrete
+                cracking. Talk to your contractor about where the construction
+                cuts will be positioned.
+                <br />
+                Add Decorative Cuts to add even more visual interest to your
+                coloured concrete flooring.
+              </p>
+            </div>
+          </div>
+          <div class="md:[20%]">
+            <img
+              class="img-fluid"
+              src="https://www.peterfell.co.nz/wp-content/uploads/Concrete-Pattern-hero-image.png"
+            />
+          </div>
+        </div>
+        <h2 class="text-[25px] font-bold font-PlayfairSerif">Concrete cuts.</h2>
+        <div class="w-full flex-wrap">
+          <div class="flex-row flex-wrap w-[70%]">
+            <div class="max-lg:w-full lg:w-2/5 flex">
+              <div class="w-[40%] mb-[30px]">
+                <img src="assets/construction-cut-v1.png" alt="" />
+              </div>
+              <div class="w-[60%]">
+                <p class="mb-[15px] text-[17px] text-greyP font-Heebo">
+                  Construction cuts only
+                </p>
+                <p class="text-[17px] text-greyP font-Heebo">
+                  This technique is required for concrete floors to control the
+                  cracking so it occurs at the cuts.
+                </p>
+              </div>
+            </div>
+            <div class="flex max-lg:w-full lg:w-2/5">
+              <div class="w-[40%] mb-[30px]">
+                <img src="assets/decorative-cut-v2.png" alt="" />
+              </div>
+              <div class="w-[60%]">
+                <p class="mb-[15px] text-[17px] text-greyP font-Heebo">
+                  Decorative cuts
+                </p>
+                <p class="text-[17px] text-greyP font-Heebo">
+                  Square pattern cuts applied in addition to construction cuts
+                  for aesthetic purposes.
+                </p>
+              </div>
+            </div>
+            <div class="flex max-lg:w-full lg:w-2/5">
+              <div class="w-[40%] mb-[30px]">
+                <img src="assets/Fair_Faced.png" alt="" />
+              </div>
+              <div class="w-[60%]">
+                <p class="mb-[15px] text-[17px] text-greyP font-Heebo">
+                  Not Applicable
+                </p>
+                <p class="text-[17px] text-greyP font-Heebo">
+                  Generally, no cuts are needed in concrete walls, however
+                  please be aware however that for cast in-situ walls, you’ll
+                  need to include expansive joints to allow for movement. We
+                  recommend that you discuss this with your engineer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[30%]"><img src="" alt="" /></div>
+        </div>
+        <div
+          class="buttonP hover:brightness-110 fixed rotate-180 mt-24"
+          id="btn-prev"
+        >
+          <button
+            class="text-btn flex items-center text-white bg-cBlue pr-6 h-72"
+          >
+            <img
+              src="assets/arrow_forward-white.svg"
+              alt="iconArrow"
+              class="brightness-[.8] rotate-180"
+            />
+            <p class="[writing-mode:vertical-lr] font-Heebo font-bold text-xl">
+              Choose your testspace
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="buttonRight mt-24">
+      <button
+        class="min-[950px]:hidden fixed flex border-2 border-cBlue p-2 items-center bottom-0 w-[50vw] justify-center bg-white"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          height="42"
+          viewBox="0 -960 960 960"
+          width="48"
+          class="fill-cBlue rotate-180"
+        >
+          <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+        </svg>
+        <p class="font-Heebo font-bold text-xl text-cBlue">Previous</p>
+      </button>
+      <button
+        class="min-[950px]:hidden fixed flex flex-row-reverse border-2 border-cBlue p-2 items-center bottom-0 w-1/2 justify-center bg-cBlue right-0"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          height="42"
+          viewBox="0 -960 960 960"
+          width="48"
+          class="fill-white opacity-40"
+        >
+          <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+        </svg>
+        <p class="font-Heebo font-bold text-xl text-white">Next</p>
+      </button>
+    </div>
+  </body>
+</html>
