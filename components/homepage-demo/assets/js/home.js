@@ -104,6 +104,7 @@ class DesignTool {
       "../step2/index.html",
       "../step3/index.html",
       "../step4/index.html",
+      "../step-5/index.html",
     ];
     this.currentStep = 1;
     this.choices = {};
@@ -141,6 +142,9 @@ class DesignTool {
             break;
           case 4:
             this.addEventsStep4();
+            break;
+          case 5:
+            this.addEventsStep5();
             break;
           default:
             console.log("Step not found");
@@ -185,15 +189,20 @@ class DesignTool {
     let color1 = document.getElementById("color1");
     color1.addEventListener("click", () => {
       this.saveChoiceMultiple(color1);
+      color1.classList.add("bg-[#d7e0e3]");
+      let colorsImg = document.getElementById("img-choice-step2");
+      let colorsUrl =
+        "	https://www.peterfell.co.nz/wp-content/uploads/PFL-112.png";
+      colorsImg.src = colorsUrl;
     });
-    let color2 = document.getElementById("color2");
-    color2.addEventListener("click", () => {
-      this.saveChoiceMultiple(color2);
-    });
-    let color3 = document.getElementById("color3");
-    color3.addEventListener("click", () => {
-      this.saveChoiceMultiple(color3);
-    });
+    // let color2 = document.getElementById("color2");
+    // color2.addEventListener("click", () => {
+    //   this.saveChoiceMultiple(color2);
+    // });
+    // let color3 = document.getElementById("color3");
+    // color3.addEventListener("click", () => {
+    //   this.saveChoiceMultiple(color3);
+    // });
     let closeStep = document.getElementById("close-step2");
     closeStep.addEventListener("click", () => location.reload());
     let btnNext = document.getElementById("btn-1");
@@ -203,42 +212,42 @@ class DesignTool {
   };
 
   addEventsStep3 = () => {
-    // try {
-    //   let recText = document.getElementById("step3-reccomended");
-    //   let recs = [
-    //     "Floors",
-    //     "Patios & courtyards",
-    //     "DriveWays & paths",
-    //     "Walls",
-    //     "Pool surrounds",
-    //     "Commercial",
-    //     "Public spaces",
-    //   ];
-    //   let step1Choice = JSON.parse(localStorage.getItem("choices"))["1"];
-    //   let myIndex = step1Choice.split("-")[2];
-    //   recText.innerText =
-    //     typeof step1Choice !== "undefined" ? recs[myIndex - 1] : "Default";
-    // } catch (error) {
-    //   console.error("ERRORONEISSIMO ROTTO TUTTO", error);
-    // }
+    try {
+      let recText = document.getElementById("step3-reccomended");
+      let recs = [
+        "Floors",
+        "Patios & courtyards",
+        "DriveWays & paths",
+        "Walls",
+        "Pool surrounds",
+        "Commercial",
+        "Public spaces",
+      ];
+      let step1Choice = JSON.parse(localStorage.getItem("choices"))["1"];
+      let myIndex = step1Choice.split("-")[2];
+      recText.innerText =
+        typeof step1Choice !== "undefined" ? recs[myIndex - 1] : "Default";
+    } catch (error) {
+      console.error("ERRORONEISSIMO ROTTO TUTTO", error);
+    }
 
-    // let textures = document.querySelectorAll(".texture");
-    // textures.forEach((el) => {
-    //   el.addEventListener("click", () => {
-    //     this.saveChoice(el);
-    //     textures.forEach((el2) => {
-    //       el2.classList.remove("bg-[#d7e0e3]");
-    //     });
-    //     el.classList.add("bg-[#d7e0e3]");
-    //     let textureImg = document.getElementById("texture-imgL");
-    //     let textureUrl = el.querySelector("img").src;
-    //     textureImg.src = textureUrl;
-    //   });
-    let closeStep3 = document.getElementById("close-step3");
-    closeStep3.addEventListener("click", () => location.reload());
-    let closeStep3s = document.getElementById("close-step3-small");
-    closeStep3s.addEventListener("click", () => location.reload());
-    // });
+    let textures = document.querySelectorAll(".texture");
+    textures.forEach((el) => {
+      el.addEventListener("click", () => {
+        this.saveChoice(el);
+        textures.forEach((el2) => {
+          el2.classList.remove("bg-[#d7e0e3]");
+        });
+        el.classList.add("bg-[#d7e0e3]");
+        let textureImg = document.getElementById("texture-imgL");
+        let textureUrl = el.querySelector("img").src;
+        textureImg.src = textureUrl;
+      });
+      let closeStep3 = document.getElementById("close-step3");
+      closeStep3.addEventListener("click", () => location.reload());
+      let closeStep3s = document.getElementById("close-step3-small");
+      closeStep3s.addEventListener("click", () => location.reload());
+    });
 
     let btnNext = document.getElementById("btn-1");
     btnNext.addEventListener("click", this.nextPage);
@@ -250,18 +259,18 @@ class DesignTool {
     btnPrevSmall.addEventListener("click", this.prevPage);
   };
   addEventsStep4 = () => {
-    // let img1step4 = document.getElementById("step4-img1");
-    // img1step4.addEventListener("click", () => {
-    //   this.saveChoice(img1step4);
-    // });
-    // let img2step4 = document.getElementById("step4-img2");
-    // img2step4.addEventListener("click", () => {
-    //   this.saveChoice(img2step4);
-    // });
-    // let img3step4 = document.getElementById("step4-img3");
-    // img3step4.addEventListener("click", () => {
-    //   this.saveChoice(img3step4);
-    // });
+    let img1step4 = document.getElementById("step4-img1");
+    img1step4.addEventListener("click", () => {
+      this.saveChoice(img1step4);
+    });
+    let img2step4 = document.getElementById("step4-img2");
+    img2step4.addEventListener("click", () => {
+      this.saveChoice(img2step4);
+    });
+    let img3step4 = document.getElementById("step4-img3");
+    img3step4.addEventListener("click", () => {
+      this.saveChoice(img3step4);
+    });
     let btnNext = document.getElementById("btn-1");
     btnNext.addEventListener("click", this.nextPage);
     let btnPrev = document.getElementById("btn-prev");
@@ -272,6 +281,28 @@ class DesignTool {
     btnNextSmall.addEventListener("click", this.nextPage);
     let btnPrevSmall = document.getElementById("btn-prev-small");
     btnPrevSmall.addEventListener("click", this.prevPage);
+  };
+  addEventsStep5 = () => {
+    let protections = document.querySelectorAll(".group");
+    protections.forEach((el) => {
+      el.addEventListener("click", () => {
+        this.saveChoice(el);
+        protections.forEach((el2) => {
+          el2.classList.remove("bg-[#d7e0e3]");
+        });
+        el.classList.add("bg-[#d7e0e3]");
+        let protectionsImg = document.getElementById("texture-imgL");
+        let protectionsUrl = el.querySelector("img").src;
+        console.log(protectionsUrl);
+        protectionsImg.src = protectionsUrl;
+      });
+    });
+    let btnNext = document.getElementById("btn-1");
+    btnNext.addEventListener("click", this.nextPage);
+    let btnPrev = document.getElementById("btn-prev");
+    btnPrev.addEventListener("click", this.prevPage);
+    let closeStep4 = document.getElementById("close-step5");
+    closeStep4.addEventListener("click", () => location.reload());
   };
   saveChoiceMultiple = (el) => {
     let currentStepN = Number(this.currentStep);
