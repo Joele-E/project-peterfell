@@ -213,6 +213,10 @@ class DesignTool {
     btnNext.addEventListener("click", this.nextPage);
     let btnPrev = document.getElementById("btn-prev");
     btnPrev.addEventListener("click", this.prevPage);
+    let btnNextSmall = document.getElementById("btn-1-small");
+    btnNextSmall.addEventListener("click", this.nextPage);
+    let btnPrevSmall = document.getElementById("btn-prev-small");
+    btnPrevSmall.addEventListener("click", this.prevPage);
   };
 
   addEventsStep3 = () => {
@@ -305,8 +309,12 @@ class DesignTool {
     btnNext.addEventListener("click", this.nextPage);
     let btnPrev = document.getElementById("btn-prev");
     btnPrev.addEventListener("click", this.prevPage);
-    let closeStep4 = document.getElementById("close-step5");
-    closeStep4.addEventListener("click", () => location.reload());
+    let closeStep5 = document.getElementById("close-step5");
+    closeStep5.addEventListener("click", () => location.reload());
+    let btnNextSmall = document.getElementById("btn-1-small");
+    btnNextSmall.addEventListener("click", this.nextPage);
+    let btnPrevSmall = document.getElementById("btn-prev-small");
+    btnPrevSmall.addEventListener("click", this.prevPage);
   };
   addEventsStep6 = () => {
     let btnPrev = document.getElementById("btn-prev");

@@ -1,900 +1,1214 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href=" https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap "
-    rel="stylesheet" />
-  <link rel="preconnect" href=" https://fonts.googleapis.com/ " />
-  <link rel="preconnect" href=" https://fonts.gstatic.com/ " crossorigin />
-  <link
-    href=" https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap "
-    rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            blueP: "#7a99ac",
-            greyP: "#6d6e70",
-            cBlue: "#7a99ac"
-          },
-          fontFamily: {
-            Heebo: ["Heebo", "sans-serif"],
-            PlayfairSerif: ["Playfair Display", "serif"],
-            PlayfairSans: ["Playfair Display", "sans-serif"],
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href=" https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap "
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href=" https://fonts.googleapis.com/ " />
+    <link rel="preconnect" href=" https://fonts.gstatic.com/ " crossorigin />
+    <link
+      href=" https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap "
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blueP: "#7a99ac",
+              greyP: "#6d6e70",
+              cBlue: "#7a99ac",
+            },
+            fontFamily: {
+              Heebo: ["Heebo", "sans-serif"],
+              PlayfairSerif: ["Playfair Display", "serif"],
+              PlayfairSans: ["Playfair Display", "sans-serif"],
+            },
           },
         },
-      },
-    };
-  </script>
-  <title></title>
-</head>
+      };
+    </script>
+    <title></title>
+  </head>
 
-<body>
-  <main id="contento-step">
-    <nav class="p-4 mt-5">
+  <body>
+    <main id="contento-step">
       <div class="flex w-full mb-11 fixed top-7 right-3">
         <div class="space w-full"></div>
-        <img src="assets/Icon-Close-Blue-1.png" alt=""
-          class="cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75" id="close-step2" />
+        <img
+          src="assets/Icon-Close-Blue-1.png"
+          alt=""
+          class="cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75"
+          id="close-step2"
+        />
       </div>
-      <div class="flex items-center justify-between w-full text-sm mt-16">
-        <div class="w-full">
-          <button class="items-center text-white bg-cBlue w-full h-10 cursor-not-allowed opacity-25">
-            Step 1:<strong>Space</strong>
-          </button>
+      <nav class="p-4 mt-5 min-[0px]:hidden min-[950px]:flex">
+        <div class="flex items-center justify-between w-full text-sm mt-16">
+          <div class="w-full">
+            <button class="items-center text-white bg-[#868A93] w-full h-10">
+              Step 1:<strong>Space</strong>
+            </button>
+          </div>
+          <img
+            src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+            alt="iconArrow"
+            class="cursor-not-allowed opacity-25"
+          />
+          <div class="w-full">
+            <button
+              class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed"
+            >
+              Step 2:<strong>Colour</strong>
+            </button>
+          </div>
+          <img
+            src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+            alt="iconArrow"
+            class="cursor-not-allowed"
+          />
+          <div class="w-full">
+            <button
+              class="items-center text-white p-2 bg-cBlue w-full opacity-25"
+            >
+              Step 3:<strong>Texture</strong>
+            </button>
+          </div>
+          <img
+            src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+            alt="iconArrow"
+            class="cursor-not-allowed opacity-25"
+          />
+          <div class="w-full">
+            <button
+              class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+            >
+              Step 4:<strong>Patterns</strong>
+            </button>
+          </div>
+          <img
+            src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+            alt="iconArrow"
+            class="cursor-not-allowed opacity-25"
+          />
+          <div class="w-full">
+            <button
+              class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+            >
+              Step 5:<strong>Protection</strong>
+            </button>
+          </div>
+          <img
+            src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+            alt="iconArrow"
+            class="cursor-not-allowed opacity-25"
+          />
+          <div class="w-full">
+            <button
+              class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+            >
+              <strong>Confirmation</strong>
+            </button>
+          </div>
         </div>
-        <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow" class="cursor-not-allowed" />
-        <div class="w-full">
-          <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed">
+      </nav>
+      <nav class="min-[950px]:hidden mb-20 w-screen flex">
+        <div class="w-screen flex">
+          <button class="text-white bg-cBlue w-screen h-10">
             Step 2:<strong>Colour</strong>
           </button>
         </div>
-        <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
-          class="cursor-not-allowed opacity-25" />
-        <div class="w-full">
-          <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
-            Step 3:<strong>Texture</strong>
-          </button>
-        </div>
-        <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
-          class="cursor-not-allowed opacity-25" />
-        <div class="w-full">
-          <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
-            Step 4:<strong>Patterns</strong>
-          </button>
-        </div>
-        <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
-          class="cursor-not-allowed opacity-25" />
-        <div class="w-full">
-          <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
-            Step 5:<strong>Protection</strong>
-          </button>
-        </div>
-        <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
-          class="cursor-not-allowed opacity-25" />
-        <div class="w-full">
-          <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
-            <strong>Confirmation</strong>
-          </button>
-        </div>
+      </nav>
+      <div
+        class="buttonP hover:brightness-110 fixed rotate-90 mt-24 -right-24 max-[950px]:hidden min-[950px]:visible"
+        id="btn-1"
+      >
+        <button
+          class="text-btn flex flex-col items-center text-white bg-cBlue py-5 px-12 h-24 w-73 rotate-180"
+        >
+          <p class="font-Heebo font-bold text-xl max-lg:hidden">
+            Choose your texture
+          </p>
+          <img
+            src="assets/arrow_forward-white.svg"
+            alt="iconArrow"
+            class="brightness-[.8] rotate-90 max-lg:rotate-0"
+          />
+        </button>
       </div>
-    </nav>
-    <div class="buttonP hover:brightness-110 fixed rotate-180 mt-24 max-[950px]:hidden min-[950px]:visible"
-      id="btn-prev">
-      <button class="text-btn flex items-center text-white bg-cBlue pr-6 h-72">
-        <img src="assets/arrow_forward-white.svg" alt="iconArrow" class="brightness-[.8] rotate-180" />
-        <p class="[writing-mode:vertical-lr] font-Heebo font-bold text-xl ">
-          Choose your testspace
-        </p>
-      </button>
-    </div>
-    <div class="buttonP hover:brightness-110 fixed -right-0 mt-24 max-[950px]:hidden min-[950px]:visible" id="btn-1">
-      <button class="text-btn flex items-center text-white bg-cBlue pr-6 h-72">
-        <img src="assets/arrow_forward-white.svg" alt="iconArrow" class="brightness-[.8] rotate-180" />
-        <p class="[writing-mode:vertical-lr] font-Heebo font-bold text-xl">
-          Choose your texture
-        </p>
-      </button>
-    </div>
-    </div>
-    <div class=" mt-24 md:pl-[250px] md:pr-[250px] max-md: pl-[50px] max-md:pr-[50px]" id="contenitore">
-      <div class="max-lg::flex-wrap lg:flex">
-        <div class="md:w-[60%]">
-          <h1 class="text-[3.5vw] font-bold mb-[20px] font-PlayfairSerif">
-            Choose your colour.
-          </h1>
-          <div class="pl-[7%]">
-            <p class="text-greyP font-light text-[25px] mb-[10px]">
-              It’s time to choose your colours.
+      <div
+        class="buttonP hover:brightness-110 fixed rotate-90 mt-24 max-lg:block -left-20 max-[950px]:hidden min-[950px]:visible"
+        id="btn-prev"
+      >
+        <button
+          class="flex flex-col items-center text-cBlue bg-white border-[1px] border-cBlue py-5 px-12 h-24 w-72 lg:hover:bg-cBlue lg:hover:text-white"
+        >
+          <p class="font-Heebo font-bold text-xl max-lg:hidden">
+            Choose your space
+          </p>
+          <img
+            src="assets/arrow_forward-white.svg"
+            alt="iconArrow"
+            class="brightness-[.8] rotate-90 max-lg:rotate-0"
+          />
+        </button>
+      </div>
+
+      <div
+        class="mt-24 md:pl-[250px] md:pr-[250px] max-md: pl-[50px] max-md:pr-[50px]"
+        id="contenitore"
+      >
+        <div class="max-lg::flex-wrap lg:flex">
+          <div class="md:w-[60%]">
+            <h1 class="text-[3.5vw] font-bold mb-[20px] font-PlayfairSerif">
+              Choose your colour.
+            </h1>
+            <div class="pl-[7%]">
+              <p class="text-greyP font-light text-[25px] mb-[10px]">
+                It’s time to choose your colours.
+              </p>
+              <p class="text-greyP font-light text-[17px]">
+                There are a couple of things you need to keep in mind. Colours
+                look different on every screen you view them on, so order some
+                actual samples before making your final decision. Something else
+                to remember is that because concrete is a natural material with
+                natural variations, the concrete laid in your space probably
+                won’t match the sample exactly.
+              </p>
+            </div>
+          </div>
+          <div class="md:[40%]">
+            <img
+              class="img-fluid"
+              src="https://www.peterfell.co.nz/wp-content/uploads/coloured-concrete-block-sealer-variations.png"
+            />
+            <p class="text-greyP font-light text-[17px] mb-[10px]">
+              The use of different sealers will impact on the final colour, as
+              you’ll see from the swatches we supply.
+            </p>
+            <p class="text-greyP font-light text-[17px] mb-[10px]">
+              <strong class="font-bold">A</strong>= PFL Acrylic Sealer, PFL
+              Epoxy Sealer or PFL C2 Polish Concrete
+            </p>
+            <p class="text-greyP font-light text-[17px] mb-[10px]">
+              <strong class="font-bold">B</strong> = PFL Natural Sealer
             </p>
             <p class="text-greyP font-light text-[17px]">
-              There are a couple of things you need to keep in mind. Colours
-              look different on every screen you view them on, so order some
-              actual samples before making your final decision. Something else
-              to remember is that because concrete is a natural material with
-              natural variations, the concrete laid in your space probably
-              won’t match the sample exactly.
+              <strong class="font-bold">C</strong> = PFL Glaze Sealer or PFL
+              Satin Sealer
             </p>
           </div>
         </div>
-        <div class="md:[40%]">
-          <img class="img-fluid"
-            src="https://www.peterfell.co.nz/wp-content/uploads/coloured-concrete-block-sealer-variations.png" />
-          <p class="text-greyP font-light text-[17px] mb-[10px]">
-            The use of different sealers will impact on the final colour, as
-            you’ll see from the swatches we supply.
-          </p>
-          <p class="text-greyP font-light text-[17px] mb-[10px]">
-            <strong class="font-bold">A</strong>= PFL Acrylic Sealer, PFL
-            Epoxy Sealer or PFL C2 Polish Concrete
-          </p>
-          <p class="text-greyP font-light text-[17px] mb-[10px]">
-            <strong class="font-bold">B</strong> = PFL Natural Sealer
-          </p>
-          <p class="text-greyP font-light text-[17px]">
-            <strong class="font-bold">C</strong> = PFL Glaze Sealer or PFL
-            Satin Sealer
-          </p>
-        </div>
-      </div>
-      <div class="flex mt-11 w-full">
-        <div class=" max-lg:w-full lg:w-3/5">
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">
-            Neutral range
-          </h2>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            SPECIAL NEUTRAL
-          </h3>
-          <div class="lg:w-full max-lg: flex-wrap lg:flex gap-2">
-            <div class=" max-lg:w-1/2 lg:w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
-              id="color1">
-              <div class="bg-[#b5a895] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 112
+        <div class="flex mt-11 w-full">
+          <div class="max-lg:w-full lg:w-3/5">
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">
+              Neutral range
+            </h2>
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              SPECIAL NEUTRAL
+            </h3>
+            <div class="lg:w-full max-lg: flex-wrap lg:flex gap-2">
+              <div
+                class="max-lg:w-1/2 lg:w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
+                id="color1"
+              >
+                <div class="bg-[#b5a895] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 112
+                </div>
+              </div>
+              <div
+                class="max-lg:w-1/2 lg:w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
+                id="color2"
+              >
+                <div class="bg-[#c4c4bb] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 137
+                </div>
+              </div>
+              <div
+                class="max-lg:w-1/2 lg:w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
+                id="color3"
+              >
+                <div class="bg-[#b5ae9c] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 155
+                </div>
+              </div>
+              <div
+                class="max-lg:w-1/2 lg:w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
+              >
+                <div class="bg-[#c1b899] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 156
+                </div>
+              </div>
+              <div
+                class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
+              >
+                <div class="bg-[#bdad8b] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 162
+                </div>
+              </div>
+              <div
+                class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
+              >
+                <div class="bg-[#bfb091] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 167
+                </div>
+              </div>
+              <div
+                class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
+              >
+                <div class="bg-[#bdb59e] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 172
+                </div>
+              </div>
+              <div
+                class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
+              >
+                <div class="bg-[#c5b593] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 182
+                </div>
+              </div>
+              <div
+                class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
+              >
+                <div class="bg-[#b3ad95] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 184
+                </div>
+              </div>
+              <div
+                class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
+              >
+                <div class="bg-[#c5ba9c] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 189
+                </div>
               </div>
             </div>
-            <div class="max-lg:w-1/2 lg:w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
-              id="color2">
-              <div class="bg-[#c4c4bb] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 137
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              PREMIUM NEUTRAL
+            </h3>
+            <div class="max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#c9bea2] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 839
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#b3ab96] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 855
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#bbac85] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 872
+                </div>
               </div>
             </div>
-            <div class="max-lg:w-1/2 lg:w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1"
-              id="color3">
-              <div class="bg-[#b5ae9c] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 155
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">
+              Sandstone range
+            </h2>
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              SPECIAL SANDSTONE
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#c5b896] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 202
+                </div>
               </div>
-            </div>
-            <div class="max-lg:w-1/2 lg:w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1">
-              <div class="bg-[#c1b899] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 156
+              <div class="cursor-pointer">
+                <div class="bg-[#c4b481] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 206
+                </div>
               </div>
-            </div>
-            <div class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1">
-              <div class="bg-[#bdad8b] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 162
+              <div class="cursor-pointer">
+                <div class="bg-[#b4a57a] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 211
+                </div>
               </div>
-            </div>
-            <div class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1">
-              <div class="bg-[#bfb091] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 167
+              <div class="cursor-pointer">
+                <div class="bg-[#ccb277] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 224
+                </div>
               </div>
-            </div>
-            <div class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1">
-              <div class="bg-[#bdb59e] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 172
+              <div class="cursor-pointer">
+                <div class="bg-[#cbb687] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 226
+                </div>
               </div>
-            </div>
-            <div class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1">
-              <div class="bg-[#c5b593] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 182
-              </div>
-            </div>
-            <div class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1">
-              <div class="bg-[#b3ad95] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 184
-              </div>
-            </div>
-            <div class="w-fit cursor-pointer hover:border-black hover:border-[1px] mb-1 mr-1">
-              <div class="bg-[#c5ba9c] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 189
-              </div>
-            </div>
-          </div>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            PREMIUM NEUTRAL
-          </h3>
-          <div class="max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#c9bea2] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 839
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#b3ab96] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 855
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#bbac85] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 872
-              </div>
-            </div>
-          </div>
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">
-            Sandstone range
-          </h2>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            SPECIAL SANDSTONE
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#c5b896] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 202
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c4b481] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 206
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#b4a57a] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 211
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#ccb277] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 224
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#cbb687] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 226
-              </div>
-            </div>
 
-
-            <div class="cursor-pointer">
-              <div class="bg-[#c6ba94] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 240
+              <div class="cursor-pointer">
+                <div class="bg-[#c6ba94] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 240
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#bcac88] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 249
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#c2b497] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 260
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#c3ba9b] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 295
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#bcac88] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 249
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              PREMIUM SANDSTONE
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#a4976a] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 811
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#cdbca0] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 835
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#b4a06e] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 840
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c2b497] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 260
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">
+              Terracotta range
+            </h2>
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              SPECIAL TERRACOTTA
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div>
+                <div class="bg-[#af8877] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 301
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#c9a082] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 305
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#aa7d60] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 322
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#b8a178] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 323
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#cdb59b] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 328
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#aa8d6b] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 330
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#b59469] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 334
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#c69d65] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 343
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#cba98d] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 390
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c3ba9b] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 295
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              PREMIUM TERRACOTTA
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#b18965] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 805
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#a2764f] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 828
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#b77350] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 890
+                </div>
               </div>
             </div>
-          </div>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            PREMIUM SANDSTONE
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#a4976a] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 811
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">
+              Brown range
+            </h2>
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              SPECIAL BROWN
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#98867a] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 403
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#a1835d] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 410
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#9a866e] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 431
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#8d7364] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 438
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#ab977c] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 450
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#aa886d] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 461
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#9f857d] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 465
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#806355] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 468
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#b6a68d] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 469
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#cdbca0] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 835
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              PREMIUM BROWN
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#b5a38f] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 162
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#a58c6e] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 162
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#896b53] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 162
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#b4a06e] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 840
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">
+              Stone range
+            </h2>
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              SPECIAL STONE
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#917e70] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 507
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#a59c7f] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 515
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#af9588] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 517
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#a0957f] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 518
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#8a8081] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 519
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#7c7467] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 520
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#a69989] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 545
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#a69a84] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 587
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#a89e7b] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 588
+                </div>
               </div>
             </div>
-          </div>
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">
-            Terracotta range
-          </h2>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            SPECIAL TERRACOTTA
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div>
-              <div class="bg-[#af8877] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 301
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              PREMIUM STONE
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#968780] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 819
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#beb0a3] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 845
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#a69776] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 888
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c9a082] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 305
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">
+              Charcoal range
+            </h2>
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              SPECIAL CHARCOAL
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#d3d3cb] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 609
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#8c8982] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 621
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#c6c6be] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 673
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#c1c0bb] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 675
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#7f7d74] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 677
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#89877b] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 678
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#aa7d60] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 322
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              PREMIUM CHARCOAL
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#ccccca] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 651
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#767678] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 698
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#51514f] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 699(SuperBlack)
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#b8a178] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 323
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">Aqua range</h2>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#949a80] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 733
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#8797a4] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 781
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#b9c2a7] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 786
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#94aa7c] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 791
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#858585] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 796
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#abb0b4] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL 797
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#cdb59b] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 328
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">
+              Gelato range
+            </h2>
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              Our Gelato range is made using Aalborg® white cement. While white
+              cement allows lighter and brighter colours, it adds extra cost and
+              is not available from all concrete manufacturers.
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#be895f] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Apricot
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#96aed4] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Blueberry
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#ab7f74] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Boysenberry
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#6d6161] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Chocolate
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#ac886e] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Dragonfruit
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#a291a4] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Grape
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#c9a8a1] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Guava
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#b3d2cc] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Gumdrop
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#afc48c] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Kiwifruit
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#d08e6b] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Papaya
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#d1b15e] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Passionfruit
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#bab170] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Pistachio
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#ac7976] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Plum
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#ae988b] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Raisin
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#b6816f] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Raspberry
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#9f807b] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Rum
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#dfdfd3] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Vanilla
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#da8365] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Watermelon
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#aa8d6b] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 330
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">
+              Pastel range
+            </h2>
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              Our Pastel range is made using Aalborg® white cement. While white
+              cement allows lighter and brighter colours, it adds extra cost and
+              is not available from all concrete manufacturers.
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#b8c4cb] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Bluebell
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#c89e98] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Blush
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#d6c083] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Buttercup
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#c6bec3] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Lavander
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#e2b28e] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Peach
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#c0cdc5] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL Spearmint
+                </div>
               </div>
             </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#b59469] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 334
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c69d65] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 343
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#cba98d] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 390
-              </div>
-            </div>
-          </div>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            PREMIUM TERRACOTTA
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#b18965] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 805
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#a2764f] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 828
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#b77350] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 890
-              </div>
-            </div>
-          </div>
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">Brown range</h2>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            SPECIAL BROWN
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#98867a] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 403
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#a1835d] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 410
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#9a866e] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 431
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#8d7364] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 438
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#ab977c] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 450
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#aa886d] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 461
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#9f857d] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 465
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#806355] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 468
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#b6a68d] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 469
-              </div>
-            </div>
-          </div>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            PREMIUM BROWN
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#b5a38f] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 162
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#a58c6e] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 162
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#896b53] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 162
-              </div>
-            </div>
-          </div>
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">Stone range</h2>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            SPECIAL STONE
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#917e70] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 507
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#a59c7f] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 515
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#af9588] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 517
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#a0957f] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 518
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#8a8081] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 519
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#7c7467] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 520
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#a69989] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 545
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#a69a84] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 587
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#a89e7b] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 588
-              </div>
-            </div>
-          </div>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            PREMIUM STONE
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#968780] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 819
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#beb0a3] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 845
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#a69776] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 888
-              </div>
-            </div>
-          </div>
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">
-            Charcoal range
-          </h2>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            SPECIAL CHARCOAL
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#d3d3cb] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 609
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#8c8982] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 621
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c6c6be] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 673
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c1c0bb] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 675
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#7f7d74] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 677
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#89877b] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 678
-              </div>
-            </div>
-          </div>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            PREMIUM CHARCOAL
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#ccccca] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 651
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#767678] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 698
-              </div>
-            </div>
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">
+              SuperBlack PFL699
+            </h2>
             <div class="cursor-pointer">
               <div class="bg-[#51514f] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 699(SuperBlack)
+              <div
+                class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+              >
+                PFL SuperBlack
+              </div>
+            </div>
+            <h2 class="font-bold text-[32px] font-PlayfairSerif">SuperWhite</h2>
+            <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
+              Our SuperWhite range is made using Aalborg® white cement. While
+              white cement allows lighter and brighter colours, it adds extra
+              cost and is not available from all concrete manufacturers.
+            </h3>
+            <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
+              <div class="cursor-pointer">
+                <div class="bg-[#e0e4e2] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL SuperWhite
+                </div>
+              </div>
+              <div class="cursor-pointer">
+                <div class="bg-[#efecea] w-[140px] h-[40px]"></div>
+                <div
+                  class="mt-[5px] font-Heebo font-light text-[17px] text-greyP"
+                >
+                  PFL SuperWhite Plus
+                </div>
               </div>
             </div>
           </div>
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">Aqua range</h2>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#949a80] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 733
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#8797a4] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 781
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#b9c2a7] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 786
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#94aa7c] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 791
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#858585] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 796
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#abb0b4] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL 797
-              </div>
-            </div>
-          </div>
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">Gelato range</h2>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            Our Gelato range is made using Aalborg® white cement. While white
-            cement allows lighter and brighter colours, it adds extra cost and
-            is not available from all concrete manufacturers.
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#be895f] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Apricot
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#96aed4] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Blueberry
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#ab7f74] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Boysenberry
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#6d6161] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Chocolate
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#ac886e] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Dragonfruit
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#a291a4] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Grape
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c9a8a1] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Guava
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#b3d2cc] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Gumdrop
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#afc48c] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Kiwifruit
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#d08e6b] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Papaya
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#d1b15e] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Passionfruit
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#bab170] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Pistachio
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#ac7976] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Plum
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#ae988b] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Raisin
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#b6816f] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Raspberry
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#9f807b] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Rum
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#dfdfd3] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Vanilla
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#da8365] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Watermelon
-              </div>
-            </div>
-          </div>
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">Pastel range</h2>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            Our Pastel range is made using Aalborg® white cement. While white
-            cement allows lighter and brighter colours, it adds extra cost and
-            is not available from all concrete manufacturers.
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#b8c4cb] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Bluebell
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c89e98] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Blush
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#d6c083] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Buttercup
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c6bec3] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Lavander
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#e2b28e] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Peach
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#c0cdc5] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL Spearmint
-              </div>
-            </div>
-          </div>
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">
-            SuperBlack PFL699
-          </h2>
-          <div class="cursor-pointer">
-            <div class="bg-[#51514f] w-[140px] h-[40px]"></div>
-            <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-              PFL SuperBlack
-            </div>
-          </div>
-          <h2 class="font-bold text-[32px] font-PlayfairSerif">SuperWhite</h2>
-          <h3 class="font-normal font-Heebo text-[23px] mb-[25px]">
-            Our SuperWhite range is made using Aalborg® white cement. While
-            white cement allows lighter and brighter colours, it adds extra cost
-            and is not available from all concrete manufacturers.
-          </h3>
-          <div class="w-[100%] max-lg: flex-wrap lg:flex gap-2">
-            <div class="cursor-pointer">
-              <div class="bg-[#e0e4e2] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL SuperWhite
-              </div>
-            </div>
-            <div class="cursor-pointer">
-              <div class="bg-[#efecea] w-[140px] h-[40px]"></div>
-              <div class="mt-[5px] font-Heebo font-light text-[17px] text-greyP">
-                PFL SuperWhite Plus
-              </div>
-            </div>
+          <div class="w-[2/5]">
+            <img
+              src=""
+              alt=""
+              class="max-lg:fixed max-lg:w-[94px] max-lg:h-[71px] max-lg:-right-0"
+              id="img-choice-step2"
+            />
           </div>
         </div>
-        <div class="w-[2/5]"><img src="" alt=""
-            class=" max-lg:fixed max-lg:w-[94px] max-lg:h-[71px] max-lg:-right-0" id="img-choice-step2"></div>
       </div>
-    </div>
-    <div class="buttonRight mt-24">
-      <button
-        class="min-[950px]:hidden fixed flex border-2 border-cBlue p-2 items-center bottom-0 w-[50vw] justify-center bg-white">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="42" viewBox="0 -960 960 960" width="48"
-          class="fill-cBlue rotate-180">
-          <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
-        </svg>
-        <p class="font-Heebo font-bold text-xl text-cBlue">Previous</p>
-      </button>
-      <button
-        class="min-[950px]:hidden fixed flex flex-row-reverse border-2 border-cBlue p-2 items-center bottom-0 w-1/2 justify-center bg-cBlue right-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="42" viewBox="0 -960 960 960" width="48"
-          class="fill-white opacity-40">
-          <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
-        </svg>
-        <p class="font-Heebo font-bold text-xl text-white">Next</p>
-      </button>
-    </div>
-  </main>
-</body>
-
+      <div class="buttonRight mt-24">
+        <button
+          class="min-[950px]:hidden fixed flex border-2 border-cBlue p-2 items-center bottom-0 w-[50vw] justify-center bg-white"
+          id="btn-prev-small"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="white"
+            height="42"
+            viewBox="0 -960 960 960"
+            width="48"
+            class="fill-cBlue rotate-180"
+          >
+            <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+          </svg>
+          <p class="font-Heebo font-bold text-xl text-cBlue">Previous</p>
+        </button>
+        <button
+          class="min-[950px]:hidden fixed flex flex-row-reverse border-2 border-cBlue p-2 items-center bottom-0 w-1/2 justify-center bg-cBlue right-0"
+          id="btn-1-small"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="white"
+            height="42"
+            viewBox="0 -960 960 960"
+            width="48"
+            class="fill-white opacity-40"
+          >
+            <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+          </svg>
+          <p class="font-Heebo font-bold text-xl text-white">Next</p>
+        </button>
+      </div>
+    </main>
+  </body>
 </html>

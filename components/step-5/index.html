@@ -42,9 +42,8 @@
         <img
           src="assets/Icon-Close-Blue-1.png"
           alt=""
-          id="close-step3"
           class="cursor-pointer hover:brightness-125 transition delay-75"
-          id="close-step"
+          id="close-step5"
         />
       </div>
       <div class="flex items-center justify-between w-full text-sm mt-16">
@@ -118,20 +117,13 @@
       </div>
     </nav>
     <nav class="min-[950px]:hidden w-screen flex flex-col gap-2">
-      <img
-        src="assets/Icon-Close-Blue-1.png"
-        alt=""
-        id="close-step3-small"
-        class="h-6 ml-auto cursor-pointer hover:brightness-125 transition delay-75 mt-2"
-        id="close-step"
-      />
-
       <div class="w-screen flex">
         <button class="text-white bg-cBlue w-screen h-10">
           Step 5:<strong>Protection</strong>
         </button>
       </div>
     </nav>
+    <!-- inserire bottoni -->
     <div class="modalBody mt-32 flex">
       <div class="space w-1/5 max-xl:w-1/4"></div>
       <div class="cont">
@@ -526,6 +518,40 @@
       </div>
       </div>
       </div>
+    </div>
+    <div class="buttonRight mt-24">
+      <button
+        class="min-[950px]:hidden fixed flex border-2 border-cBlue p-2 items-center bottom-0 w-[50vw] justify-center bg-white"
+        id="btn-prev-small"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          height="42"
+          viewBox="0 -960 960 960"
+          width="48"
+          class="fill-cBlue rotate-180"
+        >
+          <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+        </svg>
+        <p class="font-Heebo font-bold text-xl text-cBlue">Previous</p>
+      </button>
+      <button
+        class="min-[950px]:hidden fixed flex flex-row-reverse border-2 border-cBlue p-2 items-center bottom-0 w-1/2 justify-center bg-cBlue right-0"
+        id="btn-1-small"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          height="42"
+          viewBox="0 -960 960 960"
+          width="48"
+          class="fill-white opacity-40"
+        >
+          <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+        </svg>
+        <p class="font-Heebo font-bold text-xl text-white">Next</p>
+      </button>
     </div>
   </body>
 </html>
