@@ -133,13 +133,15 @@
       </div>
     </nav>
     <div class="modalBody mt-32 flex">
-      <div class="space w-1/6"></div>
+      <div class="space w-1/5 max-xl:w-1/4"></div>
       <div class="cont">
         <div class="container1 flex w-full p-2">
           <div class="text_img flex">
             <div class="text w-7/12">
               <div class="title_text">
-                <h1 class="title font-PlayfairSerif font-bold text-[3.5vw]">
+                <h1
+                  class="title font-PlayfairSerif font-bold text-[3.5vw] max-[1200px]:text-5xl"
+                >
                   Choose your protection.
                 </h1>
                 <div class="text w-2/3 mt-12 ml-12">
@@ -179,16 +181,18 @@
           </div>
         </div>
         <div class="container2 p-2 mt-32">
-          <h2 class="font-PlayfairSerif font-bold text-4xl">
+          <h2 class="font-PlayfairSerif font-bold text-[1.8vw]">
             Recommended concrete sealers or densifiers for your
           </h2>
           <div class="subgroup flex mt-10">
-            <div class="groups grid grid-cols-2 grid-rows-4 w-3/5 gap-2">
+            <div
+              class="groups grid grid-cols-2 grid-rows-4 w-3/5 gap-2 max-xl:grid-cols-1 max-xl:grid-rows-6"
+            >
               <div
                 class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
                 id="step5-img1"
               >
-                <div class="img w-2/6 mt-3">
+                <div class="img w-36 mt-3">
                   <img src="assets/C2-Gloss-10L.png" alt="" />
                 </div>
                 <div class="text_table w-full">
@@ -242,7 +246,7 @@
                 class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
                 id="step5-img2"
               >
-                <div class="img w-2/6 mt-3">
+                <div class="img w-36 mt-3">
                   <img src="assets/f16-PFL-Acrylic-Sealer-2L.png" alt="" />
                 </div>
                 <div class="text_table w-full">
@@ -296,7 +300,7 @@
                 class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
                 id="step5-img3"
               >
-                <div class="img w-2/6 mt-3">
+                <div class="img w-36 mt-3">
                   <img src="assets/f16-PFL-Glaze-Sealer-2L.png" alt="" />
                 </div>
                 <div class="text_table w-full">
@@ -350,7 +354,7 @@
                 class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
                 id="step5-img4"
               >
-                <div class="img w-2/6 mt-3">
+                <div class="img w-36 mt-3">
                   <img src="assets/C2-Shield-10L.png" alt="" />
                 </div>
                 <div class="text_table w-full">
@@ -404,7 +408,7 @@
                 class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
                 id="step5-img5"
               >
-                <div class="img w-2/6 mt-3">
+                <div class="img w-36 mt-3">
                   <img src="assets/C2-Gloss-10L.png" alt="" />
                 </div>
                 <div class="text_table w-full">
@@ -458,7 +462,7 @@
                 class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
                 id="step5-img6"
               >
-                <div class="img w-2/6 mt-3">
+                <div class="img w-36 mt-3">
                   <img src="assets/C2-Super-Hard-Label-10L.png" alt="" />
                 </div>
                 <div class="text_table w-full">
@@ -509,7 +513,7 @@
                 </div>
               </div>
             </div>
-            <div class="imgTanica max-w-[400px]">
+            <div class="imgTanica max-w-[400px] max-xl:w-80">
               <img
                 src="assets/C2-Gloss-10L.png"
                 alt=""
@@ -520,49 +524,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="buttonP hover:brightness-110 fixed rotate-90 mt-24 -left-24 max-lg:block max-lg:-left-0 max-lg:-bottom-0 max-lg:w-full max-lg:rotate-180"
-        id="btn-prev"
-      >
-        <button
-          class="flex flex-col items-center text-cBlue border border-cBlue py-5 px-12 h-24 w-72 hover:bg-cBlue hover:text-white transition delay-75 max-lg:h-16 max-lg:w-full max-lg:pr-0 max-lg:justify-center max-lg:flex-row"
-        >
-          <p class="font-Heebo font-bold text-xl max-lg:hidden lg:visible">
-            Choose your pattern
-          </p>
-          <p
-            class="font-Heebo font-bold text-xl lg:hidden max-lg:visible max-lg:font-semibold"
-          >
-            Next
-          </p>
-          <img
-            src="assets/arrow_forward-white.svg"
-            alt="iconArrow"
-            class="brightness-[.8] rotate-90 max-lg:rotate-0"
-          />
-        </button>
       </div>
-      <div
-        class="buttonP hover:brightness-110 fixed rotate-90 mt-24 -right-24 max-lg:block max-lg:-left-0 max-lg:-bottom-0 max-lg:w-full max-lg:rotate-180"
-        id="btn-1"
-      >
-        <button
-          class="text-btn flex flex-col items-center text-white bg-cBlue py-5 px-12 h-24 w-72 rotate-180 max-lg:h-16 max-lg:w-full max-lg:pr-0 max-lg:justify-center max-lg:flex-row"
-        >
-          <p class="font-Heebo font-bold text-xl max-lg:hidden lg:visible">
-            Confirmation
-          </p>
-          <p
-            class="font-Heebo font-bold text-xl lg:hidden max-lg:visible max-lg:font-semibold"
-          >
-            Next
-          </p>
-          <img
-            src="assets/arrow_forward-white.svg"
-            alt="iconArrow"
-            class="brightness-[.8] rotate-90 max-lg:rotate-0"
-          />
-        </button>
       </div>
     </div>
   </body>
