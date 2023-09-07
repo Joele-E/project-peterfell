@@ -126,25 +126,29 @@
           id="close-step5"
         />
       </div>
-      <div class="w-screen flex mt-8">
+      <div class="w-full flex mt-8">
         <button class="text-white bg-cBlue w-screen h-10">
           Step 5:<strong>Protection</strong>
         </button>
       </div>
     </nav>
-    <div class="modalBody mt-32 flex">
-      <div class="space w-1/5 max-xl:w-1/4"></div>
+    <div class="modalBody mt-20 flex max-xl:mt-20 max-[950px]:mt-4">
+      <div class="space w-1/5 max-xl:w-1/4 max-lg:w-1/3 max-[950px]:w-10"></div>
       <div class="cont">
         <div class="container1 flex w-full p-2">
-          <div class="text_img flex">
-            <div class="text w-7/12">
+          <div
+            class="text_img flex max-[950px]:gap-10 max-[767px]:flex max-[767px]:flex-col"
+          >
+            <div class="text w-7/12 max-[950px]:w-full">
               <div class="title_text">
                 <h1
                   class="title font-PlayfairSerif font-bold text-[3.5vw] max-[1200px]:text-5xl"
                 >
                   Choose your protection.
                 </h1>
-                <div class="text w-2/3 mt-12 ml-12">
+                <div
+                  class="text w-2/3 mt-12 ml-12 max-lg:ml-8 max-[950px]:ml-0 max-[767px]:w-full"
+                >
                   <p class="text-2xl font-PlayfairSerif text-greyP leading-7">
                     Your coloured concrete is laid. Now it’s time to protect it
                     from staining and marking.
@@ -158,9 +162,13 @@
                 </div>
               </div>
             </div>
-            <div class="textImg_img w-1/4">
-              <img src="assets/coloured-concrete.png" alt="imgColoured" />
-              <div class="textImg font-Heebo text-gray-400 leading-6 text-lg">
+            <div class="textImg_img w-1/4 max-[950px]:w-1/3 max-[767px]:w-full">
+              <div class="img max-[950px]:w-80 max-[767px]:w-full">
+                <img src="assets/coloured-concrete.png" alt="imgColoured" />
+              </div>
+              <div
+                class="textImg font-Heebo text-gray-400 leading-6 text-lg max-[950px]:text-base max-[950px]:leading-5"
+              >
                 <p>
                   The use of different sealers will impact on the final colour,
                   as you’ll see from the swatches we supply.
@@ -181,12 +189,14 @@
           </div>
         </div>
         <div class="container2 p-2 mt-32">
-          <h2 class="font-PlayfairSerif font-bold text-3xl w-1/2">
+          <h2
+            class="font-PlayfairSerif font-bold text-3xl w-1/2 max-[767px]:text-2xl max-[767px]:w-full"
+          >
             Recommended concrete sealers or densifiers for your
           </h2>
-          <div class="subgroup flex mt-10">
+          <div class="subgroup flex mt-10 max-[767px]:flex-col">
             <div
-              class="groups grid grid-cols-2 grid-rows-4 w-3/5 gap-2 max-xl:grid-cols-1 max-xl:grid-rows-6"
+              class="groups grid grid-cols-2 grid-rows-4 w-3/5 gap-2 max-xl:grid-cols-1 max-xl:grid-rows-6 max-[767px]:w-full"
             >
               <div
                 class="group flex w-full gap-5 border border-white p-3 hover:border-gray-200 cursor-pointer"
@@ -513,7 +523,9 @@
                 </div>
               </div>
             </div>
-            <div class="imgTanica max-w-[400px] max-xl:w-80">
+            <div
+              class="imgTanica max-w-[400px] max-xl:w-80 max-[950px]:w-60 max-[767px]:my-24 max-[767px]:ml-24"
+            >
               <img
                 src="assets/C2-Gloss-10L.png"
                 alt=""
@@ -524,9 +536,10 @@
           </div>
         </div>
       </div>
+      <!-- Inserire al posto di -rotate-90, rotate-90 -->
       <div
-        class="buttonP hover:brightness-110 fixed rotate-90 mt-24 -left-24 max-[950px]:hidden"
-        id="btn-prev-small"
+        class="buttonP hover:brightness-110 fixed -rotate-90 mt-24 -left-24 max-[950px]:hidden"
+        id="btn-prev"
       >
         <button
           class="text-btn flex flex-col items-center text-cBlue bg-white border border-cBlue py-5 px-12 h-24 w-72"
@@ -539,18 +552,19 @@
           />
         </button>
       </div>
+      <!-- Inserire al posto di -rotate-90, -rotate90 -->
       <div
-        class="buttonP hover:brightness-110 fixed mt-24 -right-24 -rotate-90"
-        id="btn-1-small"
+        class="buttonP hover:brightness-110 fixed mt-24 -right-24 rotate-90 max-[950px]:hidden"
+        id="btn-1"
       >
         <button
-          class="text-btn flex flex-col items-center text-white bg-cBlue py-5 px-12 h-24 w-72 max-[950px]:hidden"
+          class="text-btn flex flex-col items-center text-white bg-cBlue py-5 px-12 h-24 w-72"
         >
           <p class="font-Heebo font-bold text-xl">Confirmation</p>
           <img
             src="assets/arrow_forward-white.svg"
             alt="iconArrow"
-            class="brightness-[.8] rotate-90 max-lg:rotate-0"
+            class="brightness-[.8] rotate-90"
           />
         </button>
       </div>
