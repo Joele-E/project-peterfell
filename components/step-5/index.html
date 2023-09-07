@@ -116,14 +116,22 @@
         </div>
       </div>
     </nav>
-    <nav class="min-[950px]:hidden w-screen flex flex-col gap-2">
-      <div class="w-screen flex">
+    <nav class="min-[950px]:hidden w-screen flex flex-col">
+      <div class="flex w-full mb-11 fixed top-2 right-2">
+        <div class="space w-full"></div>
+        <img
+          src="assets/Icon-Close-Blue-1.png"
+          alt=""
+          class="cursor-pointer hover:brightness-125 transition delay-75 w-14"
+          id="close-step5"
+        />
+      </div>
+      <div class="w-screen flex mt-8">
         <button class="text-white bg-cBlue w-screen h-10">
           Step 5:<strong>Protection</strong>
         </button>
       </div>
     </nav>
-    <!-- inserire bottoni -->
     <div class="modalBody mt-32 flex">
       <div class="space w-1/5 max-xl:w-1/4"></div>
       <div class="cont">
@@ -173,7 +181,7 @@
           </div>
         </div>
         <div class="container2 p-2 mt-32">
-          <h2 class="font-PlayfairSerif font-bold text-[1.8vw]">
+          <h2 class="font-PlayfairSerif font-bold text-3xl w-1/2">
             Recommended concrete sealers or densifiers for your
           </h2>
           <div class="subgroup flex mt-10">
@@ -516,7 +524,35 @@
           </div>
         </div>
       </div>
+      <div
+        class="buttonP hover:brightness-110 fixed rotate-90 mt-24 -left-24 max-[950px]:hidden"
+        id="btn-prev-small"
+      >
+        <button
+          class="text-btn flex flex-col items-center text-cBlue bg-white border border-cBlue py-5 px-12 h-24 w-72"
+        >
+          <p class="font-Heebo font-bold text-xl">Choose your pattern</p>
+          <img
+            src="assets/arrow_forward-white.svg"
+            alt="iconArrow"
+            class="brightness-[.8] rotate-90"
+          />
+        </button>
       </div>
+      <div
+        class="buttonP hover:brightness-110 fixed mt-24 -right-24 -rotate-90"
+        id="btn-1-small"
+      >
+        <button
+          class="text-btn flex flex-col items-center text-white bg-cBlue py-5 px-12 h-24 w-72 max-[950px]:hidden"
+        >
+          <p class="font-Heebo font-bold text-xl">Confirmation</p>
+          <img
+            src="assets/arrow_forward-white.svg"
+            alt="iconArrow"
+            class="brightness-[.8] rotate-90 max-lg:rotate-0"
+          />
+        </button>
       </div>
     </div>
     <div class="buttonRight mt-24">
