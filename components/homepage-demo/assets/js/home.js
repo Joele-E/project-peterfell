@@ -308,7 +308,7 @@ class DesignTool {
         el.classList.add("bg-[#d7e0e3]");
         let protectionsImg = document.getElementById("texture-imgL");
         let protectionsUrl = el.querySelector("img").src;
-        console.log(protectionsUrl);
+        /*  console.log(protectionsUrl); */
         protectionsImg.src = protectionsUrl;
       });
     });
@@ -343,13 +343,13 @@ class DesignTool {
         "Public spaces",
       ];
       let immgs1 = [
-        "http://127.0.0.1:5501/project-peterfell/components/homepage-demo/assets/floors.jpg",
-        "http://127.0.0.1:5501/project-peterfell/components/homepage-demo/assets/patios.jpg",
-        "http://127.0.0.1:5501/project-peterfell/components/homepage-demo/assets/driveways.jpg",
-        "http://127.0.0.1:5501/project-peterfell/components/homepage-demo/assets/walls.jpg",
-        "http://127.0.0.1:5501/project-peterfell/components/homepage-demo/assets/pool.jpg",
-        "http://127.0.0.1:5501/project-peterfell/components/homepage-demo/assets/commercial.jpg",
-        "http://127.0.0.1:5501/project-peterfell/components/homepage-demo/assets/publicSpace.jpg",
+        "assets/floors.jpg",
+        "assets/patios.jpg",
+        "assets/driveways.jpg",
+        "assets/walls.jpg",
+        "assets/pool.jpg",
+        "assets/commercial.jpg",
+        "assets/publicSpace.jpg",
       ];
       let immgs2 = [
         "https://www.peterfell.co.nz/wp-content/uploads/Smooth_trowel.png",
@@ -361,9 +361,9 @@ class DesignTool {
         "https://www.peterfell.co.nz/wp-content/uploads/Deep_grind.png",
       ];
       let immgs3 = [
-        "	http://127.0.0.1:5501/project-peterfell/components/homepage-demo/assets/construction-cut-v1.png",
-        "http://127.0.0.1:5501/project-peterfell/components/homepage-demo/assets/decorative-cut-v2.png",
-        "	http://127.0.0.1:5501/project-peterfell/components/homepage-demo/assets/Fair_Faced.png",
+        "assets/construction-cut-v1.png",
+        "assets/decorative-cut-v2.png",
+        "assets/Fair_Faced.png",
       ];
       let immgs4 = [
         "assets/C2-Gloss-10L.png",
