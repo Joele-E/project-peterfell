@@ -349,7 +349,7 @@ class DesignTool {
         "assets/walls.jpg",
         "assets/pool.jpg",
         "assets/commercial.jpg",
-        "assets/publicSpace.jpg",
+        "assets/publicSpaces.jpg",
       ];
       let immgs2 = [
         "https://www.peterfell.co.nz/wp-content/uploads/Smooth_trowel.png",
@@ -400,6 +400,8 @@ class DesignTool {
     btnPrev.addEventListener("click", this.prevPage);
     let closeStep4 = document.getElementById("close-step6");
     closeStep4.addEventListener("click", () => location.reload());
+    let closeStep = document.getElementById("close-step6-small");
+    closeStep.addEventListener("click", () => location.reload());
     let btnPrevSmall = document.getElementById("btn-prev-small");
     btnPrevSmall.addEventListener("click", this.prevPage);
   };
