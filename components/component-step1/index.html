@@ -1,189 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            blueP: "#7a99ac",
-            greyP: "#6d6e70",
-            gray2: "#6d6e70",
-            cBlue: "#7a99ac",
-            nav: "f6f6f5",
-          },
-          fontFamily: {
-            Heebo: ["Heebo", "sans-serif"],
-            PlayfairSerif: ["Playfair Display", "serif"],
-            PlayfairSans: ["Playfair Display", "sans-serif"],
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blueP: "#7a99ac",
+              greyP: "#6d6e70",
+              gray2: "#6d6e70",
+              cBlue: "#7a99ac",
+              nav: "f6f6f5",
+            },
+            fontFamily: {
+              Heebo: ["Heebo", "sans-serif"],
+              PlayfairSerif: ["Playfair Display", "serif"],
+              PlayfairSans: ["Playfair Display", "sans-serif"],
+            },
           },
         },
-      },
-    };
-  </script>
-</head>
-<!-- <style>
+      };
+    </script>
+  </head>
+  <!-- <style>
     .text-btn {
       transform: rotate(180deg);
     }
   </style> -->
 
-<body>
-  <nav class="p-4 mt-5 max-lg:p-0 max-xl:mt-0">
-    <div class="flex w-full mb-11 fixed top-7 right-3 max-lg:top-3">
-      <div class="space w-full"></div>
-      <img src="assets/Icon-Close-Blue-1.png" alt=""
-        class="cursor-pointer max-[950px]:w-16 hover:brightness-125 transition delay-75" id="close-step" />
-    </div>
-    <div class="flex items-center justify-between w-full text-sm mt-16 max-[950px]:mt-10">
-      <div class="w-full">
-        <button class="items-center text-white bg-cBlue w-full h-10 cursor-not-allowed">
-          Step 1:<strong>Space</strong>
-        </button>
+  <body>
+    <nav class="p-4 mt-5 max-lg:p-0 max-xl:mt-0">
+      <div class="flex w-full mb-11 fixed top-7 right-3 max-lg:top-3">
+        <div class="space w-full"></div>
+        <img
+          src="assets/Icon-Close-Blue-1.png"
+          alt=""
+          class="cursor-pointer max-[950px]:w-16 hover:brightness-125 transition delay-75"
+          id="close-step"
+        />
       </div>
-      <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
-        class="cursor-not-allowed max-[950px]:hidden" />
-      <div class="w-full max-[950px]:hidden">
-        <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
-          Step 2:<strong>Colour</strong>
-        </button>
+      <div
+        class="flex items-center justify-between w-full text-sm mt-16 max-[950px]:mt-10"
+      >
+        <div class="w-full">
+          <button
+            class="items-center text-white bg-cBlue w-full h-10 cursor-not-allowed"
+          >
+            Step 1:<strong>Space</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed max-[950px]:hidden"
+        />
+        <div class="w-full max-[950px]:hidden">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+          >
+            Step 2:<strong>Colour</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed opacity-25 max-[950px]:hidden"
+        />
+        <div class="w-full max-[950px]:hidden">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+          >
+            Step 3:<strong>Texture</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed opacity-25 max-[950px]:hidden"
+        />
+        <div class="w-full max-[950px]:hidden">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+          >
+            Step 4:<strong>Patterns</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed opacity-25 max-[950px]:hidden"
+        />
+        <div class="w-full max-[950px]:hidden">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+          >
+            Step 5:<strong>Protection</strong>
+          </button>
+        </div>
+        <img
+          src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg"
+          alt="iconArrow"
+          class="cursor-not-allowed opacity-25 max-[950px]:hidden"
+        />
+        <div class="w-full max-[950px]:hidden">
+          <button
+            class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25"
+          >
+            <strong>Confirmation</strong>
+          </button>
+        </div>
       </div>
-      <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
-        class="cursor-not-allowed opacity-25 max-[950px]:hidden" />
-      <div class="w-full max-[950px]:hidden">
-        <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
-          Step 3:<strong>Texture</strong>
-        </button>
-      </div>
-      <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
-        class="cursor-not-allowed opacity-25 max-[950px]:hidden" />
-      <div class="w-full max-[950px]:hidden">
-        <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
-          Step 4:<strong>Patterns</strong>
-        </button>
-      </div>
-      <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
-        class="cursor-not-allowed opacity-25 max-[950px]:hidden" />
-      <div class="w-full max-[950px]:hidden">
-        <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
-          Step 5:<strong>Protection</strong>
-        </button>
-      </div>
-      <img src="assets/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.svg" alt="iconArrow"
-        class="cursor-not-allowed opacity-25 max-[950px]:hidden" />
-      <div class="w-full max-[950px]:hidden">
-        <button class="items-center text-white p-2 bg-cBlue w-full cursor-not-allowed opacity-25">
-          <strong>Confirmation</strong>
-        </button>
-      </div>
-    </div>
-  </nav>
-  <!-- <div class="step1Res hidden pt-6 max-screen5:block">
+    </nav>
+    <!-- <div class="step1Res hidden pt-6 max-screen5:block">
       <button
         class="items-center text-white bg-cBlue w-[1000px] cursor-not-allowed max-h-[35px] text-sm p-2"
       >
         Step 1:<strong>Space</strong>
       </button>
     </div> -->
-  <div class="modalBody mt-24 w-full flex justify-between box-border max-[950px]:mt-5">
-    <div class="container flex max-w-full">
-      <div class="space w-1/6 max-[950px]:hidden"></div>
-      <div class="elements w-full">
-        <h1 class="font-PlayfairSerif text-7xl font-bold mb-5 max-[950px]:text-5xl max-[950px]:p-5">
-          Choose your space.
-        </h1>
-        <div class="textAndImg flex w-5/6 max-[950px]:flex-col max-[950px]:w-full">
-          <div class="text p-5 w-2/6 max-[950px]:w-full">
-            <h3 class="mb-5 text-2xl font-PlayfairSerif text-greyP leading-6 w-full">
-              You’re ready to add coloured concrete to your space.
-            </h3>
-            <p class="font-Heebo text-gray2 text-lg leading-6 w-full">
-              We’ve prepared this handy step-by-step design tool to make the
-              whole process easy for you.
-            </p>
-            <p class="font-Heebo font-semibold text-gray2 text-lg leading-6 w-full">
-              So click on the space you’re creating, and let’s get started.
-            </p>
-          </div>
-          <div class="imgLine1 flex w-4/6 max-[950px]:flex-col max-[950px]:w-full max-[950px]:mt-12">
-            <div class="img cursor-pointer p-5 mx-1 border border-white hover:border-gray-400 max-lg:m-0"
-              id="img-step1-1">
-              <img src="assets/floors.jpg" alt="img" class="brightness-50 hover:brightness-100 hover:delay-[110ms]" />
-              <p class="font-Heebo text-gray-400 text-2xl p-1">Floors</p>
-            </div>
-            <div class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-lg:m-0" id="img-step1-2">
-              <img src="assets/patios.jpg" alt="img" class="brightness-50 hover:brightness-100 hover:delay-[110ms]" />
-              <p class="font-Heebo text-gray-400 text-2xl p-1">
-                Patios & courtyards
+    <div
+      class="modalBody mt-24 w-full flex justify-between box-border max-[950px]:mt-5"
+    >
+      <div class="container flex max-w-full">
+        <div class="space w-1/6 max-[950px]:hidden"></div>
+        <div class="elements w-full">
+          <h1
+            class="font-PlayfairSerif text-7xl font-bold mb-5 max-[950px]:text-5xl max-[950px]:p-5"
+          >
+            Choose your space.
+          </h1>
+          <div
+            class="textAndImg flex w-5/6 max-[950px]:flex-col max-[950px]:w-full"
+          >
+            <div class="text p-5 w-2/6 max-[950px]:w-full">
+              <h3
+                class="mb-5 text-2xl font-PlayfairSerif text-greyP leading-6 w-full"
+              >
+                You’re ready to add coloured concrete to your space.
+              </h3>
+              <p class="font-Heebo text-gray2 text-lg leading-6 w-full">
+                We’ve prepared this handy step-by-step design tool to make the
+                whole process easy for you.
               </p>
-            </div>
-          </div>
-        </div>
-        <div class="images cursor-pointer w-5/6 max-[950px]:w-full">
-          <div class="imagesLine2 flex gap-2 justify-start max-[950px]:flex-col">
-            <div class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-[950px]:m-0"
-              id="img-step1-3">
-              <img src="assets/driveways.jpg" alt="img"
-                class="brightness-50 hover:brightness-100 hover:delay-[110ms]" />
-              <p class="font-Heebo text-gray-400 text-2xl p-1">
-                Driveways & paths
+              <p
+                class="font-Heebo font-semibold text-gray2 text-lg leading-6 w-full"
+              >
+                So click on the space you’re creating, and let’s get started.
               </p>
-            </div>
-            <div class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-[950px]:m-0"
-              id="img-step1-4">
-              <img src="assets/walls.jpg" alt="img" class="brightness-50 hover:brightness-100 hover:delay-[110ms]" />
-              <p class="font-Heebo text-gray-400 text-2xl p-1">Walls</p>
-            </div>
-            <div class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-[950px]:m-0"
-              id="img-step1-5">
-              <img src="assets/pool.jpg" alt="img" class="brightness-50 hover:brightness-100 hover:delay-[110ms]" />
-              <p class="font-Heebo text-gray-400 text-2xl p-1">
-                Pool surrounds
-              </p>
-            </div>
-          </div>
-          <div class="imagesLine3 flex gap-2 justify-start w-2/3 max-[950px]:flex-col max-[950px]:w-full">
-            <div
-              class="img cursor-pointer p-5 border border-white hover:border-gray-400 w-1/2 max-[950px]:w-full max-[950px]:m-0"
-              id="img-step1-6">
-              <img src="assets/commercial.jpg" alt="img"
-                class="brightness-50 hover:brightness-100 hover:delay-[110ms]" />
-              <p class="font-Heebo text-gray-400 text-2xl p-1">Commercial</p>
             </div>
             <div
-              class="img cursor-pointer p-5 border border-white hover:border-gray-400 w-1/2 mb-32 max-[950px]:w-full max-[950px]:m-0 max-[950px]:mb-48"
-              id="img-step1-7">
-              <img src="assets/publicSpaces.jpg" alt="img"
-                class="brightness-50 hover:brightness-100 hover:delay-[110ms]" />
-              <p class="font-Heebo text-gray-400 text-2xl p-1">
-                Public spaces
-              </p>
+              class="imgLine1 flex w-4/6 max-[950px]:flex-col max-[950px]:w-full max-[950px]:mt-12"
+            >
+              <div
+                class="img cursor-pointer p-5 mx-1 border border-white hover:border-gray-400 max-lg:m-0"
+                id="img-step1-1"
+              >
+                <img
+                  src="assets/floors.jpg"
+                  alt="img"
+                  class="brightness-50 hover:brightness-100 hover:delay-[110ms]"
+                />
+                <p class="font-Heebo text-gray-400 text-2xl p-1">Floors</p>
+              </div>
+              <div
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-lg:m-0"
+                id="img-step1-2"
+              >
+                <img
+                  src="assets/patios.jpg"
+                  alt="img"
+                  class="brightness-50 hover:brightness-100 hover:delay-[110ms]"
+                />
+                <p class="font-Heebo text-gray-400 text-2xl p-1">
+                  Patios & courtyards
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="images cursor-pointer w-5/6 max-[950px]:w-full">
+            <div
+              class="imagesLine2 flex gap-2 justify-start max-[950px]:flex-col"
+            >
+              <div
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-[950px]:m-0"
+                id="img-step1-3"
+              >
+                <img
+                  src="assets/driveways.jpg"
+                  alt="img"
+                  class="brightness-50 hover:brightness-100 hover:delay-[110ms]"
+                />
+                <p class="font-Heebo text-gray-400 text-2xl p-1">
+                  Driveways & paths
+                </p>
+              </div>
+              <div
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-[950px]:m-0"
+                id="img-step1-4"
+              >
+                <img
+                  src="assets/walls.jpg"
+                  alt="img"
+                  class="brightness-50 hover:brightness-100 hover:delay-[110ms]"
+                />
+                <p class="font-Heebo text-gray-400 text-2xl p-1">Walls</p>
+              </div>
+              <div
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 max-[950px]:m-0"
+                id="img-step1-5"
+              >
+                <img
+                  src="assets/pool.jpg"
+                  alt="img"
+                  class="brightness-50 hover:brightness-100 hover:delay-[110ms]"
+                />
+                <p class="font-Heebo text-gray-400 text-2xl p-1">
+                  Pool surrounds
+                </p>
+              </div>
+            </div>
+            <div
+              class="imagesLine3 flex gap-2 justify-start w-2/3 max-[950px]:flex-col max-[950px]:w-full"
+            >
+              <div
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 w-1/2 max-[950px]:w-full max-[950px]:m-0"
+                id="img-step1-6"
+              >
+                <img
+                  src="assets/commercial.jpg"
+                  alt="img"
+                  class="brightness-50 hover:brightness-100 hover:delay-[110ms]"
+                />
+                <p class="font-Heebo text-gray-400 text-2xl p-1">Commercial</p>
+              </div>
+              <div
+                class="img cursor-pointer p-5 border border-white hover:border-gray-400 w-1/2 mb-32 max-[950px]:w-full max-[950px]:m-0 max-[950px]:mb-48"
+                id="img-step1-7"
+              >
+                <img
+                  src="assets/publicSpaces.jpg"
+                  alt="img"
+                  class="brightness-50 hover:brightness-100 hover:delay-[110ms]"
+                />
+                <p class="font-Heebo text-gray-400 text-2xl p-1">
+                  Public spaces
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      class="buttonP hover:brightness-110 fixed -rotate-90 mt-24 -right-24 max-[950px]:block max-[950px]:-left-0 max-[950px]:-bottom-0 max-[950px]:w-full max-[950px]:rotate-180"
-      id="btn-1">
-      <button
-        class="text-btn max-[950px]:rotate-180 flex flex-col items-center text-white bg-cBlue py-5 px-12 h-24 w-72 max-[950px]:h-16 max-[950px]:w-full max-[950px]:pr-0 max-[950px]:justify-center max-[950px]:flex-row">
-        <p class="font-Heebo font-bold text-xl max-[950px]:hidden min-[950px]:visible">
-          Choose your colour
-        </p>
-        <p class="font-Heebo font-bold text-xl min-[950px]:hidden max-[950px]:visible max-[950px]:font-semibold">
+      <div
+        class="buttonP hover:brightness-110 fixed -rotate-90 mt-24 -right-24 max-[950px]:block max-[950px]:-left-0 max-[950px]:-bottom-0 max-[950px]:w-full max-[950px]:rotate-180"
+        id="btn-1"
+      >
+        <button
+          class="text-btn max-[950px]:rotate-180 flex flex-col items-center text-white bg-cBlue py-5 px-12 h-24 w-72 max-[950px]:hidden"
+        >
+          <p
+            class="font-Heebo font-bold text-xl max-[950px]:hidden min-[950px]:visible"
+          >
+            Choose your colour
+          </p>
+          <!-- <p class="font-Heebo font-bold text-xl min-[950px]:hidden max-[950px]:visible max-[950px]:font-semibold">
           Next
-        </p>
-        <img src="assets/arrow_forward-white.svg" alt="iconArrow"
-          class="brightness-[.8] rotate-90 max-[950px]:rotate-0" />
-      </button>
+        </p> -->
+          <img
+            src="assets/arrow_forward-white.svg"
+            alt="iconArrow"
+            class="brightness-[.8] rotate-90 max-[950px]:rotate-0"
+          />
+        </button>
+      </div>
+      <div class="buttonRight mt-24 fixed min-[950px]:hidden max-[950px]:visible" >
+          <button id="btn-1-small"
+            class="min-[950px]:hidden fixed flex flex-row-reverse border-2 border-cBlue p-2 items-center bottom-0 w-full justify-center bg-cBlue right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="42" viewBox="0 -960 960 960" width="48"
+              class="fill-white opacity-40">
+              <path d="m315-117-30-29 335-335-335-334 30-30 364 364-364 364Z" />
+              <p class="font-Heebo font-bold text-xl text-white">
+                Next
+              </p>
+    
+          </button>
+        </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
