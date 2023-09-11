@@ -156,6 +156,7 @@ class DesignTool {
       });
   };
   addEventsStep1 = () => {
+    this.disabledButton();
     let img1Step1 = document.getElementById("img-step1-1");
     let img2Step1 = document.getElementById("img-step1-2");
     let img3Step1 = document.getElementById("img-step1-3");
@@ -180,18 +181,21 @@ class DesignTool {
           el2.classList.remove("bg-[#d7e0e3]");
         });
         el.classList.add("bg-[#d7e0e3]");
+        this.enableButton();
       });
     });
-    let btnNext = document.getElementById("btn-1");
-    btnNext.addEventListener("click", this.nextPage);
+    // let btnNext = document.getElementById("btn-1");
+    // btnNext.addEventListener("click", this.nextPage);
     let closeStep = document.getElementById("close-step");
     closeStep.addEventListener("click", () => location.reload());
   };
   addEventsStep2 = () => {
+    this.disabledButton();
     let color1 = document.getElementById("color1");
     color1.addEventListener("click", () => {
       this.saveChoiceMultiple(color1);
       color1.classList.add("bg-[#d7e0e3]");
+      this.enableButton();
       let colorsImg = document.getElementById("img-choice-step2");
       let colorsUrl =
         "	https://www.peterfell.co.nz/wp-content/uploads/PFL-112.png";
@@ -207,12 +211,12 @@ class DesignTool {
     // });
     let closeStep = document.getElementById("close-step2");
     closeStep.addEventListener("click", () => location.reload());
-    let btnNext = document.getElementById("btn-1");
-    btnNext.addEventListener("click", this.nextPage);
+    // let btnNext = document.getElementById("btn-1");
+    // btnNext.addEventListener("click", this.nextPage);
     let btnPrev = document.getElementById("btn-prev");
     btnPrev.addEventListener("click", this.prevPage);
-    let btnNextSmall = document.getElementById("btn-1-small");
-    btnNextSmall.addEventListener("click", this.nextPage);
+    // let btnNextSmall = document.getElementById("btn-1-small");
+    // btnNextSmall.addEventListener("click", this.nextPage);
     let btnPrevSmall = document.getElementById("btn-prev-small");
     btnPrevSmall.addEventListener("click", this.prevPage);
     let closeStep3s = document.getElementById("close-step3-small");
@@ -220,6 +224,7 @@ class DesignTool {
   };
 
   addEventsStep3 = () => {
+    this.disabledButton();
     try {
       let recText = document.getElementById("step3-reccomended");
       let recs = [
@@ -247,6 +252,7 @@ class DesignTool {
           el2.classList.remove("bg-[#d7e0e3]");
         });
         el.classList.add("bg-[#d7e0e3]");
+        this.enableButton();
         let textureImg = document.getElementById("texture-imgL");
         let textureUrl = el.querySelector("img").src;
         textureImg.src = textureUrl;
@@ -257,16 +263,17 @@ class DesignTool {
       closeStep3s.addEventListener("click", () => location.reload());
     });
 
-    let btnNext = document.getElementById("btn-1");
-    btnNext.addEventListener("click", this.nextPage);
+    // let btnNext = document.getElementById("btn-1");
+    // btnNext.addEventListener("click", this.nextPage);
     let btnPrev = document.getElementById("btn-prev");
     btnPrev.addEventListener("click", this.prevPage);
-    let btnNextSmall = document.getElementById("btn-1-small");
-    btnNextSmall.addEventListener("click", this.nextPage);
+    // let btnNextSmall = document.getElementById("btn-1-small");
+    // btnNextSmall.addEventListener("click", this.nextPage);
     let btnPrevSmall = document.getElementById("btn-prev-small");
     btnPrevSmall.addEventListener("click", this.prevPage);
   };
   addEventsStep4 = () => {
+    this.disabledButton();
     let img1step4 = document.getElementById("step4-img1");
     let img2step4 = document.getElementById("step4-img2");
     let img3step4 = document.getElementById("step4-img3");
@@ -279,25 +286,27 @@ class DesignTool {
           el2.classList.remove("bg-[#d7e0e3]");
         });
         el.classList.add("bg-[#d7e0e3]");
+        this.enableButton();
         let cutsImg = document.getElementById("img-choice-step4");
         let cutsUrl = el.querySelector("img").src;
         cutsImg.src = cutsUrl;
       });
     });
-    let btnNext = document.getElementById("btn-1");
-    btnNext.addEventListener("click", this.nextPage);
+    // let btnNext = document.getElementById("btn-1");
+    // btnNext.addEventListener("click", this.nextPage);
     let btnPrev = document.getElementById("btn-prev");
     btnPrev.addEventListener("click", this.prevPage);
     let closeStep4 = document.getElementById("close-step4");
     closeStep4.addEventListener("click", () => location.reload());
-    let btnNextSmall = document.getElementById("btn-1-small");
-    btnNextSmall.addEventListener("click", this.nextPage);
+    // let btnNextSmall = document.getElementById("btn-1-small");
+    // btnNextSmall.addEventListener("click", this.nextPage);
     let btnPrevSmall = document.getElementById("btn-prev-small");
     btnPrevSmall.addEventListener("click", this.prevPage);
     let closeStep3s = document.getElementById("close-step3-small");
     closeStep3s.addEventListener("click", () => location.reload());
   };
   addEventsStep5 = () => {
+    this.disabledButton();
     let protections = document.querySelectorAll(".group");
     protections.forEach((el) => {
       el.addEventListener("click", () => {
@@ -306,20 +315,21 @@ class DesignTool {
           el2.classList.remove("bg-[#d7e0e3]");
         });
         el.classList.add("bg-[#d7e0e3]");
+        this.enableButton();
         let protectionsImg = document.getElementById("texture-imgL");
         let protectionsUrl = el.querySelector("img").src;
         /*  console.log(protectionsUrl); */
         protectionsImg.src = protectionsUrl;
       });
     });
-    let btnNext = document.getElementById("btn-1");
-    btnNext.addEventListener("click", this.nextPage);
+    // let btnNext = document.getElementById("btn-1");
+    // btnNext.addEventListener("click", this.nextPage);
     let btnPrev = document.getElementById("btn-prev");
     btnPrev.addEventListener("click", this.prevPage);
     let closeStep5 = document.getElementById("close-step5");
     closeStep5.addEventListener("click", () => location.reload());
-    let btnNextSmall = document.getElementById("btn-1-small");
-    btnNextSmall.addEventListener("click", this.nextPage);
+    // let btnNextSmall = document.getElementById("btn-1-small");
+    // btnNextSmall.addEventListener("click", this.nextPage);
     let btnPrevSmall = document.getElementById("btn-prev-small");
     btnPrevSmall.addEventListener("click", this.prevPage);
     let closeStep3s = document.getElementById("close-step3-small");
@@ -404,6 +414,48 @@ class DesignTool {
     closeStep.addEventListener("click", () => location.reload());
     let btnPrevSmall = document.getElementById("btn-prev-small");
     btnPrevSmall.addEventListener("click", this.prevPage);
+  };
+  disabledButton = () => {
+    let btnNext = document.getElementById("btn-1");
+    btnNext
+      .querySelector("button")
+      .classList.add(
+        "cursor-not-allowed",
+        "opacity-30",
+        "text-cBlue",
+        "border",
+        "border-cBlue",
+        "bg-white"
+      );
+    btnNext.querySelector("p").classList.add("text-cBlue");
+
+    try {
+      let btnNextSmall = document.getElementById("btn-1-small");
+      btnNextSmall.classList.remove("bg-cBlue");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  enableButton = () => {
+    let btnNext = document.getElementById("btn-1");
+    btnNext.addEventListener("click", this.nextPage);
+    try {
+      let btnNextSmall = document.getElementById("btn-1-small");
+      btnNextSmall.addEventListener("click", this.nextPage);
+    } catch (error) {
+      console.log(error);
+    }
+    btnNext
+      .querySelector("button")
+      .classList.remove(
+        "cursor-not-allowed",
+        "text-cBlue",
+        "opacity-30",
+        "border",
+        "border-cBlue",
+        "bg-white"
+      );
+    btnNext.querySelector("p").classList.remove("text-cBlue");
   };
   saveChoiceMultiple = (el) => {
     let currentStepN = Number(this.currentStep);
