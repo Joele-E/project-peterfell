@@ -105,14 +105,15 @@
         </div>
       </div>
     </nav>
-    <img
-      src="assets/Icon-Close-Blue-1.png"
-      alt=""
-      id="close-step3-small"
-      class="h-6 ml-auto cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75"
-      id="close-step"
-    />
-    <nav class="min-[950px]:hidden mb-20 w-screen flex">
+
+    <nav class="min-[950px]:hidden mb-20 w-screen flex flex-col">
+      <img
+        src="assets/Icon-Close-Blue-1.png"
+        alt=""
+        id="close-step3-small"
+        class="h-6 ml-auto cursor-pointer max-lg:w-16 hover:brightness-125 transition delay-75"
+        id="close-step"
+      />
       <div class="w-screen flex">
         <button class="text-white bg-cBlue w-screen h-10">
           Step 4:<strong>Patterns</strong>
@@ -182,12 +183,15 @@
         </div>
         <h2 class="text-[25px] font-bold font-PlayfairSerif">Concrete cuts.</h2>
         <div class="w-full flex">
-          <div class="flex-row flex-wrap w-[70%]">
-            <div class="cuts max-lg:w-full lg:w-2/5 flex" id="step4-img1">
+          <div class="flex flex-wrap w-[70%]">
+            <div
+              class="cuts max-lg:w-full lg:w-2/5 flex hover:border-black hover:border-[1px]"
+              id="step4-img1"
+            >
               <div class="w-[40%] mb-[30px]">
                 <img src="assets/construction-cut-v1.png" alt="" />
               </div>
-              <div class="w-[60%]">
+              <div class="w-[300px]">
                 <p class="mb-[15px] text-[17px] text-greyP font-Heebo">
                   Construction cuts only
                 </p>
@@ -197,7 +201,10 @@
                 </p>
               </div>
             </div>
-            <div class="cuts flex max-lg:w-full lg:w-2/5" id="step4-img2">
+            <div
+              class="cuts flex max-lg:w-full lg:w-2/5 hover:border-black hover:border-[1px]"
+              id="step4-img2"
+            >
               <div class="w-[40%] mb-[30px]">
                 <img src="assets/decorative-cut-v2.png" alt="" />
               </div>
@@ -211,7 +218,10 @@
                 </p>
               </div>
             </div>
-            <div class="cuts flex max-lg:w-full lg:w-2/5" id="step4-img3">
+            <div
+              class="cuts flex max-lg:w-full lg:w-2/5 hover:border-black hover:border-[1px]"
+              id="step4-img3"
+            >
               <div class="w-[40%] mb-[30px]">
                 <img src="assets/Fair_Faced.png" alt="" />
               </div>
