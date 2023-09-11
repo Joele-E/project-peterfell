@@ -432,6 +432,11 @@ class DesignTool {
     try {
       let btnNextSmall = document.getElementById("btn-1-small");
       btnNextSmall.classList.remove("bg-cBlue");
+      btnNextSmall.querySelector("p").classList.remove("text-white");
+      btnNextSmall.querySelector("p").classList.add("text-cBlue", "opacity-30");
+      btnNextSmall.querySelector("svg").classList.remove("fill-white");
+      btnNextSmall.querySelector("svg").classList.add("fill-cBlue");
+      btnNextSmall.classList.add("bg-white");
     } catch (error) {
       console.log(error);
     }
@@ -442,6 +447,14 @@ class DesignTool {
     try {
       let btnNextSmall = document.getElementById("btn-1-small");
       btnNextSmall.addEventListener("click", this.nextPage);
+      btnNextSmall.classList.add("bg-cBlue");
+      btnNextSmall.querySelector("p").classList.add("text-white");
+      btnNextSmall
+        .querySelector("p")
+        .classList.remove("text-cBlue", "opacity-30");
+      btnNextSmall.querySelector("svg").classList.add("fill-white");
+      btnNextSmall.querySelector("svg").classList.remove("fill-cBlue");
+      btnNextSmall.classList.remove("bg-white");
     } catch (error) {
       console.log(error);
     }
