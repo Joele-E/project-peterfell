@@ -108,8 +108,12 @@ class DesignTool {
       "../step6/index.html",
     ];
     this.currentStep = 1;
-    this.choices = {};
-    // this.choices = JSON.parse(localStorage.getItem("choices"));
+    // this.choices = {};
+    this.choices =
+      JSON.parse(localStorage.getItem("choices")) !== null
+        ? JSON.parse(localStorage.getItem("choices"))
+        : {};
+    console.log("mie scelte", this.choices);
     this.multipleChoices = [];
   }
 
@@ -155,8 +159,25 @@ class DesignTool {
         }
       });
   };
+  highlightChoice = (step, arrStep, img) => {
+    if (this.choices[String(step)] != null) {
+      let myChoice1 = this.choices[String(step)].slice(-1);
+      let el = arrStep[myChoice1 - 1];
+
+      if (img) {
+        let imgContainer = document.getElementById("texture-imgL");
+        let textureUrl = el.querySelector("img").src;
+        imgContainer.src = textureUrl;
+      }
+
+      el.classList.add("bg-[#d7e0e3]");
+
+      this.enableButton();
+    } else {
+      this.disabledButton();
+    }
+  };
   addEventsStep1 = () => {
-    this.disabledButton();
     let img1Step1 = document.getElementById("img-step1-1");
     let img2Step1 = document.getElementById("img-step1-2");
     let img3Step1 = document.getElementById("img-step1-3");
@@ -174,6 +195,7 @@ class DesignTool {
       img6Step1,
       img7Step1
     );
+    this.highlightChoice(1, arrStep1, false);
     arrStep1.forEach((el) => {
       el.addEventListener("click", () => {
         this.saveChoice(el);
@@ -190,10 +212,20 @@ class DesignTool {
     closeStep.addEventListener("click", () => location.reload());
   };
   addEventsStep2 = () => {
-    this.disabledButton();
     let color1 = document.getElementById("color1");
+    if (this.choices["2"] != null) {
+      let myChoice1 = this.choices["2"].slice(-1);
+      color1.classList.add("bg-[#d7e0e3]");
+      this.enableButton();
+      let colorsImg = document.getElementById("img-choice-step2");
+      let colorsUrl =
+        "	https://www.peterfell.co.nz/wp-content/uploads/PFL-112.png";
+      colorsImg.src = colorsUrl;
+    } else {
+      this.disabledButton();
+    }
     color1.addEventListener("click", () => {
-      this.saveChoiceMultiple(color1);
+      this.saveChoice(color1);
       color1.classList.add("bg-[#d7e0e3]");
       this.enableButton();
       let colorsImg = document.getElementById("img-choice-step2");
@@ -224,7 +256,6 @@ class DesignTool {
   };
 
   addEventsStep3 = () => {
-    this.disabledButton();
     try {
       let recText = document.getElementById("step3-reccomended");
       let recs = [
@@ -245,6 +276,7 @@ class DesignTool {
     }
 
     let textures = document.querySelectorAll(".texture");
+    this.highlightChoice(3, textures, true);
     textures.forEach((el) => {
       el.addEventListener("click", () => {
         this.saveChoice(el);
@@ -273,12 +305,12 @@ class DesignTool {
     btnPrevSmall.addEventListener("click", this.prevPage);
   };
   addEventsStep4 = () => {
-    this.disabledButton();
     let img1step4 = document.getElementById("step4-img1");
     let img2step4 = document.getElementById("step4-img2");
     let img3step4 = document.getElementById("step4-img3");
     let arrStep = [];
     arrStep.push(img1step4, img2step4, img3step4);
+    this.highlightChoice(4, arrStep, true);
     arrStep.forEach((el) => {
       el.addEventListener("click", () => {
         this.saveChoice(el);
@@ -287,7 +319,7 @@ class DesignTool {
         });
         el.classList.add("bg-[#d7e0e3]");
         this.enableButton();
-        let cutsImg = document.getElementById("img-choice-step4");
+        let cutsImg = document.getElementById("texture-imgL");
         let cutsUrl = el.querySelector("img").src;
         cutsImg.src = cutsUrl;
       });
@@ -306,8 +338,20 @@ class DesignTool {
     closeStep3s.addEventListener("click", () => location.reload());
   };
   addEventsStep5 = () => {
-    this.disabledButton();
-    let protections = document.querySelectorAll(".group");
+    let protections = document.querySelectorAll(".group5");
+    if (this.choices["5"] != null) {
+      let myChoice1 = this.choices["5"].slice(-1);
+      let el = protections[myChoice1 - 1];
+      el.classList.add("bg-[#d7e0e3]");
+
+      let imgContainer = document.getElementById("texture-imgL");
+      let textureUrl = el.querySelector("img").src;
+      imgContainer.src = textureUrl;
+
+      this.enableButton();
+    } else {
+      this.disabledButton();
+    }
     protections.forEach((el) => {
       el.addEventListener("click", () => {
         this.saveChoice(el);
