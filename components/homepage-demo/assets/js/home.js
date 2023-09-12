@@ -177,7 +177,37 @@ class DesignTool {
       this.disabledButton();
     }
   };
+
+  handleStepButtons = (buttons) => {
+    let activeButtons = [];
+    for (let i = 1; i < 6; i++) {
+      if (this.choices[String(i)] != null) {
+        activeButtons.push("active");
+      } else {
+        activeButtons.push("disabled");
+      }
+    }
+    for (let i = 0; i < buttons.length; i++) {
+      if (activeButtons[i] == "active") {
+        buttons[i]
+          .querySelector("button")
+          .classList.remove("cursor-not-allowed");
+        buttons[i].addEventListener("click", () => {
+          if (this.currentStep > i) {
+            this.currentStep = i;
+            this.nextPage();
+          }
+        });
+      } else {
+        buttons[i].addEventListener("click", () => {
+          console.log("NON ATTIVO");
+        });
+      }
+    }
+  };
   addEventsStep1 = () => {
+    let stepBtns = document.querySelectorAll(".stepBtn");
+    this.handleStepButtons(stepBtns);
     let img1Step1 = document.getElementById("img-step1-1");
     let img2Step1 = document.getElementById("img-step1-2");
     let img3Step1 = document.getElementById("img-step1-3");
@@ -212,6 +242,8 @@ class DesignTool {
     closeStep.addEventListener("click", () => location.reload());
   };
   addEventsStep2 = () => {
+    let stepBtns = document.querySelectorAll(".stepBtn");
+    this.handleStepButtons(stepBtns);
     let color1 = document.getElementById("color1");
     if (this.choices["2"] != null) {
       let myChoice1 = this.choices["2"].slice(-1);
@@ -256,6 +288,8 @@ class DesignTool {
   };
 
   addEventsStep3 = () => {
+    let stepBtns = document.querySelectorAll(".stepBtn");
+    this.handleStepButtons(stepBtns);
     try {
       let recText = document.getElementById("step3-reccomended");
       let recs = [
@@ -305,6 +339,8 @@ class DesignTool {
     btnPrevSmall.addEventListener("click", this.prevPage);
   };
   addEventsStep4 = () => {
+    let stepBtns = document.querySelectorAll(".stepBtn");
+    this.handleStepButtons(stepBtns);
     let img1step4 = document.getElementById("step4-img1");
     let img2step4 = document.getElementById("step4-img2");
     let img3step4 = document.getElementById("step4-img3");
@@ -338,6 +374,8 @@ class DesignTool {
     closeStep3s.addEventListener("click", () => location.reload());
   };
   addEventsStep5 = () => {
+    let stepBtns = document.querySelectorAll(".stepBtn");
+    this.handleStepButtons(stepBtns);
     let protections = document.querySelectorAll(".group5");
     if (this.choices["5"] != null) {
       let myChoice1 = this.choices["5"].slice(-1);
@@ -380,6 +418,8 @@ class DesignTool {
     closeStep3s.addEventListener("click", () => location.reload());
   };
   addEventsStep6 = () => {
+    let stepBtns = document.querySelectorAll(".stepBtn");
+    this.handleStepButtons(stepBtns);
     let getChoices = JSON.parse(localStorage.getItem("choices"));
     let textStep1 = document.getElementById("choice-text-step-1");
     let imgStep1 = document.getElementById("choice-img-step-1");
